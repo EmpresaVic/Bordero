@@ -1,0 +1,13 @@
+{
+  "usuarios": [
+    {
+      "id": "super",
+      "nome": "super",
+      "senhaHash": "hro9hyh8",
+      "perfil": "superadmin",
+      "empresas": [],
+      "permissoes": null
+    }
+  ],
+  "empresas": []
+}
