@@ -18,8 +18,8 @@
       ],
       "permissoes": {
         "bordero": true,
-        "historico": true,
-        "pdvs": true,
+        "historico": false,
+        "pdvs": false,
         "funcionarios": true
       }
     },
