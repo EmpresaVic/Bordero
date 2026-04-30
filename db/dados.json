@@ -17,6 +17,16 @@
         "mokx4v4r"
       ],
       "permissoes": null
+    },
+    {
+      "id": "mokxapk7nfnxigwmadr",
+      "nome": "victria",
+      "senhaHash": "ho34zm410",
+      "perfil": "admin",
+      "empresas": [
+        "mokx9aq1"
+      ],
+      "permissoes": null
     }
   ],
   "empresas": [
