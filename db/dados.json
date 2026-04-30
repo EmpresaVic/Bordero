@@ -130,5 +130,16 @@
       "nome": "PDV2 - AA2",
       "controlaDinheiro": false
     }
+  ],
+  "emp_mokx9aq1_funcionarios": [
+    {
+      "id": "molsol0c0ye0r18bqqf",
+      "nome": "Debora Cristina",
+      "cpfEnc": "",
+      "setor": "Gestão",
+      "nascimento": "",
+      "admissao": "",
+      "status": "ativo"
+    }
   ]
 }
