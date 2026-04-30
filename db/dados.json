@@ -55,5 +55,16 @@
       "nome": "Victive Comercio de Alimentos Ltda",
       "end": "Av dos Autonomistas, 1400 - Loja FF19"
     }
+  ],
+  "emp_mokx4v4r_funcionarios": [
+    {
+      "id": "mokxc0wxlrpmfh4isop",
+      "nome": "ANDREZA POLIS",
+      "cpfEnc": "",
+      "setor": "Gestão",
+      "nascimento": "",
+      "admissao": "",
+      "status": "ativo"
+    }
   ]
 }
