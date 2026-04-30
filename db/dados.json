@@ -232,20 +232,20 @@
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
           "fundoAbertura": 200,
-          "recebimento": "200",
-          "moedas": "0.50",
-          "deposito": "160",
+          "recebimento": "",
+          "moedas": "",
+          "deposito": "",
           "depositoPor": "ANDREZA POLIS",
           "dataDeposito": "2026-04-30",
-          "cartao": "400",
-          "pix": "500",
-          "clientes": "13",
-          "fita": "200.50",
-          "devolucao": "23",
+          "cartao": "",
+          "pix": "",
+          "clientes": "",
+          "fita": "",
+          "devolucao": "",
           "obsDevolucao": "demorou",
           "devComanda": "31",
           "devHorario": "12:00",
-          "fundoFechamento": 200,
+          "fundoFechamento": "",
           "caixa": "ANDREZA POLIS",
           "responsavel": "MARCELA COELHO"
         },
@@ -328,16 +328,16 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-04-30_M",
-      "savedAt": "2026-04-30T19:17:01.105Z",
+      "savedAt": "2026-04-30T19:23:38.374Z",
       "consolidado": {
-        "totRec": 200,
-        "totDin": 180.5,
-        "totCart": 900,
-        "totTotal": 1100,
-        "totFita": 200.5,
-        "totClientes": 13,
-        "totQuebra": 899.5,
-        "totDeposito": 160
+        "totRec": 0,
+        "totDin": -20,
+        "totCart": 0,
+        "totTotal": 0,
+        "totFita": 0,
+        "totClientes": 0,
+        "totQuebra": 0,
+        "totDeposito": 0
       }
     }
   ]
