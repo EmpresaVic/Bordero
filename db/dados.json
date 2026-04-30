@@ -363,5 +363,11 @@
       "controlaDinheiro": false
     }
   ],
-  "emp_mokx9qtt_pdvs": []
+  "emp_mokx9qtt_pdvs": [
+    {
+      "id": "pdvmolvin6r4ncwjtabq5b",
+      "nome": "PDV1 - CAIXA DINHEIRO",
+      "controlaDinheiro": true
+    }
+  ]
 }
