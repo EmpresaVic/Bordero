@@ -9,5 +9,11 @@
       "permissoes": null
     }
   ],
-  "empresas": []
+  "empresas": [
+    {
+      "id": "mokx4v4r",
+      "nome": "Victrus Comercio de Alimentos Ltda",
+      "end": "Rua Tenente Avelar Rodrigues , 81 - Loja 280"
+    }
+  ]
 }
