@@ -99,6 +99,11 @@
       "id": "pdvmokxf0cmjl2rags7wo9",
       "nome": "PDV1 - CAIXA 1 - DINHEIRO",
       "controlaDinheiro": true
+    },
+    {
+      "id": "pdvmokxfbej01queo319vvz",
+      "nome": "PDV 2 - CAIXA - CARTAO",
+      "controlaDinheiro": false
     }
   ]
 }
