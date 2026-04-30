@@ -76,10 +76,19 @@
       "status": "ativo"
     },
     {
-      "id": "mokxd29sgcr2fr3gmfq",
+      "id": "mokxe1qf0qw8and14jys",
       "nome": "MARCELA COELHO",
       "cpfEnc": "",
       "setor": "Gestão",
+      "nascimento": "",
+      "admissao": "",
+      "status": "ativo"
+    },
+    {
+      "id": "mokxe7os504le1sqfbl",
+      "nome": "KYARA V",
+      "cpfEnc": "",
+      "setor": "Atendimento",
       "nascimento": "",
       "admissao": "",
       "status": "ativo"
