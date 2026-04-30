@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BorderoPro — Controle Financeiro de Caixa</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f0f0f0;
+  --s1: #ffffff;
+  --s2: #e8e8e8;
+  --s3: #dcdcdc;
+  --bd: #d0cfc8;
+  --acc: #a07828;
+  --acc2: #3a6f98;
+  --warn: #b87820;
+  --red: #c04a3a;
+  --green: #3a7a4a;
+  --text: #1a1816;
+  --muted: #7a7567;
+  --r: 12px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 13px; min-height: 100vh; }
+
+/* LOGIN SCREEN */
+#login-screen { display:none; position:fixed; inset:0; background:var(--bg); z-index:9999; align-items:center; justify-content:center; flex-direction:column; }
+#login-screen.open { display:flex; }
+.login-box { background:var(--s1); border:1px solid var(--bd); border-radius:16px; padding:44px 40px; max-width:380px; width:90%; text-align:center; box-shadow:0 8px 40px rgba(0,0,0,0.4); }
+.login-logo { font-family:Georgia,serif; font-size:26px; font-weight:800; color:var(--acc); margin-bottom:4px; }
+.login-logo span { color:var(--text); }
+.login-sub { font-size:13px; color:var(--muted); margin-bottom:28px; }
+.login-field { display:flex; flex-direction:column; gap:5px; margin-bottom:14px; text-align:left; }
+.login-field label { font-size:11px; font-weight:700; color:var(--muted); letter-spacing:0.5px; text-transform:uppercase; }
+.login-input { background:var(--bg); border:1px solid var(--bd); border-radius:8px; padding:11px 14px; color:var(--text); font-family:'DM Sans',sans-serif; font-size:14px; outline:none; width:100%; transition:border 0.15s; }
+.login-input:focus { border-color:var(--acc); }
+.login-error { color:var(--red); font-size:12px; min-height:18px; margin-bottom:10px; }
+.login-btn { width:100%; padding:11px; border:none; border-radius:8px; background:var(--acc); color:#fff; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:700; cursor:pointer; letter-spacing:0.5px; transition:all 0.18s; }
+.login-btn:hover { background:#c49a3a; transform:translateY(-1px); }
+.login-user-info { display:flex; align-items:center; gap:8px; font-size:13px; color:var(--muted); }
+.login-user-info strong { color:var(--text); }
+.btn-logout { background:transparent; border:1px solid var(--bd); color:var(--muted); padding:5px 12px; font-size:12px; border-radius:6px; cursor:pointer; font-family:'DM Sans',sans-serif; transition:all 0.15s; }
+.btn-logout:hover { border-color:var(--red); color:var(--red); }
+
+/* LAYOUT */
+.app { display: flex; flex-direction: column; min-height: 100vh; }
+
+/* HEADER HORIZONTAL */
+.app-header {
+  background: var(--s1); border-bottom: 1px solid var(--bd);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 10px;
+  padding: 14px 26px;
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.logo { display: flex; flex-direction: column; }
+.logo h1 { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 800; color: var(--acc); white-space: nowrap; }
+.logo p { color: var(--muted); font-size: 10px; margin-top: 1px; }
+.logo-emp { font-size: 10px; color: var(--acc2); margin-top: 2px; font-weight: 600; }
+
+/* NAV HORIZONTAL */
+.nav {
+  display: flex; gap: 4px; flex-wrap: wrap;
+  background: var(--s2); padding: 4px; border-radius: 10px;
+  border: 1px solid var(--bd);
+}
+.nav-item {
+  display: flex; align-items: center; gap: 6px;
+  padding: 7px 13px; border-radius: 7px; cursor: pointer;
+  color: var(--muted); font-size: 12px; font-weight: 500;
+  transition: all 0.14s; white-space: nowrap;
+}
+.nav-item:hover { background: var(--s3); color: var(--text); }
+.nav-item.active { background: var(--acc); color: #fff; font-weight: 600; }
+.nav-icon { font-size: 13px; }
+
+/* HEADER RIGHT */
+.header-right { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.user-badge { display:flex; align-items:center; gap:6px; }
+.user-badge strong { font-size:12px; color:var(--text); }
+.user-badge span { font-size:10px; color:var(--muted); }
+
+/* EMPRESA SWITCHER (superadmin) */
+.emp-switcher { display: flex; align-items: center; gap: 6px; }
+.emp-switcher label { font-size:10px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.8px; white-space: nowrap; }
+.emp-switcher select { background:var(--bg); border:1px solid var(--bd); border-radius:6px; padding:5px 8px; color:var(--text); font-family:'DM Sans',sans-serif; font-size:11px; outline:none; }
+
+.main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.topbar {
+  background: var(--s1); border-bottom: 1px solid var(--bd);
+  padding: 10px 26px; display: flex; align-items: center;
+  justify-content: space-between; gap: 12px;
+}
+.topbar h2 { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; }
+.content { padding: 22px 26px; flex: 1; overflow-y: auto; }
+
+/* CARDS */
+.card { background: var(--s1); border: 1px solid var(--bd); border-radius: var(--r); padding: 18px; margin-bottom: 14px; }
+.card-title {
+  font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700;
+  margin-bottom: 14px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+.badge {
+  background: rgba(160,120,40,0.12); color: var(--acc); font-family: 'DM Sans', sans-serif;
+  font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; letter-spacing: 0.3px;
+}
+.badge-warn { background: rgba(245,166,35,0.12); color: var(--warn); }
+.badge-red { background: rgba(192,74,58,0.12); color: var(--red); }
+.badge-blue { background: rgba(58,111,152,0.12); color: var(--acc2); }
+
+/* FORMS */
+.form-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.form-group { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 120px; }
+label { font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
+input, select, textarea {
+  background: var(--bg); border: 1px solid var(--bd); border-radius: 7px;
+  color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 12px;
+  padding: 8px 11px; outline: none; transition: border 0.14s; width: 100%;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--acc); }
+input[type="number"] { text-align: right; }
+textarea { resize: vertical; min-height: 56px; }
+select option { background: var(--s2); }
+.input-money { position: relative; }
+.input-money span { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 11px; pointer-events: none; }
+.input-money input { padding-left: 24px; }
+
+/* BTNS */
+.btn {
+  padding: 8px 16px; border-radius: 7px; border: none; cursor: pointer;
+  font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600;
+  transition: all 0.14s; display: inline-flex; align-items: center; gap: 5px;
+}
+.btn-acc { background: var(--acc); color: #fff; }
+.btn-acc:hover { background: #c49a3a; transform: translateY(-1px); }
+.btn-blue { background: var(--acc2); color: #fff; }
+.btn-blue:hover { background: #5a8fb8; }
+.btn-ghost { background: var(--s2); color: var(--text); border: 1px solid var(--bd); }
+.btn-ghost:hover { background: var(--s3); }
+.btn-red { background: var(--red); color: #fff; }
+.btn-red:hover { background: #ff6b85; }
+.btn-sm { padding: 5px 11px; font-size: 11px; }
+.flex-end { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+
+/* GRIDS */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+@media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+/* STATS */
+.stats-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 16px; }
+@media (max-width: 800px) { .stats-row { grid-template-columns: 1fr 1fr; } }
+.stat { background: var(--s1); border: 1px solid var(--bd); border-radius: var(--r); padding: 14px 16px; }
+.stat-val { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 800; }
+.stat-lbl { font-size: 10px; color: var(--muted); margin-top: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
+.stat-val.pos { color: var(--acc); }
+.stat-val.neg { color: var(--red); }
+.stat-val.neu { color: var(--warn); }
+.stat-val.blue { color: var(--acc2); }
+
+/* PDV SECTIONS */
+.pdv-container { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 14px; }
+@media (max-width: 800px) { .pdv-container { grid-template-columns: 1fr; } }
+.pdv-card {
+  background: var(--s2); border: 1px solid var(--bd); border-radius: var(--r); padding: 14px;
+}
+.pdv-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--bd);
+}
+.pdv-name { font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; }
+.pdv-total {
+  font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 800; color: var(--acc);
+}
+.field-row { display: flex; align-items: center; justify-content: space-between; padding: 5px 0; gap: 10px; }
+.field-row:not(:last-child) { border-bottom: 1px solid rgba(208,207,200,0.7); }
+.field-lbl { font-size: 11px; color: var(--muted); font-weight: 500; flex: 1; }
+.field-val { font-size: 12px; font-weight: 600; text-align: right; min-width: 90px; }
+.field-val input { padding: 5px 8px; font-size: 12px; width: 110px; }
+.field-calc { color: var(--acc); font-family: 'Playfair Display', serif; font-size: 13px; font-weight: 700; }
+.field-calc.neg { color: var(--red); }
+.field-calc.warn { color: var(--warn); }
+.field-calc.blue { color: var(--acc2); }
+
+/* TOTAL CONSOLIDADO */
+.total-bar {
+  background: linear-gradient(135deg, rgba(160,120,40,0.06), rgba(58,111,152,0.04));
+  border: 1px solid rgba(160,120,40,0.25); border-radius: var(--r);
+  padding: 16px 20px; margin-bottom: 14px;
+  display: grid; grid-template-columns: repeat(5,1fr); gap: 14px;
+}
+@media (max-width: 900px) { .total-bar { grid-template-columns: 1fr 1fr; } }
+.total-item { text-align: center; }
+.total-item .lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
+.total-item .val { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 800; color: var(--acc); }
+.total-item .val.neg { color: var(--red); }
+.total-item .val.warn { color: var(--warn); }
+.total-item .val.blue { color: var(--acc2); }
+
+/* PAGAMENTOS TABLE */
+.pag-row { display: grid; grid-template-columns: 1fr 1fr 100px auto; gap: 8px; align-items: center; margin-bottom: 6px; }
+.pag-row input, .pag-row select { padding: 6px 9px; font-size: 12px; }
+
+/* PERDAS */
+.perda-row { display: grid; grid-template-columns: 2fr 80px 2fr auto; gap: 8px; align-items: center; margin-bottom: 6px; }
+.perda-row input { padding: 6px 9px; font-size: 12px; }
+
+
+/* HIST */
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { padding: 9px 11px; text-align: left; font-size: 9px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; border-bottom: 1px solid var(--bd); }
+td { padding: 9px 11px; border-bottom: 1px solid rgba(208,207,200,0.6); }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: rgba(255,255,255,0.015); }
+.tag { display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: 10px; font-weight: 700; }
+.tag-acc { background: rgba(160,120,40,0.12); color: var(--acc); }
+.tag-warn { background: rgba(245,166,35,0.12); color: var(--warn); }
+.tag-red { background: rgba(192,74,58,0.12); color: var(--red); }
+.tag-blue { background: rgba(58,111,152,0.12); color: var(--acc2); }
+
+/* SEPARATOR */
+.sep { height: 1px; background: var(--bd); margin: 14px 0; }
+.empty { text-align: center; padding: 28px; color: var(--muted); }
+.empty-ico { font-size: 28px; margin-bottom: 8px; }
+
+/* NOTICE */
+.notice {
+  background: rgba(245,166,35,0.08); border: 1px solid rgba(245,166,35,0.2);
+  border-radius: 8px; padding: 10px 14px; font-size: 11px; color: var(--warn);
+  margin-bottom: 12px; display: flex; gap: 8px; align-items: flex-start;
+}
+
+/* TAB BAR */
+.tab-bar { display: flex; gap: 3px; background: var(--s1); padding: 4px; border-radius: 8px; margin-bottom: 16px; width: fit-content; flex-wrap: wrap; }
+.tab-btn { padding: 7px 15px; border-radius: 6px; border: none; background: transparent; color: var(--muted); font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 500; cursor: pointer; transition: all 0.13s; }
+.tab-btn.active { background: var(--acc); color: #fff; font-weight: 700; }
+.tab-btn:hover:not(.active) { background: var(--s2); color: var(--text); }
+
+/* TURNO SELECTOR */
+.turno-sel { display: flex; gap: 0; border-radius: 8px; overflow: hidden; border: 1px solid var(--bd); }
+.turno-btn { padding: 8px 22px; border: none; background: var(--s2); color: var(--muted); font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.14s; }
+.turno-btn.active { background: var(--acc2); color: #fff; }
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bd); border-radius: 10px; }
+
+/* TOAST */
+#toast { position: fixed; bottom: 22px; right: 22px; background: var(--acc); color: #fff; padding: 11px 18px; border-radius: 9px; font-weight: 700; font-size: 12px; opacity: 0; transform: translateY(8px); transition: all 0.25s; pointer-events: none; z-index: 9999; }
+#toast.show { opacity: 1; transform: translateY(0); }
+
+/* PERMISSION GRID */
+.perm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-top: 10px; }
+.perm-item { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid var(--bd); border-radius: 8px; cursor: pointer; user-select: none; font-size: 12px; background: var(--bg); }
+.perm-item:hover { border-color: var(--acc); }
+.perm-item input[type=checkbox] { width: 14px; height: 14px; accent-color: var(--acc); cursor: pointer; flex-shrink: 0; }
+
+/* User items */
+.user-item { display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border:1px solid var(--bd); border-radius:8px; margin-bottom:8px; background: var(--s2); }
+.user-item .uname { font-weight:600; color:var(--text); font-size:13px; }
+.user-item .urole { font-size:11px; color:var(--muted); margin-top:2px; }
+
+/* Filtro funcionarios */
+.filter-bar { display:flex; gap:6px; margin-bottom:14px; flex-wrap:wrap; }
+.filter-btn { padding:5px 14px; border-radius:6px; border:1px solid var(--bd); background:var(--s2); color:var(--muted); font-size:11px; font-weight:600; cursor:pointer; font-family:'DM Sans',sans-serif; transition:all 0.13s; }
+.filter-btn.active { background:var(--acc); color:#fff; border-color:var(--acc); }
+
+@media print {
+  .app-header, .topbar, .tab-bar, .btn, .flex-end { display: none !important; }
+  body { background: #fff; color: #000; }
+  .card, .pdv-card { border: 1px solid #ccc; }
+  .pdv-container { grid-template-columns: 1fr 1fr; }
+  #login-screen { display:none !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- LOGIN SCREEN -->
+<div id="login-screen" class="open">
+  <div class="login-box">
+    <div class="login-logo">BorderoPro <span>—</span></div>
+    <div class="login-sub">Acesse sua conta para continuar</div>
+    <div class="login-field">
+      <label>Usuário</label>
+      <input type="text" class="login-input" id="login-user" placeholder="Digite seu usuário" autocomplete="username" onkeydown="if(event.key==='Enter')document.getElementById('login-pass').focus()">
+    </div>
+    <div class="login-field">
+      <label>Senha</label>
+      <input type="password" class="login-input" id="login-pass" placeholder="Digite sua senha" autocomplete="current-password" onkeydown="if(event.key==='Enter')fazerLogin()">
+    </div>
+    <div class="login-field" id="login-empresa-row" style="display:none;">
+      <label>Empresa</label>
+      <select class="login-input" id="login-empresa" style="letter-spacing:0;font-size:13px;"></select>
+    </div>
+    <div class="login-error" id="login-error"></div>
+    <button class="login-btn" id="login-btn" onclick="fazerLogin()">🔑 Entrar</button>
+  </div>
+</div>
+
+<div class="app">
+
+<!-- HEADER HORIZONTAL -->
+<header class="app-header">
+  <div class="logo">
+    <h1>BorderoPro</h1>
+    <p>Controle Financeiro de Caixa</p>
+    <div class="logo-emp" id="logo-empresa-nome"></div>
+  </div>
+
+  <nav class="nav" id="main-nav">
+    <div class="nav-item active" onclick="showPage('bordero')" id="nav-bordero"><span class="nav-icon">💰</span>Borderô do Dia</div>
+    <div class="nav-item" onclick="showPage('historico')" id="nav-historico"><span class="nav-icon">📅</span>Histórico</div>
+    <div class="nav-item" onclick="showPage('pdvs')" id="nav-pdvs"><span class="nav-icon">🖥️</span>PDVs</div>
+    <div class="nav-item" onclick="showPage('funcionarios')" id="nav-funcionarios"><span class="nav-icon">👤</span>Funcionários</div>
+    <div id="nav-admin-sec" style="display:contents;">
+      <div class="nav-item" onclick="showPage('empresas')" id="nav-empresas" style="display:none;"><span class="nav-icon">🏢</span>Empresas</div>
+      <div class="nav-item" onclick="showPage('usuarios')" id="nav-usuarios"><span class="nav-icon">🔐</span>Usuários</div>
+    </div>
+  </nav>
+
+  <div class="header-right">
+    <!-- Switcher empresa (superadmin) -->
+    <div class="emp-switcher" id="emp-switcher-wrap" style="display:none;">
+      <label>🌐 Empresa:</label>
+      <select id="super-empresa-sel" onchange="superTrocarEmpresa(this.value)">
+        <option value="">— Todas —</option>
+      </select>
+    </div>
+
+    <div class="user-badge" id="sidebar-user-badge" style="display:none;">
+      <span style="font-size:16px;">👤</span>
+      <div>
+        <strong id="sidebar-username"></strong><br>
+        <span id="sidebar-userrole"></span>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:6px;align-items:center;">
+      <span id="clock" style="font-size:11px;color:var(--muted);white-space:nowrap;"></span>
+      <button class="btn btn-ghost btn-sm" onclick="fazerLogout()">↩ Sair</button>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<div class="main">
+  <div class="topbar">
+    <h2 id="page-title">Borderô do Dia</h2>
+  </div>
+  <div class="content" id="page-content"></div>
+</div>
+</div>
+<div id="toast"></div>
+
+<script>
+/* =========================================================
+   STORAGE KEY
+   ========================================================= */
+var STORAGE_KEY = 'borderopro_v2';
+
+function _cache_get() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e) { return {}; } }
+function _cache_save(obj) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(obj)); } catch(e) {} }
+function dbGet(k) { return _cache_get()[k]; }
+function dbSet(k, v) { var d = _cache_get(); d[k] = v; _cache_save(d); }
+
+/* Namespace por empresa */
+var _empresaAtiva = null;
+var _usuarioLogado = null;
+
+function _empKey(k) {
+  if (_empresaAtiva) return 'emp_' + _empresaAtiva.id + '_' + k;
+  return k;
+}
+function empGet(k) { return dbGet(_empKey(k)); }
+function empSet(k, v) { dbSet(_empKey(k), v); }
+
+/* =========================================================
+   CRIPTOGRAFIA CPF (XOR + Base64)
+   ========================================================= */
+var _CPF_KEY = 'Bord3roPr0#2025$';
+function cpfEncrypt(cpf) {
+  if (!cpf) return '';
+  var out = '';
+  for (var i = 0; i < cpf.length; i++) {
+    out += String.fromCharCode(cpf.charCodeAt(i) ^ _CPF_KEY.charCodeAt(i % _CPF_KEY.length));
+  }
+  return btoa(unescape(encodeURIComponent(out)));
+}
+function cpfDecrypt(enc) {
+  if (!enc) return '';
+  try {
+    var dec = decodeURIComponent(escape(atob(enc)));
+    var out = '';
+    for (var i = 0; i < dec.length; i++) {
+      out += String.fromCharCode(dec.charCodeAt(i) ^ _CPF_KEY.charCodeAt(i % _CPF_KEY.length));
+    }
+    return out;
+  } catch(e) { return '***'; }
+}
+function mascararCPF(input) {
+  var v = input.value.replace(/\D/g, '');
+  if (v.length > 11) v = v.slice(0, 11);
+  if (v.length > 9) v = v.replace(/^(\d{3})(\d{3})(\d{3})(\d{1,2})/, '$1.$2.$3-$4');
+  else if (v.length > 6) v = v.replace(/^(\d{3})(\d{3})(\d{1,3})/, '$1.$2.$3');
+  else if (v.length > 3) v = v.replace(/^(\d{3})(\d{1,3})/, '$1.$2');
+  input.value = v;
+}
+
+/* =========================================================
+   AUTENTICAÇÃO — USUÁRIOS E EMPRESAS
+   ========================================================= */
+function _hashSenha(s) {
+  var h = 0;
+  for (var i = 0; i < s.length; i++) h = (Math.imul(31, h) + s.charCodeAt(i)) | 0;
+  return 'h' + Math.abs(h).toString(36) + s.length;
+}
+
+function _getEmpresas() {
+  return dbGet('empresas') || [];
+}
+function _setEmpresas(lista) {
+  dbSet('empresas', lista);
+}
+function _getUsuarios() {
+  return dbGet('usuarios') || [];
+}
+function _setUsuarios(lista) {
+  dbSet('usuarios', lista);
+  renderUsuarios && renderUsuarios();
+}
+
+function _garantirSuperAdmin() {
+  var lista = _getUsuarios();
+  var existe = lista.some(function(u) { return u.perfil === 'superadmin'; });
+  if (!existe) {
+    lista.push({
+      id: 'super',
+      nome: 'super',
+      senhaHash: _hashSenha('super123'),
+      perfil: 'superadmin',
+      empresas: [],
+      permissoes: null
+    });
+    _setUsuarios(lista);
+  }
+}
+
+async function fazerLogin() {
+  var user = document.getElementById('login-user').value.trim();
+  var pass = document.getElementById('login-pass').value;
+  var errEl = document.getElementById('login-error');
+  var btn = document.getElementById('login-btn');
+
+  if (!user || !pass) { errEl.textContent = 'Preencha usuário e senha.'; return; }
+  errEl.textContent = '';
+  btn.textContent = '⏳ Verificando...';
+  btn.disabled = true;
+
+  _garantirSuperAdmin();
+  var usuarios = _getUsuarios();
+  btn.textContent = '🔑 Entrar';
+  btn.disabled = false;
+
+  var encontrado = null;
+  for (var i = 0; i < usuarios.length; i++) {
+    if (usuarios[i].nome.toLowerCase() === user.toLowerCase() && usuarios[i].senhaHash === _hashSenha(pass)) {
+      encontrado = usuarios[i]; break;
+    }
+  }
+
+  if (!encontrado) {
+    errEl.textContent = '❌ Usuário ou senha incorretos.';
+    document.getElementById('login-pass').value = '';
+    document.getElementById('login-pass').focus();
+    return;
+  }
+
+  if (encontrado.perfil === 'superadmin') {
+    _entrarSistema(encontrado, null);
+    return;
+  }
+
+  var empIds = encontrado.empresas || [];
+  var todasEmpresas = _getEmpresas();
+  var empresasAcesso = todasEmpresas.filter(function(e) { return empIds.indexOf(e.id) >= 0; });
+
+  if (!empresasAcesso.length) {
+    errEl.textContent = '⚠️ Usuário sem empresa vinculada. Contate o administrador.';
+    return;
+  }
+
+  if (empresasAcesso.length === 1) {
+    _entrarSistema(encontrado, empresasAcesso[0]);
+    return;
+  }
+
+  var sel = document.getElementById('login-empresa');
+  sel.innerHTML = '<option value="">— Selecione a empresa —</option>' +
+    empresasAcesso.map(function(e) { return '<option value="' + e.id + '">' + e.nome + '</option>'; }).join('');
+  document.getElementById('login-empresa-row').style.display = '';
+  errEl.textContent = '';
+  btn.textContent = '🏢 Confirmar Empresa';
+  btn.onclick = function() {
+    var empId = document.getElementById('login-empresa').value;
+    if (!empId) { document.getElementById('login-error').textContent = '⚠️ Selecione a empresa.'; return; }
+    var emp = empresasAcesso.find(function(e) { return e.id === empId; });
+    _entrarSistema(encontrado, emp);
+    btn.textContent = '🔑 Entrar';
+    btn.onclick = fazerLogin;
+  };
+}
+
+function _entrarSistema(user, empresa) {
+  _usuarioLogado = user;
+  _empresaAtiva = empresa;
+
+  document.getElementById('login-screen').classList.remove('open');
+  document.getElementById('login-empresa-row').style.display = 'none';
+
+  document.getElementById('sidebar-username').textContent = user.nome;
+  var PERFIL_LABEL = { superadmin: '⭐ Super Admin', admin: '🔑 Administrador', operador: '👤 Operador' };
+  document.getElementById('sidebar-userrole').textContent = PERFIL_LABEL[user.perfil] || user.perfil;
+  document.getElementById('sidebar-user-badge').style.display = 'flex';
+
+  var empNomeEl = document.getElementById('logo-empresa-nome');
+  empNomeEl.textContent = empresa ? ('🏢 ' + empresa.nome) : '🌐 Todas as empresas';
+
+  var isSA = user.perfil === 'superadmin';
+  var isAdmin = user.perfil === 'admin';
+
+  document.getElementById('emp-switcher-wrap').style.display = isSA ? 'block' : 'none';
+  if (isSA) _popularSuperSel();
+
+  document.getElementById('nav-empresas').style.display = isSA ? 'flex' : 'none';
+  document.getElementById('nav-admin-sec').style.display = (isSA || isAdmin) ? 'contents' : 'none';
+
+  _aplicarPermissoesNav();
+  loadOrReset(todayStr(), 'M');
+  showPage('bordero');
+}
+
+function fazerLogout() {
+  if (!confirm('Deseja sair do sistema?')) return;
+  _usuarioLogado = null;
+  _empresaAtiva = null;
+  document.getElementById('login-user').value = '';
+  document.getElementById('login-pass').value = '';
+  document.getElementById('login-error').textContent = '';
+  document.getElementById('login-empresa-row').style.display = 'none';
+  document.getElementById('sidebar-user-badge').style.display = 'none';
+  document.getElementById('emp-switcher-wrap').style.display = 'none';
+  document.getElementById('login-screen').classList.add('open');
+  var btn = document.getElementById('login-btn');
+  btn.textContent = '🔑 Entrar';
+  btn.onclick = fazerLogin;
+  setTimeout(function() { document.getElementById('login-user').focus(); }, 100);
+}
+
+function _aplicarPermissoesNav() {
+  if (!_usuarioLogado) return;
+  var isSA = _usuarioLogado.perfil === 'superadmin';
+  var isAdmin = _usuarioLogado.perfil === 'admin';
+  var perms = _usuarioLogado.permissoes;
+  var navIds = ['bordero', 'historico', 'pdvs', 'funcionarios', 'usuarios'];
+  navIds.forEach(function(id) {
+    var el = document.getElementById('nav-' + id);
+    if (!el) return;
+    if (isSA || isAdmin) { el.style.display = 'flex'; return; }
+    if (id === 'bordero') { el.style.display = 'flex'; return; }
+    if (!perms) { el.style.display = 'flex'; return; }
+    el.style.display = perms[id] ? 'flex' : 'none';
+  });
+}
+
+function superTrocarEmpresa(empId) {
+  if (empId) {
+    _empresaAtiva = _getEmpresas().find(function(e) { return e.id === empId; }) || null;
+  } else {
+    _empresaAtiva = null;
+  }
+  var empNomeEl = document.getElementById('logo-empresa-nome');
+  empNomeEl.textContent = _empresaAtiva ? ('🏢 ' + _empresaAtiva.nome) : '🌐 Todas as empresas';
+  loadOrReset(todayStr(), 'M');
+  showPage('bordero');
+}
+
+function _popularSuperSel() {
+  var sel = document.getElementById('super-empresa-sel');
+  if (!sel) return;
+  var empresas = _getEmpresas();
+  sel.innerHTML = '<option value="">— Todas as empresas —</option>' +
+    empresas.map(function(e) { return '<option value="' + e.id + '">' + e.nome + '</option>'; }).join('');
+  if (_empresaAtiva) sel.value = _empresaAtiva.id;
+}
+
+/* =========================================================
+   UTILITÁRIOS
+   ========================================================= */
+function toast(msg, col) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.style.background = col || 'var(--acc)';
+  t.classList.add('show');
+  setTimeout(function() { t.classList.remove('show'); }, 2600);
+}
+function clock() {
+  var n = new Date();
+  var el = document.getElementById('clock');
+  if (el) el.textContent = n.toLocaleString('pt-BR', {weekday:'short',day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+}
+setInterval(clock, 1000); clock();
+
+function fmt(v) { if (v === null || v === undefined || v === '') return '—'; var n = Number(v); if (isNaN(n)) return v; return 'R$ ' + n.toLocaleString('pt-BR', {minimumFractionDigits:2,maximumFractionDigits:2}); }
+function fmtN(v) { var n = Number(v) || 0; return n.toLocaleString('pt-BR', {minimumFractionDigits:2,maximumFractionDigits:2}); }
+function n(v) { return Number(v) || 0; }
+function genId() { return Date.now().toString(36) + Math.random().toString(36).substr(2); }
+function todayStr() { var d = new Date(); return d.getFullYear() + '-' + (String(d.getMonth()+1).padStart(2,'0')) + '-' + (String(d.getDate()).padStart(2,'0')); }
+function fmtDate(s) { if (!s) return '—'; var p = s.split('-'); return p[2] + '/' + p[1] + '/' + p[0]; }
+
+/* =========================================================
+   ESTADO BORDERO
+   ========================================================= */
+var B = {};
+
+function resetB(data, turno) {
+  var pdvs = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1'},{id:'pdv2',nome:'PDV 2'}];
+  var pdvData = {};
+  pdvs.forEach(function(p) {
+    pdvData[p.id] = { fundoAbertura:200, recebimento:0, moedas:0, deposito:0, depositoPor:'', dataDeposito:'', cartao:0, pix:0, clientes:0, fita:0, devolucao:0, obsDevolucao:'', devComanda:'', devHorario:'', fundoFechamento:200, caixa:'', responsavel:'' };
+  });
+  B = { data: data || todayStr(), turno: turno || 'M', pdvData: pdvData, pagamentos: [], perdas: [], obsGeral: '', activeTab: 'caixa', fechado: false };
+}
+
+function loadOrReset(data, turno) {
+  var hist = empGet('historico') || [];
+  var id = data + '_' + turno;
+  var found = hist.find(function(h) { return h.id === id; });
+  if (found) { B = JSON.parse(JSON.stringify(found)); }
+  else { resetB(data, turno); }
+}
+
+/* =========================================================
+   CALCULOS
+   ========================================================= */
+function calcPDV(id) {
+  var d = B.pdvData[id];
+  if (!d) return {};
+  /* Subtrai apenas pagamentos explicitamente atribuídos a este PDV */
+  var totalPagamentos = B.pagamentos.filter(function(p) {
+    return !p.noite && p.pdvId === id;
+  }).reduce(function(s, p) { return s + n(p.valor); }, 0);
+  var totalDinheiro = n(d.recebimento) - n(totalPagamentos) + n(d.moedas);
+  var totalCartaoPix = n(d.cartao) + n(d.pix);
+  var totalPDV = totalCartaoPix + n(d.recebimento);
+  var quebraCaixa = totalPDV - n(d.fita);
+  var quebraFunc = quebraCaixa + n(d.devolucao);
+  return { totalDinheiro: totalDinheiro, totalCartaoPix: totalCartaoPix, totalPDV: totalPDV, quebraCaixa: quebraCaixa, quebraFunc: quebraFunc };
+}
+
+function calcConsolidado() {
+  var pdvs = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1'},{id:'pdv2',nome:'PDV 2'}];
+  var totRec=0, totDin=0, totCart=0, totTotal=0, totFita=0, totQuebra=0, totDeposito=0, totClientes=0;
+  pdvs.forEach(function(p) {
+    var controlaDin = (p.controlaDinheiro === undefined) ? true : !!p.controlaDinheiro;
+    var d = B.pdvData[p.id] || {};
+    var c = calcPDV(p.id);
+    totRec += n(d.recebimento);
+    totDin += c.totalDinheiro || 0;
+    totCart += c.totalCartaoPix || 0;
+    totTotal += c.totalPDV || 0;
+    totFita += n(d.fita);
+    totClientes += parseInt(d.clientes) || 0;
+    if (controlaDin) totQuebra += c.quebraCaixa || 0;
+    totDeposito += n(d.deposito);
+  });
+  return { totRec:totRec, totDin:totDin, totCart:totCart, totTotal:totTotal, totFita:totFita, totClientes:totClientes, totQuebra:totQuebra, totDeposito:totDeposito };
+}
+
+/* =========================================================
+   RENDER PAGES
+   ========================================================= */
+function showPage(page) {
+  var pages = ['bordero','historico','pdvs','funcionarios','usuarios','empresas'];
+  pages.forEach(function(p) {
+    var el = document.getElementById('nav-' + p);
+    if (el) el.classList.toggle('active', p === page);
+  });
+  var titles = { bordero:'Borderô do Dia', historico:'Histórico de Caixas', pdvs:'Cadastro de PDVs', funcionarios:'Funcionários', usuarios:'Usuários', empresas:'Empresas' };
+  document.getElementById('page-title').textContent = titles[page] || '';
+  var renders = { bordero:renderBordero, historico:renderHistorico, pdvs:renderPDVs, funcionarios:renderFuncionarios, usuarios:renderUsuarios, empresas:renderEmpresas };
+  if (renders[page]) renders[page]();
+}
+
+/* =========================================================
+   BORDERO
+   ========================================================= */
+function renderBordero() {
+  var content = document.getElementById('page-content');
+  if (!B.data) loadOrReset(todayStr(), 'M');
+  content.innerHTML = buildBordero();
+}
+
+function buildBordero() {
+  var pdvsRaw = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1',controlaDinheiro:true},{id:'pdv2',nome:'PDV 2',controlaDinheiro:true}];
+  var pdvs = pdvsRaw.map(function(p) { return Object.assign({}, p, {controlaDinheiro: (p.controlaDinheiro === undefined) ? true : !!p.controlaDinheiro}); });
+  var con = calcConsolidado();
+
+  var h = '<div class="card" style="background:linear-gradient(135deg,rgba(160,120,40,0.06),rgba(58,111,152,0.03));border-color:rgba(160,120,40,0.2);">';
+  h += '<div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">';
+  h += '<div><div style="font-family:Georgia,serif;font-size:26px;font-weight:800;color:var(--acc);">' + fmtDate(B.data) + '</div>';
+  h += '<div style="color:var(--muted);font-size:12px;margin-top:2px;">Borderô Financeiro Diário</div></div>';
+  h += '<div style="flex:1"></div>';
+  h += '<div class="form-group" style="min-width:140px;"><label>Data</label><input type="date" value="' + B.data + '" onchange="B.data=this.value;loadOrReset(B.data,B.turno);renderBordero();"></div>';
+  h += '<div><label style="display:block;margin-bottom:4px;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;">Turno</label>';
+  h += '<div class="turno-sel"><button class="turno-btn' + (B.turno==='M'?' active':'') + '" onclick="B.turno=\'M\';loadOrReset(B.data,\'M\');renderBordero();">☀️ Manhã</button>';
+  h += '<button class="turno-btn' + (B.turno==='T'?' active':'') + '" onclick="B.turno=\'T\';loadOrReset(B.data,\'T\');renderBordero();">🌙 Tarde</button></div></div>';
+  h += '</div></div>';
+
+  var queCls = con.totQuebra>0?'pos':con.totQuebra<0?'neg':'warn';
+  /* quebra por PDV com controle de dinheiro */
+  var pdvsDin = pdvs.filter(function(p) { return (p.controlaDinheiro === undefined) ? true : p.controlaDinheiro; });
+  var quebraHtml = '';
+  if (pdvsDin.length > 1) {
+    pdvsDin.forEach(function(p) {
+      var cq = calcPDV(p.id);
+      var qv = cq.quebraCaixa || 0;
+      quebraHtml += '<div style="display:flex;justify-content:space-between;gap:6px;font-size:9px;margin-top:2px;">'
+        + '<span style="color:var(--muted);">' + p.nome + '</span>'
+        + '<span style="font-weight:700;color:' + (qv<0?'var(--red)':qv>0?'var(--green)':'var(--warn)') + ';">' + fmtN(qv) + '</span>'
+        + '</div>';
+    });
+  }
+  h += '<div class="total-bar">';
+  h += '<div class="total-item"><div class="lbl">Total Dinheiro</div><div class="val blue">' + fmtN(con.totDin) + '</div></div>';
+  h += '<div class="total-item"><div class="lbl">Cartão + PIX</div><div class="val">' + fmtN(con.totCart) + '</div></div>';
+  h += '<div class="total-item"><div class="lbl">Total Geral</div><div class="val">' + fmtN(con.totTotal) + '</div></div>';
+  h += '<div class="total-item"><div class="lbl">Fita / Degust — Clientes</div><div class="val warn">' + con.totClientes + '</div></div>';
+  h += '<div class="total-item"><div class="lbl">Quebra de Caixa</div><div class="val ' + queCls + '">' + fmtN(con.totQuebra) + '</div><div id="quebra-pdv-detail">' + quebraHtml + '</div></div>';
+  h += '</div>';
+
+  var tabs = [{k:'caixa',l:'💳 Caixas/PDVs'},{k:'pagamentos',l:'💸 Pagamentos'},{k:'perdas',l:'🗑️ Perdas'},{k:'obs',l:'📝 Observações'}];
+  h += '<div class="tab-bar">';
+  tabs.forEach(function(t) { h += '<button class="tab-btn' + (B.activeTab===t.k?' active':'') + '" onclick="B.activeTab=\'' + t.k + '\';renderBordero();">' + t.l + '</button>'; });
+  h += '</div>';
+
+  if (B.activeTab === 'caixa') h += buildCaixas(pdvs);
+  else if (B.activeTab === 'pagamentos') h += buildPagamentos();
+  else if (B.activeTab === 'perdas') h += buildPerdas();
+  
+  else if (B.activeTab === 'obs') h += buildObs();
+
+  h += '<div class="flex-end">';
+  if (B.fechado !== true) {
+    h += '<button class="btn btn-ghost btn-sm" onclick="salvarBordero(false)">💾 Salvar Rascunho</button>';
+    h += '<button class="btn btn-acc" onclick="salvarBordero(true)">✅ Fechar Turno</button>';
+  } else {
+    h += '<button class="btn btn-ghost btn-sm" disabled style="opacity:0.45;cursor:not-allowed;">💾 Salvar Rascunho</button>';
+    h += '<button class="btn" disabled style="background:var(--green);color:#fff;opacity:0.75;cursor:not-allowed;">🔒 Turno Fechado</button>';
+  }
+  h += '</div>';
+  return h;
+}
+
+function printFechamento(pdvId) {
+  var pdvsRaw = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1',controlaDinheiro:true}];
+  var pdv = pdvsRaw.find(function(p) { return p.id === pdvId; });
+  if (!pdv) return;
+  var d = B.pdvData[pdvId] || {};
+  var c = calcPDV(pdvId);
+  var empNome = (_empresaAtiva && _empresaAtiva.nome) ? _empresaAtiva.nome.toUpperCase() : 'NOME EMPRESA';
+
+  /* pagamentos deste PDV */
+  var pagsDoPDV = B.pagamentos.filter(function(p) { return p.pdvId === pdvId; });
+  var totalPags = pagsDoPDV.reduce(function(s, p) { return s + n(p.valor); }, 0);
+  var compras   = pagsDoPDV.filter(function(p) { return (p.tipo||'').toLowerCase().indexOf('compra') >= 0; });
+  var totalCompras = compras.reduce(function(s, p) { return s + n(p.valor); }, 0);
+
+  var turnoManha = B.turno === 'M';
+  var dataParts  = (B.data || '').split('-');
+  var dataFmt    = dataParts.length === 3 ? dataParts[2]+'/'+dataParts[1]+'/'+dataParts[0] : B.data;
+  var perdas     = (B.perdas || []).length > 0;
+
+  function row(lbl, val) {
+    return '<tr><td class="lbl">'+lbl+'</td><td class="val">'+val+'</td></tr>';
+  }
+  function money(v) { return 'R$ '+(Number(v)||0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+  function chk(on) { return on ? '(X)' : '(  )'; }
+
+  var html = '<!DOCTYPE html><html><head><meta charset="UTF-8">'
+    + '<title>Check-list Fechamento — '+pdv.nome+'</title>'
+    + '<style>'
+    + '@page { size: 58mm auto; margin: 2mm 2mm; }'
+    + '* { box-sizing: border-box; margin: 0; padding: 0; }'
+    + 'body { font-family: "Courier New", Courier, monospace; font-size: 9px; background: #fff; color: #000; width: 54mm; }'
+    + '.center { text-align: center; }'
+    + '.bold { font-weight: bold; }'
+    + '.title { font-size: 11px; font-weight: bold; text-align: center; margin-bottom: 2mm; }'
+    + '.subtitle { font-size: 10px; font-weight: bold; text-align: center; margin-bottom: 1mm; }'
+    + '.sep { border-top: 1px dashed #000; margin: 2mm 0; }'
+    + '.sep-solid { border-top: 1px solid #000; margin: 2mm 0; }'
+    + '.row { display: flex; justify-content: space-between; margin-bottom: 1mm; font-size: 9px; }'
+    + '.row .lbl { flex: 1; font-weight: bold; padding-right: 2mm; }'
+    + '.row .val { text-align: right; white-space: nowrap; }'
+    + '.row-full { margin-bottom: 1mm; font-size: 9px; }'
+    + '.row-full .lbl { font-weight: bold; }'
+    + '.row-full .val { padding-left: 2mm; }'
+    + '.footer { text-align: center; font-size: 10px; font-weight: bold; margin-top: 2mm; }'
+    + '.turno-line { font-size: 9px; margin-bottom: 1mm; }'
+    + '@media print { body { width: 54mm; } }'
+    + '</style></head><body>'
+
+    + '<div class="title">CHECK-LIST FECHAMENTO</div>'
+    + '<div class="sep-solid"></div>'
+
+    + '<div class="row"><span class="lbl">Data:</span><span class="val">'+dataFmt+'</span></div>'
+    + '<div class="row"><span class="lbl">PDV:</span><span class="val">'+pdv.nome+'</span></div>'
+    + '<div class="turno-line"><span class="bold">TURNO:</span> Manhã '+chk(turnoManha)+'  Tarde '+chk(!turnoManha)+'</div>'
+
+    + '<div class="sep"></div>'
+
+    + '<div class="row"><span class="lbl">Total Recebido Dinheiro</span><span class="val">'+money(d.recebimento)+'</span></div>'
+    + '<div class="row"><span class="lbl">Valor Depósito</span><span class="val">'+money(d.deposito)+'</span></div>'
+    + '<div class="row"><span class="lbl">Sobra Moeda</span><span class="val">'+money(d.moedas)+'</span></div>'
+    + '<div class="row"><span class="lbl">Total Cartões</span><span class="val">'+money(c.totalCartaoPix)+'</span></div>'
+    + '<div class="row"><span class="lbl">Pagamentos</span><span class="val">'+money(totalPags)+'</span></div>'
+    + (function(){
+        if (!compras.length) return '<div class="row"><span class="lbl">Compras</span><span class="val">'+money(0)+'</span></div>';
+        var linhas = '<div class="row"><span class="lbl bold">Compras ('+compras.length+')</span><span class="val">'+money(totalCompras)+'</span></div>';
+        compras.forEach(function(cp) {
+          var prod = (cp.nome || cp.tipo || '—').trim();
+          linhas += '<div class="row" style="padding-left:3mm;"><span class="lbl" style="font-weight:normal;">› '+prod+'</span><span class="val">'+money(cp.valor)+'</span></div>';
+        });
+        return linhas;
+      })()
+    + '<div class="row"><span class="lbl">Quebra de Caixa</span><span class="val">'+money(c.quebraCaixa)+'</span></div>'
+    + (function(){
+        var dev = n(d.devolucao);
+        if (!dev) return '';
+        var bloco = '<div class="sep"></div>'
+          + '<div class="row"><span class="lbl bold">Devolução</span><span class="val">'+money(dev)+'</span></div>';
+        if (d.devComanda) bloco += '<div class="row"><span class="lbl">Nº Comanda</span><span class="val">'+d.devComanda+'</span></div>';
+        if (d.devHorario) bloco += '<div class="row"><span class="lbl">Horário Pedido</span><span class="val">'+d.devHorario+'</span></div>';
+        if (d.obsDevolucao) bloco += '<div class="row-full"><span class="lbl">Motivo:</span><div class="val" style="padding-left:2mm;font-weight:normal;">'+d.obsDevolucao+'</div></div>';
+        return bloco;
+      })()
+
+    + '<div class="sep"></div>'
+
+    + '<div class="row-full"><span class="lbl">Depósito efetuado por:</span><div class="val">'+(d.depositoPor||'_____________________')+'</div></div>'
+    + '<div class="row"><span class="lbl">Total de Comandas</span><span class="val">'+(d.clientes||'0')+'</span></div>'
+
+    + '<div class="sep"></div>'
+
+    + '<div class="row"><span class="lbl">Total Fita Degust</span><span class="val">'+money(d.fita)+'</span></div>'
+
+    + '<div class="sep"></div>'
+
+    + '<div class="row-full"><span class="lbl">Conferido, Lacrado e Assinado por:</span><div class="val">'+(d.responsavel||'_____________________')+'</div></div>'
+
+    + '<div class="sep-solid"></div>'
+    + '<div class="footer">'+empNome+'</div>'
+    + (function(){ var now = new Date(); var d = String(now.getDate()).padStart(2,'0')+'/'+String(now.getMonth()+1).padStart(2,'0')+'/'+now.getFullYear(); var h = String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0')+':'+String(now.getSeconds()).padStart(2,'0'); return '<div style="text-align:center;font-size:8px;margin-top:1mm;color:#555;">Impresso em '+d+' às '+h+'</div>'; })()
+
+    + '<script>window.onload=function(){window.print();}<\/script>'
+    + '</body></html>';
+
+  var w = window.open('', '_blank', 'width=360,height=620');
+  w.document.write(html);
+  w.document.close();
+}
+
+function buildCaixas(pdvs) {
+  /* ── funcionários ativos para os combos ── */
+  var _todosFunc = empGet('funcionarios') || [];
+  var _funcAtivos = _todosFunc.filter(function(f) { return (f.status || 'ativo') === 'ativo'; });
+  var _nomesGestao = _funcAtivos
+    .filter(function(f) { return (f.setor || '').toLowerCase().replace(/ã/g,'a') === 'gestao'; })
+    .map(function(f) { return f.nome; });
+  var _nomesOutros = _funcAtivos
+    .filter(function(f) { return (f.setor || '').toLowerCase().replace(/ã/g,'a') !== 'gestao'; })
+    .map(function(f) { return f.nome; });
+  var _nomesAtivos = _funcAtivos.map(function(f) { return f.nome; });
+  /* grupos para Operador de Caixa: todos ativos (sem agrupamento) */
+  var _gruposCaixa = [{ label: '', nomes: _nomesAtivos }];
+  /* grupos para Responsável: somente setor Gestão */
+  var _gruposResp = _nomesGestao.length
+    ? [{ label: '', nomes: _nomesGestao }]
+    : [{ label: '', nomes: [] }];
+
+  var h = '<div class="pdv-container">';
+  pdvs.forEach(function(pdv) {
+    var d = B.pdvData[pdv.id] = B.pdvData[pdv.id] || {fundoAbertura:200,recebimento:0,moedas:0,deposito:0,depositoPor:'',dataDeposito:'',cartao:0,pix:0,clientes:0,fita:0,devolucao:0,obsDevolucao:'',devComanda:'',devHorario:'',fundoFechamento:200,caixa:'',responsavel:''};
+    var c = calcPDV(pdv.id);
+    var id = pdv.id;
+    var queCls = c.quebraCaixa>0?'pos':c.quebraCaixa<0?'neg':'warn';
+    var controlaDin = (pdv.controlaDinheiro === undefined) ? true : pdv.controlaDinheiro;
+    h += '<div class="pdv-card">';
+    h += '<div class="pdv-header"><span class="pdv-name">' + pdv.nome + '</span>';
+    if (!controlaDin) h += '<span class="tag tag-warn" style="font-size:10px;">Sem Dinheiro</span>';
+    if (controlaDin) h += '<button class="btn btn-ghost btn-sm" style="font-size:11px;" onclick="printFechamento(\''+id+'\')">🖨️ Imprimir</button>';
+    h += '<span class="pdv-total">' + fmtN(c.totalPDV) + '</span></div>';
+    if (controlaDin) {
+      h += '<div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px;">Dinheiro</div>';
+      h += field('Fundo Abertura R$', id+'.fundoAbertura', d.fundoAbertura, true);
+      h += field('Recebimento em Dinheiro', id+'.recebimento', d.recebimento);
+      h += fieldCalc('Pagamentos Efetuados', 'R$ '+fmtN(B.pagamentos.filter(function(p){return !p.noite&&p.pdvId===id;}).reduce(function(s,p){return s+n(p.valor);},0)), 'warn');
+      h += field('Moedas p/ Cofre', id+'.moedas', d.moedas);
+      h += fieldCalc('Total Dinheiro', fmtN(c.totalDinheiro), 'blue');
+      h += '<div class="sep"></div>';
+      h += '<div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px;">Depósito</div>';
+      h += field('Valor Depósito R$', id+'.deposito', d.deposito);
+      h += fieldSelect('Depósito feito por', id+'.depositoPor', d.depositoPor, _gruposCaixa);
+      h += fieldDate('Data Depósito', id+'.dataDeposito', d.dataDeposito);
+      h += '<div class="sep"></div>';
+    }
+    h += '<div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px;">Cartão / PIX</div>';
+    h += field('Cartão Déb/Créd/VR', id+'.cartao', d.cartao);
+    h += field('PIX', id+'.pix', d.pix);
+    h += fieldCalc('Total Cartão+PIX', fmtN(c.totalCartaoPix));
+    h += fieldCalc('Total PDV', fmtN(c.totalPDV));
+    h += '<div class="sep"></div>';
+    h += '<div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px;">Fechamento</div>';
+    h += field('Fita Degust : Qtdade. Clientes', id+'.clientes', d.clientes, false, true);
+    if (controlaDin) {
+      h += field('Fita Degust : Recebimento em Dinheiro', id+'.fita', d.fita);
+      h += field('Devolução R$', id+'.devolucao', d.devolucao, false, false, true);
+      h += '<div id="obs-dev-'+id+'" style="'+(n(d.devolucao)>0?'':'display:none;')+'">';
+      h += '<div class="field-row"><span class="field-lbl">Nº da Comanda</span><div class="field-val"><input type="text" style="width:200px;font-size:11px;" placeholder="Ex: 0042" data-key="'+id+'.devComanda" value="'+(d.devComanda||'')+'" onchange="setPDVField(this.dataset.key,this.value);" oninput="setPDVField(this.dataset.key,this.value);"></div></div>';
+      h += '<div class="field-row"><span class="field-lbl">Horário do Pedido</span><div class="field-val"><input type="time" style="width:200px;font-size:11px;" value="'+(d.devHorario||'')+'" data-key="'+id+'.devHorario" onchange="setPDVField(this.dataset.key,this.value);"></div></div>';
+      h += '<div class="field-row" style="align-items:flex-start;"><span class="field-lbl" style="padding-top:6px;">Motivo da Devolução</span><div class="field-val"><textarea style="width:200px;font-size:11px;min-height:48px;" placeholder="Descreva o motivo..." data-key="'+id+'.obsDevolucao" onchange="setPDVField(this.dataset.key,this.value);" oninput="setPDVField(this.dataset.key,this.value);">'+(d.obsDevolucao||'')+'</textarea></div></div>';
+      h += '</div>';
+      h += fieldCalc('Quebra de Caixa', fmtN(c.quebraCaixa), queCls);
+      h += fieldCalc('Quebra Func.', fmtN(c.quebraFunc), c.quebraFunc<0?'neg':'');
+      h += field('Fundo Fechamento R$', id+'.fundoFechamento', d.fundoFechamento, true);
+      h += fieldSelect('Operador de Caixa', id+'.caixa', d.caixa, _gruposCaixa);
+      h += fieldSelect('Responsável Turno', id+'.responsavel', d.responsavel, _gruposResp);
+    } else {
+      h += fieldCalc('Fita Degust : Total Recebido', fmtN(c.totalCartaoPix), 'blue');
+    }
+    h += '</div>';
+  });
+  h += '</div>';
+  return h;
+}
+
+function field(lbl, key, val, fundo, isInt) {
+  var step = isInt ? '1' : '0.01';
+  return '<div class="field-row"><span class="field-lbl">'+lbl+'</span><div class="field-val"><div class="input-money"><span>R$</span><input type="number" step="'+step+'" min="0" value="'+(val||0)+'" style="width:120px;" onchange="setPDVField(\''+key+'\',this.value);" oninput="setPDVField(\''+key+'\',this.value);"></div></div></div>';
+}
+function fieldText(lbl, key, val, ph) {
+  return '<div class="field-row"><span class="field-lbl">'+lbl+'</span><div class="field-val"><input type="text" value="'+(val||'')+'" placeholder="'+(ph||'')+'" style="width:140px;" onchange="setPDVField(\''+key+'\',this.value);" oninput="setPDVField(\''+key+'\',this.value);"></div></div>';
+}
+function fieldDate(lbl, key, val) {
+  return '<div class="field-row"><span class="field-lbl">'+lbl+'</span><div class="field-val"><input type="date" value="'+(val||'')+'" style="width:140px;" onchange="setPDVField(\''+key+'\',this.value);"></div></div>';
+}
+function fieldSelect(lbl, key, val, grupos) {
+  /* grupos = [{label:'Grupo', nomes:['Nome1','Nome2']}, ...] */
+  var opts = '<option value="">— Selecione —</option>';
+  grupos.forEach(function(g) {
+    if (g.nomes && g.nomes.length) {
+      if (g.label) opts += '<optgroup label="' + g.label + '">';
+      g.nomes.forEach(function(nome) {
+        opts += '<option value="' + nome + '"' + (val === nome ? ' selected' : '') + '>' + nome + '</option>';
+      });
+      if (g.label) opts += '</optgroup>';
+    }
+  });
+  return '<div class="field-row"><span class="field-lbl">'+lbl+'</span><div class="field-val"><select style="width:160px;" onchange="setPDVField(\''+key+'\',this.value);">'+opts+'</select></div></div>';
+}
+function fieldCalc(lbl, val, cls) {
+  return '<div class="field-row"><span class="field-lbl">'+lbl+'</span><span class="field-calc '+(cls||'')+'">'+val+'</span></div>';
+}
+function setPDVField(key, val) {
+  var parts = key.split('.');
+  if (!B.pdvData[parts[0]]) B.pdvData[parts[0]] = {};
+  B.pdvData[parts[0]][parts[1]] = val;
+  refreshCalcs();
+  /* se alterou devolucao, mostrar/ocultar campo de obs dinamicamente */
+  if (parts[1] === 'devolucao') {
+    var obsEl = document.getElementById('obs-dev-' + parts[0]);
+    if (obsEl) obsEl.style.display = (Number(val) > 0) ? '' : 'none';
+  }
+}
+function refreshCalcs() {
+  var con = calcConsolidado();
+  var totItems = document.querySelectorAll('.total-bar .val');
+  if (totItems.length >= 5) {
+    totItems[0].textContent = fmtN(con.totDin);
+    totItems[1].textContent = fmtN(con.totCart);
+    totItems[2].textContent = fmtN(con.totTotal);
+    totItems[3].textContent = con.totClientes;
+    totItems[4].textContent = fmtN(con.totQuebra);
+    totItems[4].className = 'val ' + (con.totQuebra>0?'pos':con.totQuebra<0?'neg':'warn');
+  }
+  /* atualizar sub-linhas de quebra por PDV */
+  var quebraSubEl = document.getElementById('quebra-pdv-detail');
+  if (quebraSubEl) {
+    var pdvsRaw = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1',controlaDinheiro:true},{id:'pdv2',nome:'PDV 2',controlaDinheiro:true}];
+    var pdvsDin = pdvsRaw.filter(function(p) { return (p.controlaDinheiro===undefined)?true:p.controlaDinheiro; });
+    var html = '';
+    if (pdvsDin.length > 1) {
+      pdvsDin.forEach(function(p) {
+        var cq = calcPDV(p.id);
+        var qv = cq.quebraCaixa || 0;
+        html += '<div style="display:flex;justify-content:space-between;gap:6px;font-size:9px;margin-top:2px;">'
+          + '<span style="color:var(--muted);">'+p.nome+'</span>'
+          + '<span style="font-weight:700;color:'+(qv<0?'var(--red)':qv>0?'var(--green)':'var(--warn)')+';">'+fmtN(qv)+'</span>'
+          + '</div>';
+      });
+    }
+    quebraSubEl.innerHTML = html;
+  }
+}
+
+function buildPagamentos() {
+  var pagamentos = B.pagamentos || [];
+  var total = pagamentos.reduce(function(s, p) { return s + n(p.valor); }, 0);
+
+  /* PDVs habilitados com dinheiro */
+  var pdvsRaw = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1',controlaDinheiro:true},{id:'pdv2',nome:'PDV 2',controlaDinheiro:true}];
+  var pdvsDin = pdvsRaw.filter(function(p) { return (p.controlaDinheiro === undefined) ? true : p.controlaDinheiro; });
+
+  var h = '<div class="card">';
+  h += '<div class="card-title">💸 Controle de Pagamentos <span class="badge badge-warn">Total: R$ '+fmtN(total)+'</span></div>';
+  h += '<div class="notice">⚠️ Os pagamentos efetuados são subtraídos automaticamente do Recebimento em R$ do PDV selecionado. VTs devem ser anotados na planilha de controle de VTs.</div>';
+
+  /* Cabeçalho — 6 colunas */
+  h += '<div style="display:grid;grid-template-columns:1fr 1fr 110px 90px 90px auto;gap:8px;margin-bottom:6px;padding:0 2px;">';
+  h += '<span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;">Compra ou VT</span>';
+  h += '<span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;">Loja / Funcionário</span>';
+  h += '<span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;">Valor R$</span>';
+  h += '<span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;">PDV</span>';
+  h += '<span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;">Turno</span>';
+  h += '<span></span></div>';
+
+  h += '<div id="pag-list">';
+  pagamentos.forEach(function(p, idx) {
+    var pdvOpts = '<option value="">— PDV —</option>';
+    pdvsDin.forEach(function(pdv) {
+      pdvOpts += '<option value="'+pdv.id+'"'+(p.pdvId===pdv.id?' selected':'')+'>'+pdv.nome+'</option>';
+    });
+    h += '<div style="display:grid;grid-template-columns:1fr 1fr 110px 90px 90px auto;gap:8px;align-items:center;margin-bottom:6px;">';
+    h += '<input type="text" value="'+(p.tipo||'')+'" placeholder="Compra / VT / etc..." onchange="B.pagamentos['+idx+'].tipo=this.value;">';
+    h += '<input type="text" value="'+(p.nome||'')+'" placeholder="Loja ou nome..." onchange="B.pagamentos['+idx+'].nome=this.value;">';
+    h += '<div class="input-money"><span>R$</span><input type="number" step="0.01" min="0" value="'+(p.valor||0)+'" onchange="B.pagamentos['+idx+'].valor=Number(this.value);refreshCalcs();"></div>';
+    h += '<select onchange="B.pagamentos['+idx+'].pdvId=this.value;refreshCalcs();" title="PDV de origem do pagamento">'+pdvOpts+'</select>';
+    h += '<select onchange="B.pagamentos['+idx+'].noite=(this.value===\'T\');refreshCalcs();"><option value="M"'+(p.noite?'':' selected')+'>Manhã</option><option value="T"'+(p.noite?' selected':'')+'>Tarde</option></select>';
+    h += '<button class="btn btn-red btn-sm" onclick="B.pagamentos.splice('+idx+',1);B.activeTab=\'pagamentos\';renderBordero();">✕</button>';
+    h += '</div>';
+  });
+  h += '</div>';
+
+  var pdvDefault = pdvsDin.length ? pdvsDin[0].id : '';
+  h += '<button class="btn btn-ghost btn-sm" style="margin-top:8px;" onclick="B.pagamentos.push({tipo:\'\',nome:\'\',valor:0,pdvId:\''+pdvDefault+'\',noite:B.turno===\'T\'});B.activeTab=\'pagamentos\';renderBordero();">+ Adicionar Pagamento</button>';
+  h += '</div>';
+  return h;
+}
+
+function buildPerdas() {
+  var perdas = B.perdas || [];
+  var h = '<div class="card">';
+  h += '<div class="card-title">🗑️ Controle de Perdas <span class="badge badge-red">'+perdas.length+' registros</span></div>';
+  h += '<div class="notice">⚠️ No fechamento do turno, verificar com a cozinha se houve perda para registrar aqui.</div>';
+  h += '<div style="display:grid;grid-template-columns:2fr 80px 2fr auto;gap:8px;margin-bottom:6px;padding:0 2px;">';
+  h += '<span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;">Produto</span>';
+  h += '<span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;">Qtde</span>';
+  h += '<span style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;">Motivo</span>';
+  h += '<span></span></div>';
+  h += '<div id="perda-list">';
+  perdas.forEach(function(p, idx) {
+    h += '<div class="perda-row">';
+    h += '<input type="text" value="'+(p.produto||'')+'" placeholder="Nome do produto..." onchange="B.perdas['+idx+'].produto=this.value;">';
+    h += '<input type="number" min="0" value="'+(p.qtde||'')+'" placeholder="0" onchange="B.perdas['+idx+'].qtde=this.value;">';
+    h += '<input type="text" value="'+(p.motivo||'')+'" placeholder="Queimou, acionou errado, devolução..." onchange="B.perdas['+idx+'].motivo=this.value;">';
+    h += '<button class="btn btn-red btn-sm" onclick="B.perdas.splice('+idx+',1);B.activeTab=\'perdas\';renderBordero();">✕</button>';
+    h += '</div>';
+  });
+  h += '</div>';
+  h += '<button class="btn btn-ghost btn-sm" style="margin-top:8px;" onclick="B.perdas.push({produto:\'\',qtde:\'\',motivo:\'\'});B.activeTab=\'perdas\';renderBordero();">+ Registrar Perda</button>';
+  h += '</div>';
+  return h;
+}
+
+
+function buildObs() {
+  var turno = B.turno === 'M' ? 'Manhã' : 'Tarde/Noite';
+  var h = '<div class="card">';
+  h += '<div class="card-title">📝 Observações do Turno</div>';
+  h += '<div class="notice">⚠️ Em caso de Devolução, solicitar o contato do cliente para que o SAC entre em contato.</div>';
+  h += '<div class="form-group" style="margin-bottom:14px;"><label>Observação — ' + turno + '</label>';
+  h += '<textarea placeholder="Registre ocorrências, informações relevantes, problemas..." onchange="B.obsGeral=this.value;">' + (B.obsGeral || '') + '</textarea></div>';
+  h += '</div>';
+
+  var con = calcConsolidado();
+  var pdvsRaw2 = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1',controlaDinheiro:true},{id:'pdv2',nome:'PDV 2',controlaDinheiro:true}];
+  var pdvs = pdvsRaw2.map(function(p) { return Object.assign({}, p, {controlaDinheiro: (p.controlaDinheiro === undefined) ? true : !!p.controlaDinheiro}); });
+  h += '<div class="card" style="background:var(--s2);">';
+  h += '<div class="card-title">📊 Resumo para Fechamento</div>';
+  h += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">';
+  pdvs.forEach(function(pdv) {
+    var d = B.pdvData[pdv.id] || {};
+    var c = calcPDV(pdv.id);
+    var controlaDin = pdv.controlaDinheiro;
+    h += '<div><div style="font-family:Georgia,serif;font-size:13px;font-weight:700;margin-bottom:10px;color:var(--acc);">' + pdv.nome + (controlaDin ? '' : ' <span style="font-size:10px;color:var(--warn);font-family:\'DM Sans\',sans-serif;font-weight:600;">(Sem Dinheiro)</span>') + '</div>';
+    h += '<table><tbody>';
+    if (controlaDin) {
+      h += '<tr><td style="color:var(--muted);">Fundo Abertura</td><td style="text-align:right;font-weight:600;">' + fmt(d.fundoAbertura) + '</td></tr>';
+      h += '<tr><td style="color:var(--muted);">Recebimento em Dinheiro</td><td style="text-align:right;font-weight:600;">' + fmt(d.recebimento) + '</td></tr>';
+    }
+    h += '<tr><td style="color:var(--muted);">Cartão+PIX</td><td style="text-align:right;font-weight:600;">' + fmt(c.totalCartaoPix) + '</td></tr>';
+    h += '<tr><td style="color:var(--muted);">Total PDV</td><td style="text-align:right;font-weight:700;color:var(--acc);">' + fmt(c.totalPDV) + '</td></tr>';
+    h += '<tr><td style="color:var(--muted);">Fita Degust.</td><td style="text-align:right;font-weight:600;">' + fmt(d.fita) + '</td></tr>';
+    if (controlaDin) {
+      h += '<tr><td style="color:var(--muted);">Quebra Caixa</td><td style="text-align:right;font-weight:700;color:' + (c.quebraCaixa < 0 ? 'var(--red)' : 'var(--acc)') + '">' + fmt(c.quebraCaixa) + '</td></tr>';
+      h += '<tr><td style="color:var(--muted);">Quebra Func.</td><td style="text-align:right;font-weight:700;color:' + (c.quebraFunc < 0 ? 'var(--red)' : 'var(--acc)') + '">' + fmt(c.quebraFunc) + '</td></tr>';
+      h += '<tr><td style="color:var(--muted);">Fundo Fechamento</td><td style="text-align:right;font-weight:600;">' + fmt(d.fundoFechamento) + '</td></tr>';
+      h += '<tr><td style="color:var(--muted);">Operador de Caixa</td><td style="text-align:right;">' + (d.caixa || '—') + '</td></tr>';
+      h += '<tr><td style="color:var(--muted);">Responsável Turno</td><td style="text-align:right;">' + (d.responsavel || '—') + '</td></tr>';
+    }
+    h += '</tbody></table></div>';
+  });
+  h += '</div><div class="sep"></div>';
+  h += '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">';
+  h += '<div style="font-family:Georgia,serif;font-size:13px;font-weight:700;">TOTAL CONSOLIDADO</div>';
+  h += '<div style="display:flex;gap:20px;flex-wrap:wrap;">';
+  h += '<div style="text-align:center;"><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;">Total Geral</div><div style="font-size:18px;font-weight:800;font-family:Georgia,serif;color:var(--acc);">R$ '+fmtN(con.totTotal)+'</div></div>';
+  h += '<div style="text-align:center;"><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;">Total Dinheiro</div><div style="font-size:18px;font-weight:800;font-family:Georgia,serif;color:var(--acc2);">R$ '+fmtN(con.totDin)+'</div></div>';
+  h += '<div style="text-align:center;"><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;">Depósito Total</div><div style="font-size:18px;font-weight:800;font-family:Georgia,serif;color:var(--warn);">R$ '+fmtN(con.totDeposito)+'</div></div>';
+  h += '<div style="text-align:center;"><div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;">Quebra Total</div><div style="font-size:18px;font-weight:800;font-family:Georgia,serif;color:'+(con.totQuebra<0?'var(--red)':'var(--acc)')+'">R$ '+fmtN(con.totQuebra)+'</div></div>';
+  h += '</div></div></div>';
+  return h;
+}
+
+function salvarBordero(fechar) {
+  if (fechar) {
+    /* 1ª confirmação */
+    if (!confirm('Deseja realmente fechar o turno?\n\nAtenção: após fechar, o turno não poderá ser mais alterado.')) return;
+    /* Calcular valor do depósito consolidado */
+    var con = calcConsolidado();
+    var pdvsRaw = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1',controlaDinheiro:true},{id:'pdv2',nome:'PDV 2',controlaDinheiro:true}];
+    var linhasDeposito = '';
+    var totalDep = 0;
+    pdvsRaw.forEach(function(p) {
+      var d = B.pdvData[p.id] || {};
+      var dep = Number(d.deposito) || 0;
+      if (dep > 0) {
+        totalDep += dep;
+        linhasDeposito += '\n  ' + p.nome + ': R$ ' + dep.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+      }
+    });
+    var valorDepStr = totalDep > 0
+      ? 'R$ ' + totalDep.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}) + (linhasDeposito ? '\n' + linhasDeposito : '')
+      : 'R$ 0,00';
+    /* buscar responsável do turno (primeiro PDV que tiver) */
+    var nomeResp = '';
+    pdvsRaw.forEach(function(p) {
+      if (!nomeResp) { var d = B.pdvData[p.id] || {}; nomeResp = d.responsavel || ''; }
+    });
+    var prefixoResp = nomeResp ? nomeResp + ', confirma' : 'Confirma';
+    /* 2ª confirmação com valor do depósito */
+    if (!confirm(prefixoResp + ' que no envelope o valor em dinheiro é ' + valorDepStr + '\n\nClique OK para confirmar e fechar o turno.')) return;
+  }
+  var hist = empGet('historico') || [];
+  var id = B.data + '_' + B.turno;
+  var entry = JSON.parse(JSON.stringify(B));
+  entry.id = id;
+  entry.fechado = fechar;
+  entry.savedAt = new Date().toISOString();
+  entry.consolidado = calcConsolidado();
+  var idx = hist.findIndex(function(h) { return h.id === id; });
+  if (idx >= 0) hist[idx] = entry; else hist.unshift(entry);
+  empSet('historico', hist);
+  toast(fechar ? '✅ Turno fechado!' : '💾 Rascunho salvo!', fechar ? 'var(--acc)' : 'var(--acc2)');
+}
+
+/* =========================================================
+   HISTÓRICO
+   ========================================================= */
+function renderHistorico() {
+  var content = document.getElementById('page-content');
+  var hist = empGet('historico') || [];
+  var html = '';
+  if (hist.length === 0) {
+    content.innerHTML = '<div class="card"><div class="empty"><div class="empty-ico">📅</div>Nenhum borderô salvo ainda.</div></div>';
+    return;
+  }
+  var totalGeral = hist.reduce(function(s, h) { return s + (h.consolidado ? h.consolidado.totTotal : 0); }, 0);
+  var fechados = hist.filter(function(h) { return h.fechado; }).length;
+  html += '<div class="stats-row">';
+  html += '<div class="stat"><div class="stat-val blue">'+hist.length+'</div><div class="stat-lbl">Borderôs Registrados</div></div>';
+  html += '<div class="stat"><div class="stat-val pos">'+fechados+'</div><div class="stat-lbl">Turnos Fechados</div></div>';
+  html += '<div class="stat"><div class="stat-val">R$ '+fmtN(totalGeral)+'</div><div class="stat-lbl">Volume Total</div></div>';
+  html += '<div class="stat"><div class="stat-val neu">'+(hist.length-fechados)+'</div><div class="stat-lbl">Rascunhos</div></div>';
+  html += '</div>';
+  html += '<div class="card"><div class="card-title">📅 Histórico de Caixas</div><div style="overflow-x:auto;"><table>';
+  html += '<thead><tr><th>Data</th><th>Turno</th><th>Total Geral</th><th>Total Dinheiro</th><th>Quebra</th><th>Status</th><th>Conferido por</th><th>Data Conferência</th><th>Observação</th><th></th></tr></thead><tbody>';
+  hist.forEach(function(h, idx) {
+    var con = h.consolidado || {};
+    var queCls = (con.totQuebra || 0) < 0 ? 'tag-red' : 'tag-acc';
+    var conf = h.conferencia || {};
+    html += '<tr>';
+    html += '<td><strong>' + fmtDate(h.data) + '</strong></td>';
+    html += '<td><span class="tag ' + (h.turno==='M'?'tag-blue':'tag-warn') + '">' + (h.turno==='M'?'☀️ Manhã':'🌙 Tarde') + '</span></td>';
+    html += '<td style="font-weight:700;font-family:Georgia,serif;">R$ ' + fmtN(con.totTotal||0) + '</td>';
+    html += '<td>R$ ' + fmtN(con.totDin||0) + '</td>';
+    html += '<td><span class="tag ' + queCls + '">R$ ' + fmtN(con.totQuebra||0) + '</span></td>';
+    html += '<td><span class="tag ' + (h.fechado?'tag-acc':'tag-warn') + '">' + (h.fechado?'Fechado':'Rascunho') + '</span></td>';
+    html += '<td><input type="text" value="'+(conf.por||'')+'" placeholder="Nome..." style="width:110px;font-size:11px;" data-idx="'+idx+'" data-field="por" onchange="salvarConferencia(this);" /></td>';
+    html += '<td><input type="date" value="'+(conf.data||'')+'" style="width:120px;font-size:11px;" data-idx="'+idx+'" data-field="data" onchange="salvarConferencia(this);" /></td>';
+    html += '<td><input type="text" value="'+(conf.obs||'')+'" placeholder="Observação..." style="width:150px;font-size:11px;" data-idx="'+idx+'" data-field="obs" onchange="salvarConferencia(this);" /></td>';
+    var abrirLabel = h.fechado ? '🔓 Reabrir' : '📂 Abrir';
+    html += '<td style="display:flex;gap:6px;"><button class="btn btn-ghost btn-sm" onclick="abrirBordero('+idx+')">'+abrirLabel+'</button>';
+    html += '<button class="btn btn-red btn-sm" onclick="excluirBordero('+idx+')">✕</button></td>';
+    html += '</tr>';
+  });
+  html += '</tbody></table></div></div>';
+  content.innerHTML = html;
+}
+
+function abrirBordero(idx) {
+  var hist = empGet('historico') || [];
+  var entry = JSON.parse(JSON.stringify(hist[idx]));
+  if (entry.fechado) {
+    if (!confirm('Este turno está FECHADO.\n\nDeseja reabrir o turno para edição?\n\nAtenção: ao reabrir, o turno voltará ao status de rascunho.')) return;
+    entry.fechado = false;
+    hist[idx] = entry;
+    empSet('historico', hist);
+    toast('🔓 Turno reaberto!', 'var(--warn)');
+  } else {
+    toast('📂 Borderô carregado!', 'var(--acc2)');
+  }
+  B = entry;
+  showPage('bordero');
+}
+function salvarConferencia(el) {
+  var idx = parseInt(el.dataset.idx);
+  var field = el.dataset.field;
+  var hist = empGet('historico') || [];
+  if (!hist[idx]) return;
+  if (!hist[idx].conferencia) hist[idx].conferencia = {};
+  hist[idx].conferencia[field] = el.value;
+  empSet('historico', hist);
+  toast('✅ Conferência salva!', 'var(--acc)');
+}
+function excluirBordero(idx) {
+  if (!confirm('Excluir este borderô?')) return;
+  var hist = empGet('historico') || [];
+  hist.splice(idx, 1);
+  empSet('historico', hist);
+  renderHistorico();
+  toast('Excluído.', 'var(--red)');
+}
+
+/* =========================================================
+   PDVs
+   ========================================================= */
+function renderPDVs() {
+  var content = document.getElementById('page-content');
+  var pdvs = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1',controlaDinheiro:true},{id:'pdv2',nome:'PDV 2',controlaDinheiro:true}];
+  var html = '<div class="card"><div class="card-title">➕ Adicionar PDV</div>';
+  html += '<div class="form-row"><div class="form-group"><label>Nome do PDV</label><input type="text" id="pdv-nome" placeholder="Ex: PDV 3 / Autoatendimento"></div></div>';
+  html += '<div class="form-row"><div class="form-group"><label class="perm-item" style="text-transform:none;font-size:13px;font-weight:500;letter-spacing:0;border:1px solid var(--bd);border-radius:8px;padding:8px 12px;display:flex;align-items:center;gap:8px;width:fit-content;cursor:pointer;"><input type="checkbox" id="pdv-controla-dinheiro" style="width:14px;height:14px;accent-color:var(--acc);"> Controla Dinheiro</label></div></div>';
+  html += '<div class="flex-end"><button class="btn btn-acc" onclick="addPDV()">Adicionar</button></div></div>';
+  html += '<div class="card"><div class="card-title">🖥️ PDVs Cadastrados <span class="badge">'+pdvs.length+'</span></div>';
+  if (!pdvs.length) { html += '<div class="empty"><div class="empty-ico">🖥️</div>Nenhum PDV.</div>'; }
+  else {
+    html += '<table><thead><tr><th>Nome</th><th>Controla Dinheiro</th><th></th></tr></thead><tbody>';
+    pdvs.forEach(function(p, idx) {
+      var din = (p.controlaDinheiro === undefined) ? true : p.controlaDinheiro;
+      var dinStr = din ? '<span class="tag tag-acc">✓ Sim</span>' : '<span class="tag tag-warn">Não</span>';
+      var dinBtnLbl = din ? '🔴 Desativar Dinheiro' : '🟢 Ativar Dinheiro';
+      html += '<tr><td><strong>'+p.nome+'</strong></td><td>'+dinStr+'</td>';
+      html += '<td style="display:flex;gap:5px;"><button class="btn btn-ghost btn-sm" onclick="togglePDVDinheiro('+idx+')" style="font-size:11px;">'+dinBtnLbl+'</button>';
+      html += '<button class="btn btn-red btn-sm" onclick="removePDV('+idx+')">✕ Remover</button></td></tr>';
+    });
+    html += '</tbody></table>';
+  }
+  html += '</div>';
+  content.innerHTML = html;
+}
+function togglePDVDinheiro(idx) {
+  var pdvs = empGet('pdvs') || [];
+  if (!pdvs[idx]) return;
+  var atual = (pdvs[idx].controlaDinheiro === undefined) ? true : pdvs[idx].controlaDinheiro;
+  pdvs[idx].controlaDinheiro = !atual;
+  empSet('pdvs', pdvs);
+  renderPDVs();
+  toast((pdvs[idx].controlaDinheiro ? '✅ Dinheiro ativado!' : '⚠️ Dinheiro desativado!'), pdvs[idx].controlaDinheiro ? 'var(--acc)' : 'var(--warn)');
+}
+function addPDV() {
+  var nome = document.getElementById('pdv-nome').value.trim();
+  if (!nome) { toast('Informe o nome!', 'var(--red)'); return; }
+  var controlaDinheiro = document.getElementById('pdv-controla-dinheiro').checked;
+  var pdvs = empGet('pdvs') || [{id:'pdv1',nome:'PDV 1'},{id:'pdv2',nome:'PDV 2'}];
+  pdvs.push({id:'pdv'+genId(), nome:nome, controlaDinheiro:controlaDinheiro});
+  empSet('pdvs', pdvs);
+  toast('✅ PDV adicionado!');
+  renderPDVs();
+}
+function removePDV(idx) {
+  if (!confirm('Remover este PDV?')) return;
+  var pdvs = empGet('pdvs') || [];
+  pdvs.splice(idx, 1);
+  empSet('pdvs', pdvs);
+  renderPDVs();
+}
+
+/* =========================================================
+   FUNCIONÁRIOS (módulo atualizado)
+   ========================================================= */
+var _filtroFunc = 'todos';
+
+function setFiltroFunc(filtro, btn) {
+  _filtroFunc = filtro;
+  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+  renderFuncionarios();
+}
+
+function renderFuncionarios() {
+  var content = document.getElementById('page-content');
+  var lista = empGet('funcionarios') || [];
+  var setores = empGet('setores') || ['Atendimento', 'Cozinha', 'Gestão'];
+
+  var html = '<div class="card"><div class="card-title">➕ Adicionar Funcionário</div>';
+  html += '<div class="form-row">';
+  html += '<div class="form-group" style="flex:2;"><label>Nome Completo</label><input type="text" id="func-nome" placeholder="Nome do funcionário"></div>';
+  html += '<div class="form-group"><label>CPF</label><input type="text" id="func-cpf" placeholder="000.000.000-00" oninput="mascararCPF(this)" maxlength="14"></div>';
+  html += '</div>';
+  html += '<div class="form-row">';
+  html += '<div class="form-group"><label>Setor</label><select id="func-setor"><option value="">— Selecione —</option>';
+  setores.forEach(function(s) { html += '<option value="'+s+'">'+s+'</option>'; });
+  html += '</select></div>';
+  html += '<div class="form-group"><label>Data de Nascimento</label><input type="date" id="func-nascimento"></div>';
+  html += '<div class="form-group"><label>Data de Admissão</label><input type="date" id="func-admissao"></div>';
+  html += '<div class="form-group"><label>Status</label><select id="func-status"><option value="ativo">✅ Ativo</option><option value="inativo">⛔ Inativo</option></select></div>';
+  html += '</div>';
+  html += '<div class="flex-end"><button class="btn btn-acc" onclick="addFuncionario()">➕ Adicionar Funcionário</button></div></div>';
+
+  var ativos = lista.filter(function(f) { return (f.status || 'ativo') === 'ativo'; }).length;
+  var inativos = lista.filter(function(f) { return f.status === 'inativo'; }).length;
+
+  html += '<div class="card"><div class="card-title">👥 Funcionários <span class="badge">'+lista.length+'</span></div>';
+  html += '<div class="filter-bar">';
+  html += '<button class="filter-btn' + (_filtroFunc==='todos'?' active':'') + '" onclick="setFiltroFunc(\'todos\',this)">Todos ('+lista.length+')</button>';
+  html += '<button class="filter-btn' + (_filtroFunc==='ativo'?' active':'') + '" onclick="setFiltroFunc(\'ativo\',this)">✅ Ativos ('+ativos+')</button>';
+  html += '<button class="filter-btn' + (_filtroFunc==='inativo'?' active':'') + '" onclick="setFiltroFunc(\'inativo\',this)">⛔ Inativos ('+inativos+')</button>';
+  html += '</div>';
+
+  var filtrada = lista;
+  if (_filtroFunc === 'ativo') filtrada = lista.filter(function(f) { return (f.status||'ativo') === 'ativo'; });
+  else if (_filtroFunc === 'inativo') filtrada = lista.filter(function(f) { return f.status === 'inativo'; });
+
+  if (!filtrada.length) {
+    html += '<div class="empty"><div class="empty-ico">👤</div>Nenhum funcionário encontrado.</div>';
+  } else {
+    html += '<div style="overflow-x:auto;"><table><thead><tr>';
+    html += '<th>Nome</th><th>CPF</th><th>Setor</th><th>Nascimento</th><th>Admissão</th><th>Status</th><th></th>';
+    html += '</tr></thead><tbody>';
+    filtrada.forEach(function(f) {
+      var cpfShow = f.cpfEnc
+        ? '<span style="font-family:monospace;font-size:12px;">' + cpfDecrypt(f.cpfEnc) + '</span>'
+        : '<span style="color:var(--muted);">—</span>';
+      var isAtivo = (f.status || 'ativo') === 'ativo';
+      var statusBadge = isAtivo
+        ? '<span class="tag tag-acc">✅ Ativo</span>'
+        : '<span class="tag tag-red">⛔ Inativo</span>';
+      var toggleLbl = isAtivo ? '⛔ Inativar' : '✅ Ativar';
+      html += '<tr>';
+      html += '<td><strong>' + f.nome + '</strong></td>';
+      html += '<td>' + cpfShow + '</td>';
+      html += '<td>' + (f.setor || '<span style="color:var(--muted);">—</span>') + '</td>';
+      html += '<td>' + (f.nascimento ? fmtDate(f.nascimento) : '<span style="color:var(--muted);">—</span>') + '</td>';
+      html += '<td>' + (f.admissao ? fmtDate(f.admissao) : '<span style="color:var(--muted);">—</span>') + '</td>';
+      html += '<td>' + statusBadge + '</td>';
+      html += '<td style="white-space:nowrap;display:flex;gap:5px;">';
+      html += '<button class="btn btn-ghost btn-sm" onclick="toggleStatusFunc(\'' + f.id + '\')">' + toggleLbl + '</button>';
+      html += '<button class="btn btn-ghost btn-sm" onclick="abrirEditFunc(\'' + f.id + '\')">✏️</button>';
+      html += '<button class="btn btn-red btn-sm" onclick="removerFunc(\'' + f.id + '\')">✕</button>';
+      html += '</td></tr>';
+    });
+    html += '</tbody></table></div>';
+  }
+  html += '</div>';
+
+  /* Modal edição */
+  html += '<div id="modal-edit-func" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:2000;align-items:center;justify-content:center;">';
+  html += '<div style="background:var(--s1);border:1px solid var(--bd);border-radius:12px;padding:28px;max-width:520px;width:94%;max-height:90vh;overflow-y:auto;">';
+  html += '<div style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:var(--acc);margin-bottom:18px;">✏️ Editar Funcionário</div>';
+  html += '<input type="hidden" id="edit-func-id">';
+  html += '<div class="form-row"><div class="form-group" style="flex:2;"><label>Nome Completo</label><input type="text" id="edit-func-nome"></div>';
+  html += '<div class="form-group"><label>CPF</label><input type="text" id="edit-func-cpf" oninput="mascararCPF(this)" maxlength="14"></div></div>';
+  html += '<div class="form-row">';
+  html += '<div class="form-group"><label>Setor</label><select id="edit-func-setor"><option value="">— Selecione —</option>';
+  setores.forEach(function(s) { html += '<option value="'+s+'">'+s+'</option>'; });
+  html += '</select></div>';
+  html += '<div class="form-group"><label>Nascimento</label><input type="date" id="edit-func-nascimento"></div>';
+  html += '<div class="form-group"><label>Admissão</label><input type="date" id="edit-func-admissao"></div>';
+  html += '<div class="form-group"><label>Status</label><select id="edit-func-status"><option value="ativo">✅ Ativo</option><option value="inativo">⛔ Inativo</option></select></div>';
+  html += '</div>';
+  html += '<div class="flex-end">';
+  html += '<button class="btn btn-ghost" onclick="document.getElementById(\'modal-edit-func\').style.display=\'none\'">Cancelar</button>';
+  html += '<button class="btn btn-acc" onclick="salvarEdicaoFunc()">✓ Salvar</button>';
+  html += '</div></div></div>';
+
+  content.innerHTML = html;
+}
+
+function addFuncionario() {
+  var nome = document.getElementById('func-nome').value.trim();
+  var cpf = document.getElementById('func-cpf').value.trim();
+  var setor = document.getElementById('func-setor').value;
+  var nascimento = document.getElementById('func-nascimento').value;
+  var admissao = document.getElementById('func-admissao').value;
+  var status = document.getElementById('func-status').value;
+  if (!nome) { toast('Informe o nome!', 'var(--red)'); return; }
+  var lista = empGet('funcionarios') || [];
+  lista.push({
+    id: genId(),
+    nome: nome,
+    cpfEnc: cpfEncrypt(cpf),
+    setor: setor,
+    nascimento: nascimento,
+    admissao: admissao,
+    status: status || 'ativo'
+  });
+  empSet('funcionarios', lista);
+  toast('✅ Funcionário adicionado!');
+  renderFuncionarios();
+}
+
+function toggleStatusFunc(id) {
+  var lista = empGet('funcionarios') || [];
+  for (var i = 0; i < lista.length; i++) {
+    if (lista[i].id === id) {
+      lista[i].status = lista[i].status === 'inativo' ? 'ativo' : 'inativo';
+      break;
+    }
+  }
+  empSet('funcionarios', lista);
+  toast('✓ Status atualizado!');
+  renderFuncionarios();
+}
+
+function abrirEditFunc(id) {
+  var lista = empGet('funcionarios') || [];
+  var f = lista.find(function(x) { return x.id === id; });
+  if (!f) return;
+  document.getElementById('edit-func-id').value = f.id;
+  document.getElementById('edit-func-nome').value = f.nome || '';
+  document.getElementById('edit-func-cpf').value = f.cpfEnc ? cpfDecrypt(f.cpfEnc) : '';
+  document.getElementById('edit-func-setor').value = f.setor || '';
+  document.getElementById('edit-func-nascimento').value = f.nascimento || '';
+  document.getElementById('edit-func-admissao').value = f.admissao || '';
+  document.getElementById('edit-func-status').value = f.status || 'ativo';
+  document.getElementById('modal-edit-func').style.display = 'flex';
+}
+
+function salvarEdicaoFunc() {
+  var id = document.getElementById('edit-func-id').value;
+  var lista = empGet('funcionarios') || [];
+  for (var i = 0; i < lista.length; i++) {
+    if (lista[i].id === id) {
+      lista[i].nome = document.getElementById('edit-func-nome').value.trim();
+      lista[i].cpfEnc = cpfEncrypt(document.getElementById('edit-func-cpf').value.trim());
+      lista[i].setor = document.getElementById('edit-func-setor').value;
+      lista[i].nascimento = document.getElementById('edit-func-nascimento').value;
+      lista[i].admissao = document.getElementById('edit-func-admissao').value;
+      lista[i].status = document.getElementById('edit-func-status').value;
+      break;
+    }
+  }
+  empSet('funcionarios', lista);
+  document.getElementById('modal-edit-func').style.display = 'none';
+  toast('✓ Funcionário atualizado!');
+  renderFuncionarios();
+}
+
+function removerFunc(id) {
+  if (!confirm('Remover este funcionário?')) return;
+  var lista = (empGet('funcionarios') || []).filter(function(f) { return f.id !== id; });
+  empSet('funcionarios', lista);
+  renderFuncionarios();
+  toast('Funcionário removido.', 'var(--red)');
+}
+
+/* =========================================================
+   EMPRESAS (apenas superadmin)
+   ========================================================= */
+function renderEmpresas() {
+  var content = document.getElementById('page-content');
+  var lista = _getEmpresas();
+  var usuarios = _getUsuarios();
+  var html = '<div class="card"><div class="card-title">🏢 Cadastrar Empresa</div>';
+  html += '<div class="form-row">';
+  html += '<div class="form-group" style="flex:2;"><label>Nome da Empresa</label><input type="text" id="emp-nome" placeholder="Nome da empresa"></div>';
+  html += '<div class="form-group"><label>Endereço / Obs</label><input type="text" id="emp-end" placeholder="Endereço ou observação"></div>';
+  html += '</div>';
+  html += '<div class="flex-end"><button class="btn btn-acc" onclick="addEmpresa()">➕ Adicionar</button></div></div>';
+  html += '<div class="card"><div class="card-title">🏢 Empresas Cadastradas <span class="badge">'+lista.length+'</span></div>';
+  if (!lista.length) { html += '<div class="empty"><div class="empty-ico">🏢</div>Nenhuma empresa.</div>'; }
+  else {
+    lista.forEach(function(e) {
+      var numU = usuarios.filter(function(u) { return (u.empresas || []).indexOf(e.id) >= 0; }).length;
+      html += '<div class="user-item">';
+      html += '<div><div class="uname">🏢 ' + e.nome + '</div>';
+      html += '<div class="urole">' + numU + ' usuário(s) vinculado(s)' + (e.end ? ' · 📍 ' + e.end : '') + '</div></div>';
+      html += '<button class="btn btn-red btn-sm" onclick="delEmpresa(\'' + e.id + '\')">✕ Remover</button>';
+      html += '</div>';
+    });
+  }
+  html += '</div>';
+  content.innerHTML = html;
+}
+
+function addEmpresa() {
+  var nome = document.getElementById('emp-nome').value.trim();
+  var end = document.getElementById('emp-end').value.trim();
+  if (!nome) { toast('Informe o nome!', 'var(--red)'); return; }
+  var lista = _getEmpresas();
+  lista.push({ id: Date.now().toString(36), nome: nome, end: end });
+  _setEmpresas(lista);
+  toast('✅ Empresa adicionada!');
+  renderEmpresas();
+  _popularSuperSel();
+}
+
+function delEmpresa(id) {
+  var lista = _getEmpresas();
+  var emp = lista.find(function(e) { return e.id === id; });
+  if (!emp) return;
+  if (!confirm('Remover "' + emp.nome + '"?')) return;
+  lista = lista.filter(function(e) { return e.id !== id; });
+  var usuarios = _getUsuarios();
+  usuarios = usuarios.map(function(u) {
+    u.empresas = (u.empresas || []).filter(function(eid) { return eid !== id; });
+    return u;
+  });
+  _setUsuarios(usuarios);
+  _setEmpresas(lista);
+  toast('Empresa removida.', 'var(--red)');
+  renderEmpresas();
+  _popularSuperSel();
+}
+
+/* =========================================================
+   USUÁRIOS
+   ========================================================= */
+function renderUsuarios() {
+  var content = document.getElementById('page-content');
+  if (!content) return;
+  var lista = _getUsuarios();
+  var empresas = _getEmpresas();
+  var isSA = _usuarioLogado && _usuarioLogado.perfil === 'superadmin';
+  var PERFIL_LABEL = { superadmin: '⭐ Super Admin', admin: '🔑 Administrador', operador: '👤 Operador' };
+
+  var html = '<div class="card"><div class="card-title">➕ Novo Usuário</div>';
+  html += '<div class="form-row">';
+  html += '<div class="form-group"><label>Nome de Usuário</label><input type="text" id="usr-nome" placeholder="login"></div>';
+  html += '<div class="form-group"><label>Senha</label><input type="password" id="usr-senha" placeholder="mín. 4 caracteres"></div>';
+  html += '<div class="form-group"><label>Confirmar Senha</label><input type="password" id="usr-senha2" placeholder="repita a senha"></div>';
+  html += '<div class="form-group"><label>Perfil</label><select id="usr-perfil" onchange="onUsrPerfilChange()">';
+  if (isSA) html += '<option value="superadmin">⭐ Super Admin</option>';
+  html += '<option value="admin">🔑 Administrador</option><option value="operador" selected>👤 Operador</option></select></div>';
+  html += '</div>';
+  html += '<div id="usr-empresa-row"><label style="display:block;margin-bottom:6px;">Empresas com Acesso</label><div id="usr-empresa-grid" class="perm-grid"></div></div>';
+  html += '<div class="flex-end"><button class="btn btn-acc" onclick="addUsuario()">➕ Criar Usuário</button></div></div>';
+
+  html += '<div class="card"><div class="card-title">🔐 Usuários Cadastrados <span class="badge">'+lista.length+'</span></div>';
+  lista.forEach(function(u) {
+    var isMe = _usuarioLogado && u.id === _usuarioLogado.id;
+    var empNomes = '';
+    if (u.perfil !== 'superadmin') {
+      var empIds = u.empresas || [];
+      var nomes = empIds.map(function(eid) { var e = empresas.find(function(x) { return x.id === eid; }); return e ? e.nome : eid; });
+      empNomes = '<div style="font-size:11px;color:var(--muted);margin-top:3px;">🏢 ' + (nomes.length ? nomes.join(', ') : '— Sem empresa') + '</div>';
+    } else {
+      empNomes = '<div style="font-size:11px;color:var(--muted);margin-top:3px;">🌐 Acesso total — todas as empresas</div>';
+    }
+    html += '<div class="user-item" style="flex-direction:column;align-items:flex-start;">';
+    html += '<div style="display:flex;justify-content:space-between;width:100%;align-items:center;">';
+    html += '<div><div class="uname">' + u.nome + (isMe ? ' <span style="font-size:10px;color:var(--acc);">(você)</span>' : '') + '</div>';
+    html += '<div class="urole">' + (PERFIL_LABEL[u.perfil] || u.perfil) + '</div>' + empNomes + '</div>';
+    if (!isMe) {
+      html += '<div style="display:flex;gap:5px;">';
+      if (u.perfil !== 'superadmin') html += '<button class="btn btn-ghost btn-sm" onclick="editarPermissoes(\'' + u.id + '\')">✏️ Permissões</button>';
+      html += '<button class="btn btn-red btn-sm" onclick="delUsuario(\'' + u.id + '\')">✕</button>';
+      html += '</div>';
+    }
+    html += '</div></div>';
+  });
+  html += '</div>';
+  content.innerHTML = html;
+
+  _buildEmpresaChecks(null);
+}
+
+function onUsrPerfilChange() {
+  var perfil = document.getElementById('usr-perfil').value;
+  var row = document.getElementById('usr-empresa-row');
+  if (row) row.style.display = perfil === 'superadmin' ? 'none' : '';
+}
+
+function _buildEmpresaChecks(selectedIds) {
+  var el = document.getElementById('usr-empresa-grid');
+  if (!el) return;
+  var empresas = _getEmpresas();
+  if (!empresas.length) { el.innerHTML = '<span style="font-size:12px;color:var(--muted);">Nenhuma empresa cadastrada.</span>'; return; }
+  el.innerHTML = empresas.map(function(e) {
+    var chk = (selectedIds && selectedIds.indexOf(e.id) >= 0) ? 'checked' : '';
+    return '<label class="perm-item"><input type="checkbox" class="uemp-chk" value="' + e.id + '" ' + chk + '> ' + e.nome + '</label>';
+  }).join('');
+}
+
+function addUsuario() {
+  var nome = document.getElementById('usr-nome').value.trim();
+  var senha = document.getElementById('usr-senha').value;
+  var senha2 = document.getElementById('usr-senha2').value;
+  var perfil = document.getElementById('usr-perfil').value;
+  if (!nome) { toast('Informe o nome!', 'var(--red)'); return; }
+  if (senha.length < 4) { toast('Senha deve ter ao menos 4 caracteres.', 'var(--red)'); return; }
+  if (senha !== senha2) { toast('As senhas não coincidem.', 'var(--red)'); return; }
+  var lista = _getUsuarios();
+  if (lista.some(function(u) { return u.nome.toLowerCase() === nome.toLowerCase(); })) {
+    toast('Usuário já existe.', 'var(--red)'); return;
+  }
+  var empresasIds = [];
+  if (perfil !== 'superadmin') {
+    var empChks = document.querySelectorAll('.uemp-chk:checked');
+    for (var k = 0; k < empChks.length; k++) empresasIds.push(empChks[k].value);
+    if (!empresasIds.length && perfil !== 'admin') {
+      toast('Selecione ao menos uma empresa.', 'var(--red)'); return;
+    }
+  }
+  lista.push({ id: genId(), nome: nome, senhaHash: _hashSenha(senha), perfil: perfil, empresas: empresasIds, permissoes: null });
+  _setUsuarios(lista);
+  toast('✅ Usuário criado!');
+}
+
+function delUsuario(id) {
+  var lista = _getUsuarios();
+  if (lista.length <= 1) { toast('Deve haver ao menos um usuário.', 'var(--red)'); return; }
+  var alvo = lista.find(function(u) { return u.id === id; });
+  if (_usuarioLogado && alvo && alvo.id === _usuarioLogado.id) { toast('Não pode remover o usuário logado.', 'var(--red)'); return; }
+  if (!confirm('Remover usuário?')) return;
+  _setUsuarios(lista.filter(function(u) { return u.id !== id; }));
+  toast('Usuário removido.', 'var(--red)');
+}
+
+function editarPermissoes(id) {
+  var lista = _getUsuarios();
+  var u = lista.find(function(x) { return x.id === id; });
+  if (!u) return;
+  var empresas = _getEmpresas();
+  var modulos = [
+    {k:'bordero',l:'💰 Borderô'},{k:'historico',l:'📅 Histórico'},
+    {k:'pdvs',l:'🖥️ PDVs'},{k:'funcionarios',l:'👤 Funcionários'}
+  ];
+  var perms = u.permissoes || {};
+  var checksHtml = modulos.map(function(m) {
+    var disabled = m.k === 'bordero' ? ' disabled' : '';
+    var checked = (m.k === 'bordero' || perms[m.k]) ? ' checked' : '';
+    return '<label class="perm-item"><input type="checkbox" class="ep-check" data-mod="' + m.k + '"' + checked + disabled + '> ' + m.l + '</label>';
+  }).join('');
+  var empIds = u.empresas || [];
+  var empChecks = empresas.map(function(e) {
+    var c = empIds.indexOf(e.id) >= 0 ? ' checked' : '';
+    return '<label class="perm-item"><input type="checkbox" class="ep-emp" value="' + e.id + '"' + c + '> ' + e.nome + '</label>';
+  }).join('');
+
+  var overlay = document.getElementById('modal-edit-perm');
+  if (!overlay) { overlay = document.createElement('div'); overlay.id = 'modal-edit-perm'; overlay.style.cssText = 'display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:2100;align-items:center;justify-content:center;'; document.body.appendChild(overlay); }
+  overlay.innerHTML = '<div style="background:var(--s1);border:1px solid var(--bd);border-radius:12px;padding:28px;max-width:500px;width:94%;max-height:90vh;overflow-y:auto;">'
+    + '<div style="font-family:Georgia,serif;font-size:17px;font-weight:700;color:var(--acc);margin-bottom:4px;">✏️ Permissões</div>'
+    + '<p style="font-size:12px;color:var(--muted);margin-bottom:16px;">Usuário: <strong style="color:var(--text);">' + u.nome + '</strong></p>'
+    + (empresas.length ? '<div style="margin-bottom:16px;"><label style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;">Empresas</label><div class="perm-grid" style="margin-top:8px;">' + empChecks + '</div></div>' : '')
+    + '<label style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;">Módulos Permitidos</label>'
+    + '<div class="perm-grid">' + checksHtml + '</div>'
+    + '<p style="font-size:11px;color:var(--muted);margin-top:8px;">* Borderô sempre liberado.</p>'
+    + '<div class="flex-end"><button class="btn btn-ghost" onclick="document.getElementById(\'modal-edit-perm\').style.display=\'none\'">Cancelar</button><button class="btn btn-acc" onclick="salvarPermissoes(\'' + id + '\')">✓ Salvar</button></div>'
+    + '</div>';
+  overlay.style.display = 'flex';
+}
+
+function salvarPermissoes(id) {
+  var lista = _getUsuarios();
+  var u = lista.find(function(x) { return x.id === id; });
+  if (!u) return;
+  var checks = document.querySelectorAll('#modal-edit-perm .ep-check');
+  var permissoes = {};
+  for (var i = 0; i < checks.length; i++) permissoes[checks[i].getAttribute('data-mod')] = checks[i].checked;
+  permissoes['bordero'] = true;
+  u.permissoes = permissoes;
+  var empChks = document.querySelectorAll('#modal-edit-perm .ep-emp:checked');
+  u.empresas = [];
+  for (var j = 0; j < empChks.length; j++) u.empresas.push(empChks[j].value);
+  document.getElementById('modal-edit-perm').style.display = 'none';
+  _setUsuarios(lista);
+  if (_usuarioLogado && _usuarioLogado.id === id) { _usuarioLogado.permissoes = permissoes; _aplicarPermissoesNav(); }
+  toast('✓ Permissões salvas!');
+}
+
+/* =========================================================
+   INICIALIZAÇÃO
+   ========================================================= */
+document.addEventListener('DOMContentLoaded', function() {
+  _garantirSuperAdmin();
+  document.getElementById('login-screen').classList.add('open');
+  setTimeout(function() { document.getElementById('login-user').focus(); }, 200);
+});
+</script>
+</body>
+</html>
