@@ -195,5 +195,16 @@
       "admissao": "",
       "status": "ativo"
     }
+  ],
+  "emp_mokx9qtt_funcionarios": [
+    {
+      "id": "molswn6vqqzjfln4fg",
+      "nome": "Karine Trindade",
+      "cpfEnc": "",
+      "setor": "Gestão",
+      "nascimento": "",
+      "admissao": "",
+      "status": "ativo"
+    }
   ]
 }
