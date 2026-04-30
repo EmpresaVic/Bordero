@@ -356,6 +356,11 @@
       "id": "pdvmolvhpj2sinsq4cfdxa",
       "nome": "PDV3 - AA1",
       "controlaDinheiro": false
+    },
+    {
+      "id": "pdvmolvhtyei5gzy02wac",
+      "nome": "PDV4 - AA2",
+      "controlaDinheiro": false
     }
   ]
 }
