@@ -368,6 +368,11 @@
       "id": "pdvmolvin6r4ncwjtabq5b",
       "nome": "PDV1 - CAIXA DINHEIRO",
       "controlaDinheiro": true
+    },
+    {
+      "id": "pdvmolvixj2daj5opzwud5",
+      "nome": "PDV2 - AA1",
+      "controlaDinheiro": false
     }
   ]
 }
