@@ -374,5 +374,68 @@
       "nome": "PDV2 - AA1",
       "controlaDinheiro": false
     }
+  ],
+  "emp_mokx9aq1_historico": [
+    {
+      "data": "2026-04-30",
+      "turno": "M",
+      "pdvData": {
+        "pdv1": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "2026-04-30",
+          "cartao": "850.89",
+          "pix": "222.90",
+          "clientes": "1073.79",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Moyses P",
+          "responsavel": "Aline Silva"
+        },
+        "pdv2": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-04-30_M",
+      "savedAt": "2026-04-30T19:27:47.699Z",
+      "consolidado": {
+        "totRec": 0,
+        "totDin": 0,
+        "totCart": 0,
+        "totTotal": 0,
+        "totFita": 0,
+        "totClientes": 0,
+        "totQuebra": 0,
+        "totDeposito": 0
+      }
+    }
   ]
 }
