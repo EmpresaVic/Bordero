@@ -16,7 +16,12 @@
       "empresas": [
         "mokx4v4r"
       ],
-      "permissoes": null
+      "permissoes": {
+        "bordero": true,
+        "historico": true,
+        "pdvs": true,
+        "funcionarios": true
+      }
     },
     {
       "id": "mokxapk7nfnxigwmadr",
