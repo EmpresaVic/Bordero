@@ -341,5 +341,11 @@
       }
     }
   ],
-  "emp_mokx9aq1_pdvs": []
+  "emp_mokx9aq1_pdvs": [
+    {
+      "id": "pdvmolvhbik2r5qh46q62",
+      "nome": "PDV1 - CAIXA DINHEIRO",
+      "controlaDinheiro": true
+    }
+  ]
 }
