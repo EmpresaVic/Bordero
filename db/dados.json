@@ -109,6 +109,11 @@
       "id": "pdvmokxfhrsfeatn4wrpjg",
       "nome": "PDV3 - AA1",
       "controlaDinheiro": false
+    },
+    {
+      "id": "pdvmokxfoxcnmphndpowpn",
+      "nome": "PDV2 - AA2",
+      "controlaDinheiro": false
     }
   ]
 }
