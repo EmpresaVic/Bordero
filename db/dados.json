@@ -351,6 +351,11 @@
       "id": "pdvmolvhkn7zloercktp7q",
       "nome": "PDV2 - CAIXA CARTAO",
       "controlaDinheiro": false
+    },
+    {
+      "id": "pdvmolvhpj2sinsq4cfdxa",
+      "nome": "PDV3 - AA1",
+      "controlaDinheiro": false
     }
   ]
 }
