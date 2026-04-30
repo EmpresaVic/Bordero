@@ -339,8 +339,11 @@ tr:hover td { background: rgba(255,255,255,0.015); }
       </div>
     </div>
 
-    <div style="display:flex;gap:6px;align-items:center;">
+    <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
       <span id="clock" style="font-size:11px;color:var(--muted);white-space:nowrap;"></span>
+      <span id="gh-status" style="font-size:11px;font-weight:600;white-space:nowrap;color:var(--acc);">⏳ Carregando...</span>
+      <button class="btn btn-ghost btn-sm" onclick="abrirGHConfig()" title="Configurar GitHub" style="font-size:11px;">⚙️ GitHub</button>
+      <button class="btn btn-ghost btn-sm" onclick="sincronizar()" title="Sincronizar dados" style="font-size:11px;">🔄 Sync</button>
       <button class="btn btn-ghost btn-sm" onclick="fazerLogout()">↩ Sair</button>
     </div>
   </div>
@@ -354,29 +357,234 @@ tr:hover td { background: rgba(255,255,255,0.015); }
   <div class="content" id="page-content"></div>
 </div>
 </div>
+<!-- GITHUB CONFIG MODAL -->
+<div id="modal-ghcfg" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:3000;align-items:center;justify-content:center;">
+  <div style="background:var(--s1);border:1px solid var(--acc);border-radius:var(--r);padding:32px;max-width:460px;width:95%;">
+    <div style="font-family:'Playfair Display',serif;color:var(--acc);margin-bottom:6px;font-size:20px;font-weight:700;">⚙️ Configuração GitHub</div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:20px;">Os dados serão salvos no seu repositório GitHub e ficam acessíveis em qualquer computador.</p>
+    <div style="display:flex;flex-direction:column;gap:5px;margin-bottom:14px;">
+      <label style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;">Usuário GitHub</label>
+      <input type="text" id="gh-user" placeholder="seu-usuario" style="background:var(--bg);border:1px solid var(--bd);border-radius:7px;padding:9px 13px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;outline:none;width:100%;">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:5px;margin-bottom:14px;">
+      <label style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;">Repositório</label>
+      <input type="text" id="gh-repo" placeholder="borderopro-dados" style="background:var(--bg);border:1px solid var(--bd);border-radius:7px;padding:9px 13px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;outline:none;width:100%;">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:5px;margin-bottom:14px;">
+      <label style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;">Branch</label>
+      <input type="text" id="gh-branch" placeholder="main" value="main" style="background:var(--bg);border:1px solid var(--bd);border-radius:7px;padding:9px 13px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;outline:none;width:100%;">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:5px;margin-bottom:14px;">
+      <label style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;">Token (ghp_...)</label>
+      <input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx" style="background:var(--bg);border:1px solid var(--bd);border-radius:7px;padding:9px 13px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;outline:none;width:100%;">
+    </div>
+    <div style="margin-bottom:16px;">
+      <span id="gh-test-status" style="font-size:12px;"></span>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <button class="btn btn-acc" onclick="salvarGHConfig()">✓ Salvar e Conectar</button>
+      <button class="btn btn-ghost" onclick="fecharGHConfig()">Cancelar</button>
+      <button class="btn btn-red" onclick="limparGHConfig()" style="margin-left:auto;">🗑️ Desconectar</button>
+    </div>
+    <p style="font-size:11px;color:var(--muted);margin-top:14px;">O token é salvo apenas localmente neste navegador (localStorage). O arquivo de dados é salvo em <code style="color:var(--acc);">db/dados.json</code> no repositório.</p>
+  </div>
+</div>
+
 <div id="toast"></div>
 
 <script>
 /* =========================================================
-   STORAGE KEY
+   ARMAZENAMENTO PERSISTENTE — GitHub API REST
+   Padrão idêntico ao ControleBreak.html
+   Dados salvos em db/dados.json no repositório configurado.
+   Configuração (usuário/repo/branch/token) fica em localStorage.
    ========================================================= */
-var STORAGE_KEY = 'borderopro_v2';
 
-function _cache_get() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch(e) { return {}; } }
-function _cache_save(obj) { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(obj)); } catch(e) {} }
-function dbGet(k) { return _cache_get()[k]; }
-function dbSet(k, v) { var d = _cache_get(); d[k] = v; _cache_save(d); }
+var STORAGE_KEY = 'borderopro_db';
+var GH_CFG_KEY  = 'borderopro_gh_cfg';
+var GH_FILE     = 'db/dados.json';
 
-/* Namespace por empresa */
-var _empresaAtiva = null;
+/* Usuário e empresa ativos na sessão */
 var _usuarioLogado = null;
+var _empresaAtiva  = null;
 
+/* Cache em memória da sessão */
+var _cache = {};
+
+/* ─── Configuração GitHub ─── */
+var GH = {
+  getCfg: function() {
+    try { return JSON.parse(localStorage.getItem(GH_CFG_KEY) || 'null') || {}; }
+    catch(e) { return {}; }
+  },
+  saveCfg: function(obj) {
+    localStorage.setItem(GH_CFG_KEY, JSON.stringify(obj));
+  },
+  isConfigured: function() {
+    var c = GH.getCfg();
+    return !!(c.user && c.repo && c.branch && c.token);
+  },
+  _url: function() {
+    var c = GH.getCfg();
+    return 'https://api.github.com/repos/' + c.user + '/' + c.repo + '/contents/' + GH_FILE + '?ref=' + c.branch;
+  },
+  _headers: function() {
+    var c = GH.getCfg();
+    return {
+      'Authorization': 'token ' + c.token,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json'
+    };
+  },
+  read: async function() {
+    try {
+      var resp = await fetch(GH._url(), { headers: GH._headers() });
+      if (resp.status === 404) return { content: null, sha: null };
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      var data = await resp.json();
+      var rawB64 = (data.content || '').replace(/\n/g,'').trim();
+      if (!rawB64) return { content: null, sha: data.sha };
+      var json = '';
+      try { json = decodeURIComponent(escape(atob(rawB64))); }
+      catch(decErr) { json = atob(rawB64); }
+      json = json.trim();
+      if (!json) return { content: null, sha: data.sha };
+      var parsed = null;
+      try { parsed = JSON.parse(json); }
+      catch(parseErr) { return { content: null, sha: data.sha }; }
+      return { content: parsed, sha: data.sha };
+    } catch(e) {
+      console.error('GH read error:', e);
+      throw e;
+    }
+  },
+  write: async function(dados, sha) {
+    var c = GH.getCfg();
+    var json = JSON.stringify(dados, null, 2);
+    var b64;
+    try { b64 = btoa(unescape(encodeURIComponent(json))); }
+    catch(e) { b64 = btoa(json); }
+    var body = {
+      message: 'BorderoPro — ' + new Date().toLocaleString('pt-BR'),
+      content: b64,
+      branch: c.branch
+    };
+    if (sha) body.sha = sha;
+    var resp = await fetch(
+      'https://api.github.com/repos/' + c.user + '/' + c.repo + '/contents/' + GH_FILE,
+      { method: 'PUT', headers: GH._headers(), body: JSON.stringify(body) }
+    );
+    if (!resp.ok) {
+      var err = await resp.json().catch(function(){ return {}; });
+      throw new Error((err.message || 'Erro ao salvar') + ' (HTTP ' + resp.status + ')');
+    }
+    var result = await resp.json();
+    return result.content.sha;
+  },
+  test: async function() {
+    try {
+      var c = GH.getCfg();
+      var resp = await fetch('https://api.github.com/repos/' + c.user + '/' + c.repo, {
+        headers: GH._headers()
+      });
+      if (resp.status === 401) return { ok: false, msg: 'Token inválido ou sem permissão.' };
+      if (resp.status === 404) return { ok: false, msg: 'Repositório não encontrado.' };
+      if (!resp.ok) return { ok: false, msg: 'Erro HTTP ' + resp.status };
+      return { ok: true, msg: 'Conectado com sucesso!' };
+    } catch(e) {
+      return { ok: false, msg: 'Erro de rede: ' + e.message };
+    }
+  }
+};
+
+/* ─── SHA atual do arquivo ─── */
+var _currentSha = null;
+
+function _carregarLocalStorage() {
+  try {
+    var local = localStorage.getItem(STORAGE_KEY);
+    if (local) _cache = JSON.parse(local) || {};
+    else _cache = {};
+  } catch(e) { _cache = {}; }
+}
+
+/* Persiste _cache (GitHub ou localStorage como fallback) */
+async function _persistir(callback) {
+  if (!Array.isArray(_cache['empresas'])) _cache['empresas'] = [];
+  if (!Array.isArray(_cache['usuarios'])) _cache['usuarios'] = [];
+
+  if (GH.isConfigured()) {
+    try {
+      _currentSha = await GH.write(_cache, _currentSha);
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(_cache)); } catch(e3){}
+      if (callback) callback(null);
+    } catch(e) {
+      try {
+        var r = await GH.read();
+        _currentSha = r ? r.sha : null;
+        _currentSha = await GH.write(_cache, _currentSha);
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(_cache)); } catch(e3){}
+        if (callback) callback(null);
+      } catch(e2) {
+        console.error('Erro ao salvar no GitHub:', e2);
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(_cache)); } catch(e3){}
+        toast('⚠️ Salvo localmente (GitHub indisponível).', 'var(--warn)');
+        if (callback) callback(null);
+      }
+    }
+  } else {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(_cache)); } catch(e) {}
+    if (callback) callback(null);
+  }
+}
+
+/* ─── API pública de db ─── */
+function dbGet(k) {
+  return _cache[k];
+}
+function dbSet(k, v, callback) {
+  _cache[k] = v;
+  _persistir(callback);
+}
+
+/* ─── Namespace por empresa ─── */
 function _empKey(k) {
   if (_empresaAtiva) return 'emp_' + _empresaAtiva.id + '_' + k;
   return k;
 }
 function empGet(k) { return dbGet(_empKey(k)); }
-function empSet(k, v) { dbSet(_empKey(k), v); }
+function empSet(k, v, callback) { dbSet(_empKey(k), v, callback); }
+
+/* ─── loadAll: carrega todos os dados (GitHub ou localStorage) ─── */
+var DB = {
+  loadAll: async function(callback) {
+    if (GH.isConfigured()) {
+      try {
+        var result = await GH.read();
+        if (result && result.content) {
+          _cache = result.content;
+          _currentSha = result.sha;
+        } else {
+          _carregarLocalStorage();
+          _currentSha = result ? result.sha : null;
+          try { _currentSha = await GH.write(_cache, _currentSha); }
+          catch(writeErr) { console.warn('GH: não foi possível inicializar arquivo remoto:', writeErr.message); }
+        }
+      } catch(e) {
+        _carregarLocalStorage();
+        if (callback) callback(new Error('GitHub indisponível: ' + e.message));
+        return;
+      }
+    } else {
+      _carregarLocalStorage();
+    }
+    if (!Array.isArray(_cache['empresas'])) _cache['empresas'] = [];
+    if (!Array.isArray(_cache['usuarios'])) _cache['usuarios'] = [];
+    _garantirSuperAdmin();
+    if (callback) callback(null);
+  }
+};
+
 
 /* =========================================================
    CRIPTOGRAFIA CPF (XOR + Base64)
@@ -435,18 +643,27 @@ function _setUsuarios(lista) {
 
 function _garantirSuperAdmin() {
   var lista = _getUsuarios();
-  var existe = lista.some(function(u) { return u.perfil === 'superadmin'; });
-  if (!existe) {
-    lista.push({
-      id: 'super',
-      nome: 'super',
-      senhaHash: _hashSenha('super123'),
-      perfil: 'superadmin',
-      empresas: [],
-      permissoes: null
-    });
-    _setUsuarios(lista);
+  var idx = -1;
+  for (var i = 0; i < lista.length; i++) {
+    if (lista[i].nome === 'super') { idx = i; break; }
   }
+  var superObj = {
+    id: 'super',
+    nome: 'super',
+    senhaHash: _hashSenha('super123'),
+    perfil: 'superadmin',
+    empresas: [],
+    permissoes: null
+  };
+  if (idx === -1) {
+    lista.push(superObj);
+  } else {
+    /* Garante que a senha e perfil nunca sejam alterados */
+    lista[idx].senhaHash = superObj.senhaHash;
+    lista[idx].perfil    = 'superadmin';
+    lista[idx].empresas  = lista[idx].empresas || [];
+  }
+  _cache['usuarios'] = lista;
 }
 
 async function fazerLogin() {
@@ -460,10 +677,13 @@ async function fazerLogin() {
   btn.textContent = '⏳ Verificando...';
   btn.disabled = true;
 
-  _garantirSuperAdmin();
-  var usuarios = _getUsuarios();
+  try { await DB.loadAll(function(){}); } catch(e) {}
+
   btn.textContent = '🔑 Entrar';
   btn.disabled = false;
+
+  _garantirSuperAdmin();
+  var usuarios = _getUsuarios();
 
   var encontrado = null;
   for (var i = 0; i < usuarios.length; i++) {
@@ -539,8 +759,7 @@ function _entrarSistema(user, empresa) {
   document.getElementById('nav-admin-sec').style.display = (isSA || isAdmin) ? 'contents' : 'none';
 
   _aplicarPermissoesNav();
-  loadOrReset(todayStr(), 'M');
-  showPage('bordero');
+  sincronizar();
 }
 
 function fazerLogout() {
@@ -1705,12 +1924,149 @@ function salvarPermissoes(id) {
 }
 
 /* =========================================================
+   MODAL GITHUB CONFIG
+   ========================================================= */
+function abrirGHConfig() {
+  var c = GH.getCfg();
+  document.getElementById('gh-user').value   = c.user   || '';
+  document.getElementById('gh-repo').value   = c.repo   || '';
+  document.getElementById('gh-branch').value = c.branch || 'main';
+  document.getElementById('gh-token').value  = c.token  || '';
+  document.getElementById('gh-test-status').textContent = '';
+  document.getElementById('modal-ghcfg').style.display = 'flex';
+}
+
+function fecharGHConfig() {
+  document.getElementById('modal-ghcfg').style.display = 'none';
+}
+
+async function salvarGHConfig() {
+  var user   = document.getElementById('gh-user').value.trim();
+  var repo   = document.getElementById('gh-repo').value.trim();
+  var branch = document.getElementById('gh-branch').value.trim() || 'main';
+  var token  = document.getElementById('gh-token').value.trim();
+
+  if (!user || !repo || !token) {
+    document.getElementById('gh-test-status').textContent = '⚠️ Preencha todos os campos.';
+    document.getElementById('gh-test-status').style.color = 'var(--red)';
+    return;
+  }
+
+  GH.saveCfg({ user: user, repo: repo, branch: branch, token: token });
+
+  document.getElementById('gh-test-status').textContent = '⏳ Testando conexão...';
+  document.getElementById('gh-test-status').style.color = 'var(--warn)';
+
+  var result = await GH.test();
+  if (!result.ok) {
+    document.getElementById('gh-test-status').textContent = '❌ ' + result.msg;
+    document.getElementById('gh-test-status').style.color = 'var(--red)';
+    return;
+  }
+
+  document.getElementById('gh-test-status').textContent = '✅ ' + result.msg;
+  document.getElementById('gh-test-status').style.color = 'var(--green)';
+
+  setTimeout(function() {
+    fecharGHConfig();
+    sincronizar();
+  }, 1200);
+}
+
+function limparGHConfig() {
+  if (!confirm('Desconectar do GitHub? Os dados locais não serão apagados.')) return;
+  localStorage.removeItem(GH_CFG_KEY);
+  _currentSha = null;
+  fecharGHConfig();
+  setStatus('⚠️ Sem GitHub', 'var(--red)');
+  toast('GitHub desconectado. Usando armazenamento local.', 'var(--red)');
+}
+
+/* =========================================================
+   SINCRONIZAÇÃO / STATUS
+   ========================================================= */
+function setStatus(txt, cor) {
+  var el = document.getElementById('gh-status');
+  if (!el) return;
+  el.textContent = txt;
+  el.style.color = cor || 'var(--green)';
+}
+
+async function sincronizar() {
+  if (!GH.isConfigured()) {
+    setStatus('⚠️ Configure o GitHub', 'var(--red)');
+    _carregarLocalStorage();
+    if (!Array.isArray(_cache['empresas'])) _cache['empresas'] = [];
+    if (!Array.isArray(_cache['usuarios'])) _cache['usuarios'] = [];
+    _garantirSuperAdmin();
+    loadOrReset(todayStr(), 'M');
+    showPage('bordero');
+    return;
+  }
+
+  setStatus('⏳ Sincronizando...', 'var(--warn)');
+  await DB.loadAll(function(err) {
+    if (err) {
+      setStatus('❌ Erro: ' + err.message, 'var(--red)');
+    } else {
+      var now = new Date().toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
+      setStatus('✅ Sync ' + now, 'var(--green)');
+      _ultimoHash = _hashCache();
+      iniciarAutoSync();
+    }
+    loadOrReset(todayStr(), 'M');
+    showPage('bordero');
+  });
+}
+
+/* =========================================================
+   AUTO-SYNC — background a cada 30 segundos
+   ========================================================= */
+var _autoSyncInterval = null;
+var _ultimoHash = '';
+
+function _hashCache() {
+  var hist = _cache[_empKey ? _empKey('historico') : 'historico'];
+  return JSON.stringify(_cache).length + '_' + (Array.isArray(hist) ? hist.length : 0);
+}
+
+async function _autoSync() {
+  if (!GH.isConfigured()) return;
+  var ativo = document.activeElement;
+  if (ativo && (ativo.tagName === 'INPUT' || ativo.tagName === 'SELECT' || ativo.tagName === 'TEXTAREA')) return;
+
+  try {
+    var result = await GH.read();
+    if (!result || !result.content) return;
+    var hashRemoto = JSON.stringify(result.content).length + '_' + 0;
+    if (hashRemoto === _ultimoHash) return;
+    _cache = result.content;
+    _currentSha = result.sha;
+    _ultimoHash = hashRemoto;
+    var now = new Date().toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit'});
+    setStatus('✅ Sync ' + now, 'var(--green)');
+  } catch(e) {
+    console.warn('Auto-sync falhou:', e.message);
+  }
+}
+
+function iniciarAutoSync() {
+  if (_autoSyncInterval) clearInterval(_autoSyncInterval);
+  if (!GH.isConfigured()) return;
+  _ultimoHash = _hashCache();
+  _autoSyncInterval = setInterval(_autoSync, 30000);
+}
+
+/* =========================================================
    INICIALIZAÇÃO
    ========================================================= */
 document.addEventListener('DOMContentLoaded', function() {
   _garantirSuperAdmin();
   document.getElementById('login-screen').classList.add('open');
   setTimeout(function() { document.getElementById('login-user').focus(); }, 200);
+  if (!GH.isConfigured()) {
+    setStatus('⚠️ Configure o GitHub →', 'var(--red)');
+  }
 });
 </script>
 </body>
