@@ -7,6 +7,16 @@
       "perfil": "superadmin",
       "empresas": [],
       "permissoes": null
+    },
+    {
+      "id": "mokxac5e6dpepy4a8lt",
+      "nome": "victrus",
+      "senhaHash": "hoa20hy10",
+      "perfil": "admin",
+      "empresas": [
+        "mokx4v4r"
+      ],
+      "permissoes": null
     }
   ],
   "empresas": [
