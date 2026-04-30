@@ -46,7 +46,12 @@
       "empresas": [
         "mokx9qtt"
       ],
-      "permissoes": null
+      "permissoes": {
+        "bordero": true,
+        "historico": true,
+        "pdvs": false,
+        "funcionarios": true
+      }
     }
   ],
   "empresas": [
