@@ -234,7 +234,7 @@
           "fundoAbertura": 200,
           "recebimento": "200",
           "moedas": "0.50",
-          "deposito": 0,
+          "deposito": "160",
           "depositoPor": "ANDREZA POLIS",
           "dataDeposito": "2026-04-30",
           "cartao": "400",
@@ -326,9 +326,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-04-30_M",
-      "savedAt": "2026-04-30T19:16:14.604Z",
+      "savedAt": "2026-04-30T19:17:01.105Z",
       "consolidado": {
         "totRec": 200,
         "totDin": 180.5,
@@ -337,7 +337,7 @@
         "totFita": 200.5,
         "totClientes": 13,
         "totQuebra": 899.5,
-        "totDeposito": 0
+        "totDeposito": 160
       }
     }
   ]
