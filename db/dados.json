@@ -31,7 +31,12 @@
       "empresas": [
         "mokx9aq1"
       ],
-      "permissoes": null
+      "permissoes": {
+        "bordero": true,
+        "historico": true,
+        "pdvs": true,
+        "funcionarios": true
+      }
     },
     {
       "id": "mokxb4wbjdihy0mrx",
