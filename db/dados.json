@@ -48,7 +48,7 @@
       ],
       "permissoes": {
         "bordero": true,
-        "historico": true,
+        "historico": false,
         "pdvs": false,
         "funcionarios": true
       }
