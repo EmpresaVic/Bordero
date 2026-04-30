@@ -94,5 +94,11 @@
       "status": "ativo"
     }
   ],
-  "emp_mokx4v4r_pdvs": []
+  "emp_mokx4v4r_pdvs": [
+    {
+      "id": "pdvmokxf0cmjl2rags7wo9",
+      "nome": "PDV1 - CAIXA 1 - DINHEIRO",
+      "controlaDinheiro": true
+    }
+  ]
 }
