@@ -314,6 +314,20 @@
           "valor": 33.8,
           "pdvId": "pdvmokxf0cmjl2rags7wo9",
           "noite": false
+        },
+        {
+          "tipo": "Pagamento 1 dia trabalhado + 1 dia de vt",
+          "nome": "Anderson",
+          "valor": 92.2,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "",
+          "nome": "",
+          "valor": 0,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
         }
       ],
       "perdas": [],
@@ -321,10 +335,10 @@
       "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-04-30_M",
-      "savedAt": "2026-04-30T21:10:59.060Z",
+      "savedAt": "2026-04-30T21:11:11.668Z",
       "consolidado": {
         "totRec": 236,
-        "totDin": 203.79999999999998,
+        "totDin": 111.6,
         "totCart": 1756.5,
         "totTotal": 1992.5,
         "totFita": 237.7,
