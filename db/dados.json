@@ -27,6 +27,16 @@
         "mokx9aq1"
       ],
       "permissoes": null
+    },
+    {
+      "id": "mokxb4wbjdihy0mrx",
+      "nome": "victive",
+      "senhaHash": "hk0y9q610",
+      "perfil": "admin",
+      "empresas": [
+        "mokx9qtt"
+      ],
+      "permissoes": null
     }
   ],
   "empresas": [
