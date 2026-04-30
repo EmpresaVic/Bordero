@@ -234,7 +234,7 @@
           "fundoAbertura": 200,
           "recebimento": "236",
           "moedas": "1.60",
-          "deposito": "110.00",
+          "deposito": "111.60",
           "depositoPor": "MARCELA COELHO",
           "dataDeposito": "2026-04-30",
           "cartao": "1557.90",
@@ -332,10 +332,10 @@
       ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "pagamentos",
+      "activeTab": "caixa",
       "fechado": false,
       "id": "2026-04-30_M",
-      "savedAt": "2026-04-30T21:12:21.652Z",
+      "savedAt": "2026-04-30T21:13:00.495Z",
       "consolidado": {
         "totRec": 236,
         "totDin": 111.6,
@@ -344,7 +344,7 @@
         "totFita": 237.7,
         "totClientes": 42,
         "totQuebra": 1754.8,
-        "totDeposito": 110
+        "totDeposito": 111.6
       }
     }
   ],
