@@ -756,7 +756,7 @@ function _entrarSistema(user, empresa) {
   if (isSA) _popularSuperSel();
 
   document.getElementById('nav-empresas').style.display = isSA ? 'flex' : 'none';
-  document.getElementById('nav-admin-sec').style.display = (isSA || isAdmin) ? 'contents' : 'none';
+  document.getElementById('nav-admin-sec').style.display = 'contents'; /* container sempre visivel; itens controlados por _aplicarPermissoesNav */
 
   _aplicarPermissoesNav();
   sincronizar();
@@ -782,15 +782,17 @@ function fazerLogout() {
 function _aplicarPermissoesNav() {
   if (!_usuarioLogado) return;
   var isSA = _usuarioLogado.perfil === 'superadmin';
-  var isAdmin = _usuarioLogado.perfil === 'admin';
   var perms = _usuarioLogado.permissoes;
   var navIds = ['bordero', 'historico', 'pdvs', 'funcionarios', 'usuarios'];
   navIds.forEach(function(id) {
     var el = document.getElementById('nav-' + id);
     if (!el) return;
-    if (isSA || isAdmin) { el.style.display = 'flex'; return; }
+    /* Somente superadmin tem acesso total irrestrito */
+    if (isSA) { el.style.display = 'flex'; return; }
+    /* Borderô sempre visível para qualquer perfil autenticado */
     if (id === 'bordero') { el.style.display = 'flex'; return; }
-    if (!perms) { el.style.display = 'flex'; return; }
+    /* Admin e operador: respeitam as permissões cadastradas */
+    if (!perms) { el.style.display = 'none'; return; }
     el.style.display = perms[id] ? 'flex' : 'none';
   });
 }
@@ -902,13 +904,30 @@ function calcConsolidado() {
 /* =========================================================
    RENDER PAGES
    ========================================================= */
+function _temPermissao(page) {
+  if (!_usuarioLogado) return false;
+  var isSA = _usuarioLogado.perfil === 'superadmin';
+  /* Somente superadmin tem acesso total irrestrito */
+  if (isSA) return true;
+  if (page === 'bordero') return true;
+  /* Admin e operador: respeitam as permissões cadastradas */
+  var perms = _usuarioLogado.permissoes;
+  if (!perms) return false;
+  return !!perms[page];
+}
+
 function showPage(page) {
+  if (!_temPermissao(page)) {
+    toast('\u26d4 Voc\u00ea n\u00e3o tem permiss\u00e3o para acessar este m\u00f3dulo.', 'var(--red)');
+    if (page !== 'bordero') showPage('bordero');
+    return;
+  }
   var pages = ['bordero','historico','pdvs','funcionarios','usuarios','empresas'];
   pages.forEach(function(p) {
     var el = document.getElementById('nav-' + p);
     if (el) el.classList.toggle('active', p === page);
   });
-  var titles = { bordero:'Borderô do Dia', historico:'Histórico de Caixas', pdvs:'Cadastro de PDVs', funcionarios:'Funcionários', usuarios:'Usuários', empresas:'Empresas' };
+  var titles = { bordero:'Bord\u00ear\u00f4 do Dia', historico:'Hist\u00f3rico de Caixas', pdvs:'Cadastro de PDVs', funcionarios:'Funcion\u00e1rios', usuarios:'Usu\u00e1rios', empresas:'Empresas' };
   document.getElementById('page-title').textContent = titles[page] || '';
   var renders = { bordero:renderBordero, historico:renderHistorico, pdvs:renderPDVs, funcionarios:renderFuncionarios, usuarios:renderUsuarios, empresas:renderEmpresas };
   if (renders[page]) renders[page]();
@@ -961,7 +980,7 @@ function buildBordero() {
   h += '<div class="total-item"><div class="lbl">Quebra de Caixa</div><div class="val ' + queCls + '">' + fmtN(con.totQuebra) + '</div><div id="quebra-pdv-detail">' + quebraHtml + '</div></div>';
   h += '</div>';
 
-  var tabs = [{k:'caixa',l:'💳 Caixas/PDVs'},{k:'pagamentos',l:'💸 Pagamentos'},{k:'perdas',l:'🗑️ Perdas'},{k:'obs',l:'📝 Observações'}];
+  var tabs = [{k:'caixa',l:'💳 Caixas/PDVs'},{k:'pagamentos',l:'💸 Pagamentos'},{k:'perdas',l:'🗑️ Perdas'}];
   h += '<div class="tab-bar">';
   tabs.forEach(function(t) { h += '<button class="tab-btn' + (B.activeTab===t.k?' active':'') + '" onclick="B.activeTab=\'' + t.k + '\';renderBordero();">' + t.l + '</button>'; });
   h += '</div>';
@@ -970,7 +989,6 @@ function buildBordero() {
   else if (B.activeTab === 'pagamentos') h += buildPagamentos();
   else if (B.activeTab === 'perdas') h += buildPerdas();
   
-  else if (B.activeTab === 'obs') h += buildObs();
 
   h += '<div class="flex-end">';
   if (B.fechado !== true) {
