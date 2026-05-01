@@ -430,7 +430,7 @@
           "recebimento": 0,
           "moedas": 0,
           "deposito": 0,
-          "depositoPor": "",
+          "depositoPor": "Debora Cristina",
           "dataDeposito": "2026-04-30",
           "cartao": "850.89",
           "pix": "222.9",
@@ -508,7 +508,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-04-30_M",
-      "savedAt": "2026-04-30T19:34:12.579Z",
+      "savedAt": "2026-05-01T01:32:44.484Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
