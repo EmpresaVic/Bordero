@@ -227,6 +227,120 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-05-01",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "139.58",
+          "moedas": "0",
+          "deposito": "105.00",
+          "depositoPor": "ANDREZA POLIS",
+          "dataDeposito": "2026-05-01",
+          "cartao": "1340.32",
+          "pix": "234.400",
+          "clientes": "33",
+          "fita": "139.58",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "ANDREZA POLIS",
+          "responsavel": "ANDREZA POLIS"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "COMPRA ALFACE E CENOURA ",
+          "nome": "ANDREZA",
+          "valor": 34.58,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "",
+          "nome": "",
+          "valor": 0,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": true,
+      "id": "2026-05-01_M",
+      "savedAt": "2026-05-01T20:13:51.857Z",
+      "consolidado": {
+        "totRec": 139.58,
+        "totDin": 105.00000000000001,
+        "totCart": 1574.72,
+        "totTotal": 1714.3,
+        "totFita": 139.58,
+        "totClientes": 33,
+        "totQuebra": 1574.72,
+        "totDeposito": 105
+      }
+    },
+    {
       "data": "2026-04-30",
       "turno": "M",
       "pdvData": {
