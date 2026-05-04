@@ -578,13 +578,28 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "VT ",
+          "nome": "MURILO",
+          "valor": 8.6,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        },
+        {
+          "tipo": "",
+          "nome": "",
+          "valor": 0,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-05-03_T",
-      "savedAt": "2026-05-04T00:12:14.558Z",
+      "savedAt": "2026-05-04T00:13:32.644Z",
       "consolidado": {
         "totRec": 15.5,
         "totDin": 15.5,
