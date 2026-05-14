@@ -3485,6 +3485,89 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-05-14",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "53.00",
+          "moedas": "0.30",
+          "deposito": "4.70",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-05-14",
+          "cartao": "422.51",
+          "pix": 0,
+          "clientes": "16",
+          "fita": "448.42",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "COMPRA",
+          "nome": "KALUNGA",
+          "valor": 29.9,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        },
+        {
+          "tipo": "VALOR QUE FICOU FALTANTO DO CAIXA 12/05 ",
+          "nome": "CAIXA PDV 1 - MANHA",
+          "valor": 10,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        },
+        {
+          "tipo": "VALOR QUE FICOU FALTANTO DO CAIXA 13/05",
+          "nome": "CAIXA PDV 1 - TARDE",
+          "valor": 8.7,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-05-14_M",
+      "savedAt": "2026-05-14T19:46:41.868Z",
+      "consolidado": {
+        "totRec": 53,
+        "totDin": 4.7000000000000055,
+        "totCart": 422.51,
+        "totTotal": 475.51,
+        "totFita": 448.42,
+        "totClientes": 16,
+        "totQuebra": 27.089999999999975,
+        "totDeposito": 4.7
+      }
+    },
+    {
       "data": "2026-05-13",
       "turno": "T",
       "pdvData": {
