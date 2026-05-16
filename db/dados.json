@@ -307,16 +307,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "vale transporte",
+          "nome": "amderson",
+          "valor": 184.4,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-05-16_M",
-      "savedAt": "2026-05-16T18:09:37.727Z",
+      "savedAt": "2026-05-16T18:09:59.050Z",
       "consolidado": {
         "totRec": 244.2,
-        "totDin": 245,
+        "totDin": 60.59999999999998,
         "totCart": 3879.5,
         "totTotal": 4123.7,
         "totFita": 312.6,
