@@ -4285,6 +4285,75 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-05-16",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "15",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "3232.66",
+          "pix": 0,
+          "clientes": "77",
+          "fita": "3293.93",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Emilie",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "VT",
+          "nome": "MATEUS",
+          "valor": 25,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-05-16_T",
+      "savedAt": "2026-05-18T00:35:18.689Z",
+      "consolidado": {
+        "totRec": 15,
+        "totDin": 15,
+        "totCart": 3232.66,
+        "totTotal": 3247.66,
+        "totFita": 3293.93,
+        "totClientes": 77,
+        "totQuebra": -46.26999999999998,
+        "totDeposito": 0
+      }
+    },
+    {
       "data": "2026-05-17",
       "turno": "T",
       "pdvData": {
