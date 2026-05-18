@@ -4299,10 +4299,10 @@
           "pix": 0,
           "clientes": "77",
           "fita": "3293.93",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
+          "devolucao": "31.35",
+          "obsDevolucao": "Por que a cliente é lojista e o prato passou dos 10min",
+          "devComanda": "380",
+          "devHorario": "12:23",
           "fundoFechamento": 200,
           "caixa": "Emilie",
           "responsavel": "Karine Trindade"
@@ -4341,7 +4341,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-05-16_T",
-      "savedAt": "2026-05-18T00:35:45.449Z",
+      "savedAt": "2026-05-18T00:38:18.259Z",
       "consolidado": {
         "totRec": 40,
         "totDin": 40,
