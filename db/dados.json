@@ -1753,12 +1753,18 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Ancho",
+          "qtde": "1",
+          "motivo": "Cliente Reclamou , estava improprio para consumo."
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-05-19_T",
-      "savedAt": "2026-05-20T01:34:54.432Z",
+      "savedAt": "2026-05-20T01:35:36.336Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
