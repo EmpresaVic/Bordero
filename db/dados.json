@@ -1761,10 +1761,10 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
-      "fechado": false,
+      "activeTab": "caixa",
+      "fechado": true,
       "id": "2026-05-19_T",
-      "savedAt": "2026-05-20T01:35:36.336Z",
+      "savedAt": "2026-05-20T01:35:48.416Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
