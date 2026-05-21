@@ -236,6 +236,113 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-05-21",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "153.21",
+          "moedas": "3.25",
+          "deposito": "120.00",
+          "depositoPor": "ANDREZA POLIS",
+          "dataDeposito": "2026-05-21",
+          "cartao": "676.70",
+          "pix": "244.30",
+          "clientes": "23",
+          "fita": "151.60",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "ANDREZA POLIS",
+          "responsavel": "ANDREZA POLIS"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "bobina",
+          "nome": "yasmin",
+          "valor": 29.99,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-05-21_M",
+      "savedAt": "2026-05-21T18:53:25.252Z",
+      "consolidado": {
+        "totRec": 153.21,
+        "totDin": 126.47000000000001,
+        "totCart": 921,
+        "totTotal": 1074.21,
+        "totFita": 151.6,
+        "totClientes": 23,
+        "totQuebra": 922.61,
+        "totDeposito": 120
+      }
+    },
+    {
       "data": "2026-05-20",
       "turno": "T",
       "pdvData": {
