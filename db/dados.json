@@ -2065,7 +2065,15 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "compra",
+          "nome": "Grafica",
+          "valor": 13.2,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
       "perdas": [
         {
           "produto": "Arroz a Grega",
@@ -2084,10 +2092,10 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-05-22_T",
-      "savedAt": "2026-05-23T02:00:01.097Z",
+      "savedAt": "2026-05-23T02:00:27.034Z",
       "consolidado": {
         "totRec": 117.2,
         "totDin": 117.2,
