@@ -5954,6 +5954,67 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-05-23",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "107.95",
+          "moedas": 0,
+          "deposito": "100.00",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-05-23",
+          "cartao": "2069.48",
+          "pix": 0,
+          "clientes": "43",
+          "fita": "2216.72",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-05-23_M",
+      "savedAt": "2026-05-23T20:32:26.316Z",
+      "consolidado": {
+        "totRec": 107.95,
+        "totDin": 107.95,
+        "totCart": 2069.48,
+        "totTotal": 2177.43,
+        "totFita": 2216.72,
+        "totClientes": 43,
+        "totQuebra": -39.289999999999964,
+        "totDeposito": 100
+      }
+    },
+    {
       "data": "2026-05-22",
       "turno": "T",
       "pdvData": {
