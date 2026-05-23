@@ -2066,12 +2066,28 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Arroz a Grega",
+          "qtde": "529",
+          "motivo": "Descarte Noite"
+        },
+        {
+          "produto": "Pure de Batata",
+          "qtde": "488",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Brocolis",
+          "qtde": "150",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-05-22_T",
-      "savedAt": "2026-05-23T01:59:06.458Z",
+      "savedAt": "2026-05-23T02:00:01.097Z",
       "consolidado": {
         "totRec": 117.2,
         "totDin": 117.2,
