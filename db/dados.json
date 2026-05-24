@@ -2104,22 +2104,22 @@
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
           "fundoAbertura": 200,
-          "recebimento": 0,
+          "recebimento": "95.40",
           "moedas": 0,
           "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
+          "depositoPor": "Debora Cristina",
+          "dataDeposito": "2026-05-23",
+          "cartao": "3175.50",
           "pix": 0,
-          "clientes": 0,
-          "fita": 0,
+          "clientes": "63",
+          "fita": "3276.69",
           "devolucao": 0,
           "obsDevolucao": "",
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "Deyvilla R.",
+          "responsavel": "Debora Cristina"
         },
         "pdvmolvhkn7zloercktp7q": {
           "fundoAbertura": 200,
@@ -2193,18 +2193,18 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
+      "activeTab": "caixa",
       "fechado": false,
       "id": "2026-05-23_T",
-      "savedAt": "2026-05-24T01:51:28.873Z",
+      "savedAt": "2026-05-24T01:52:19.593Z",
       "consolidado": {
-        "totRec": 0,
-        "totDin": 0,
-        "totCart": 3284.12,
-        "totTotal": 3284.12,
-        "totFita": 0,
-        "totClientes": 47,
-        "totQuebra": 0,
+        "totRec": 95.4,
+        "totDin": 95.4,
+        "totCart": 6459.62,
+        "totTotal": 6555.02,
+        "totFita": 3276.69,
+        "totClientes": 110,
+        "totQuebra": -5.789999999999964,
         "totDeposito": 0
       }
     },
