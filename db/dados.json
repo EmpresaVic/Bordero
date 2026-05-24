@@ -2118,8 +2118,8 @@
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "Deyvilla R.",
-          "responsavel": "Debora Cristina"
+          "caixa": "Moyses P",
+          "responsavel": "Aline Silva"
         },
         "pdvmolvhkn7zloercktp7q": {
           "fundoAbertura": 200,
@@ -2185,7 +2185,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-05-23_M",
-      "savedAt": "2026-05-24T01:46:32.922Z",
+      "savedAt": "2026-05-24T01:47:19.929Z",
       "consolidado": {
         "totRec": 170.25,
         "totDin": 170.25,
