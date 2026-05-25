@@ -2180,12 +2180,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Legumes Saute",
+          "qtde": "126",
+          "motivo": "Descarte moite"
+        },
+        {
+          "produto": "Arroz a grega",
+          "qtde": "151",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-05-24_T",
-      "savedAt": "2026-05-25T00:55:04.603Z",
+      "savedAt": "2026-05-25T00:55:39.599Z",
       "consolidado": {
         "totRec": 205.1,
         "totDin": 205.1,
