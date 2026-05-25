@@ -6262,6 +6262,67 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-05-24",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "350.10",
+          "moedas": 0,
+          "deposito": "190.40",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-05-24",
+          "cartao": "3827.72",
+          "pix": 0,
+          "clientes": "90",
+          "fita": "3978.82",
+          "devolucao": "58.80",
+          "obsDevolucao": "tinha barata na batata",
+          "devComanda": "438",
+          "devHorario": "16:38",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "497.49",
+          "pix": 0,
+          "clientes": "8",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-05-24_T",
+      "savedAt": "2026-05-25T00:49:57.721Z",
+      "consolidado": {
+        "totRec": 350.1,
+        "totDin": 350.1,
+        "totCart": 4325.21,
+        "totTotal": 4675.3099999999995,
+        "totFita": 3978.82,
+        "totClientes": 98,
+        "totQuebra": 198.99999999999955,
+        "totDeposito": 190.4
+      }
+    },
+    {
       "data": "2026-05-23",
       "turno": "T",
       "pdvData": {
