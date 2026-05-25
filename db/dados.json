@@ -236,6 +236,113 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-05-25",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "150.00",
+          "moedas": 0,
+          "deposito": "50.00",
+          "depositoPor": "ANDREZA POLIS",
+          "dataDeposito": "2026-05-25",
+          "cartao": "1487.60",
+          "pix": "214.64",
+          "clientes": "41",
+          "fita": "180.00",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "ANDREZA POLIS",
+          "responsavel": "ANDREZA POLIS"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "pagamento anderson",
+          "nome": "",
+          "valor": 100,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-05-25_M",
+      "savedAt": "2026-05-25T19:45:49.600Z",
+      "consolidado": {
+        "totRec": 150,
+        "totDin": 50,
+        "totCart": 1702.2399999999998,
+        "totTotal": 1852.2399999999998,
+        "totFita": 180,
+        "totClientes": 41,
+        "totQuebra": 1672.2399999999998,
+        "totDeposito": 50
+      }
+    },
+    {
       "data": "2026-05-23",
       "turno": "M",
       "pdvData": {
