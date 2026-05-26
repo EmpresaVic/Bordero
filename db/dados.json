@@ -2386,12 +2386,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Brocolis",
+          "qtde": "327",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Arroz a grega",
+          "qtde": "236",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-05-25_T",
-      "savedAt": "2026-05-26T01:44:18.818Z",
+      "savedAt": "2026-05-26T01:44:52.634Z",
       "consolidado": {
         "totRec": 162,
         "totDin": 162,
