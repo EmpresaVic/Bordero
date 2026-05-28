@@ -236,6 +236,120 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-05-27",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "201.65",
+          "moedas": "",
+          "deposito": "73.45",
+          "depositoPor": "MARCELA COELHO",
+          "dataDeposito": "2026-05-27",
+          "cartao": "1385.40",
+          "pix": 0,
+          "clientes": "30",
+          "fita": "1565.20",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "MARCELA COELHO",
+          "responsavel": "MARCELA COELHO"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "405.40",
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "160.10",
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "1 DIA TRABALHADO / 1 DIA VT ",
+          "nome": "ANDERSON",
+          "valor": 92.2,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "COMPRA",
+          "nome": "ALFACE E SALSA",
+          "valor": 36,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-05-27_M",
+      "savedAt": "2026-05-28T00:33:48.501Z",
+      "consolidado": {
+        "totRec": 201.65,
+        "totDin": 73.45000000000002,
+        "totCart": 1950.9,
+        "totTotal": 2152.55,
+        "totFita": 1565.2,
+        "totClientes": 30,
+        "totQuebra": 21.850000000000136,
+        "totDeposito": 73.45
+      }
+    },
+    {
       "data": "2026-05-26",
       "turno": "M",
       "pdvData": {
