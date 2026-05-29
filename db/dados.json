@@ -2620,16 +2620,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Vt",
+          "nome": "Carlos",
+          "valor": 26,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-05-28_M",
-      "savedAt": "2026-05-28T20:38:25.329Z",
+      "savedAt": "2026-05-29T01:38:20.550Z",
       "consolidado": {
         "totRec": 149.8,
-        "totDin": 149.8,
+        "totDin": 123.80000000000001,
         "totCart": 1444.5,
         "totTotal": 1594.3,
         "totFita": 1573.3,
@@ -7527,128 +7535,6 @@
     }
   ],
   "emp_mokx9qtt_historico": [
-    {
-      "data": "2026-05-28",
-      "turno": "T",
-      "pdvData": {
-        "pdvmolvin6r4ncwjtabq5b": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "Agatha",
-          "dataDeposito": "2026-05-28",
-          "cartao": "217.80",
-          "pix": 0,
-          "clientes": "7",
-          "fita": "168.30",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "Agatha",
-          "responsavel": "Karine Trindade"
-        },
-        "pdvmolvixj2daj5opzwud5": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        }
-      },
-      "pagamentos": [],
-      "perdas": [],
-      "obsGeral": "",
-      "activeTab": "caixa",
-      "fechado": true,
-      "id": "2026-05-28_T",
-      "savedAt": "2026-05-29T01:25:24.401Z",
-      "consolidado": {
-        "totRec": 0,
-        "totDin": 0,
-        "totCart": 217.8,
-        "totTotal": 217.8,
-        "totFita": 168.3,
-        "totClientes": 7,
-        "totQuebra": 49.5,
-        "totDeposito": 0
-      }
-    },
-    {
-      "data": "2026-05-28",
-      "turno": "M",
-      "pdvData": {
-        "pdvmolvin6r4ncwjtabq5b": {
-          "fundoAbertura": 200,
-          "recebimento": "48.54",
-          "moedas": 0,
-          "deposito": "50",
-          "depositoPor": "Agatha",
-          "dataDeposito": "2026-05-28",
-          "cartao": "440.5",
-          "pix": 0,
-          "clientes": "17",
-          "fita": "476.9",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "Agatha",
-          "responsavel": "Karine Trindade"
-        },
-        "pdvmolvixj2daj5opzwud5": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        }
-      },
-      "pagamentos": [],
-      "perdas": [],
-      "obsGeral": "",
-      "activeTab": "caixa",
-      "fechado": false,
-      "id": "2026-05-28_M",
-      "savedAt": "2026-05-28T21:24:32.196Z",
-      "consolidado": {
-        "totRec": 48.54,
-        "totDin": 48.54,
-        "totCart": 440.5,
-        "totTotal": 489.04,
-        "totFita": 476.9,
-        "totClientes": 17,
-        "totQuebra": 12.140000000000043,
-        "totDeposito": 50
-      }
-    },
     {
       "data": "2026-05-27",
       "turno": "T",
