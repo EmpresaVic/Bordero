@@ -2621,12 +2621,18 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Brocolis",
+          "qtde": "102",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-05-28_T",
-      "savedAt": "2026-05-29T01:40:35.246Z",
+      "savedAt": "2026-05-29T01:41:59.406Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
