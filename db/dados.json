@@ -7802,10 +7802,10 @@
       ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "pagamentos",
-      "fechado": false,
+      "activeTab": "caixa",
+      "fechado": true,
       "id": "2026-05-29_M",
-      "savedAt": "2026-05-30T01:33:22.301Z",
+      "savedAt": "2026-05-30T01:33:45.933Z",
       "consolidado": {
         "totRec": 102,
         "totDin": 102.59,
