@@ -2630,12 +2630,18 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Legumes saute",
+          "qtde": "237",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-05-29_T",
-      "savedAt": "2026-05-30T01:53:19.750Z",
+      "savedAt": "2026-05-30T01:53:43.958Z",
       "consolidado": {
         "totRec": 15.5,
         "totDin": 15.5,
