@@ -7791,13 +7791,21 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "VT",
+          "nome": "Mateus",
+          "valor": 24.99,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-05-29_M",
-      "savedAt": "2026-05-30T01:32:59.421Z",
+      "savedAt": "2026-05-30T01:33:22.301Z",
       "consolidado": {
         "totRec": 102,
         "totDin": 102.59,
