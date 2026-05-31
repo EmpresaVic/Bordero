@@ -2836,12 +2836,18 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "",
+          "qtde": "",
+          "motivo": ""
+        }
+      ],
       "obsGeral": "",
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-05-31_M",
-      "savedAt": "2026-05-31T21:37:01.274Z",
+      "savedAt": "2026-05-31T22:01:57.825Z",
       "consolidado": {
         "totRec": 334,
         "totDin": 335.6,
