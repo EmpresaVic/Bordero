@@ -2855,9 +2855,9 @@
       ],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-05-30_T",
-      "savedAt": "2026-05-31T01:52:49.336Z",
+      "savedAt": "2026-05-31T01:52:54.929Z",
       "consolidado": {
         "totRec": 165.5,
         "totDin": 165.5,
