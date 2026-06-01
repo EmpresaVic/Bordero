@@ -2860,7 +2860,7 @@
         "pdvmolvhbik2r5qh46q62": {
           "fundoAbertura": 200,
           "recebimento": "12",
-          "moedas": "1",
+          "moedas": "1.50",
           "deposito": 0,
           "depositoPor": "",
           "dataDeposito": "",
@@ -2935,15 +2935,21 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "brocolis",
+          "qtde": "3.99",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-05-31_T",
-      "savedAt": "2026-06-01T00:43:04.325Z",
+      "savedAt": "2026-06-01T00:45:21.794Z",
       "consolidado": {
         "totRec": 12,
-        "totDin": 13,
+        "totDin": 13.5,
         "totCart": 5330.68,
         "totTotal": 5342.68,
         "totFita": 1125.3,
