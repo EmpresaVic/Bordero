@@ -8797,6 +8797,67 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-06-01",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "155.00",
+          "moedas": "4.5",
+          "deposito": "159",
+          "depositoPor": "Emilie",
+          "dataDeposito": "2026-06-01",
+          "cartao": "282.39",
+          "pix": 0,
+          "clientes": "14",
+          "fita": "499.58",
+          "devolucao": "58.00",
+          "obsDevolucao": "reclamou que não era contra e que estava feia a carne ",
+          "devComanda": "989",
+          "devHorario": "20:56",
+          "fundoFechamento": 200,
+          "caixa": "Emilie",
+          "responsavel": ""
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-01_T",
+      "savedAt": "2026-06-02T01:53:28.943Z",
+      "consolidado": {
+        "totRec": 155,
+        "totDin": 159.5,
+        "totCart": 282.39,
+        "totTotal": 437.39,
+        "totFita": 499.58,
+        "totClientes": 14,
+        "totQuebra": -62.19,
+        "totDeposito": 159
+      }
+    },
+    {
+      "data": "2026-06-01",
       "turno": "M",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
