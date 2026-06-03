@@ -232,6 +232,15 @@
       "nascimento": "",
       "admissao": "",
       "status": "ativo"
+    },
+    {
+      "id": "mpyjmz8bj68kcpvumss",
+      "nome": "Ariane B Santos",
+      "cpfEnc": "",
+      "setor": "Gestão",
+      "nascimento": "",
+      "admissao": "2026-06-01",
+      "status": "ativo"
     }
   ],
   "emp_mokx4v4r_historico": [
