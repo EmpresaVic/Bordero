@@ -9030,8 +9030,8 @@
           "fundoAbertura": 200,
           "recebimento": "120.2",
           "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
+          "deposito": "16",
+          "depositoPor": "Agatha",
           "dataDeposito": "",
           "cartao": "490.10",
           "pix": 0,
@@ -9042,8 +9042,8 @@
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
         },
         "pdvmolvixj2daj5opzwud5": {
           "fundoAbertura": 200,
@@ -9071,7 +9071,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-02_M",
-      "savedAt": "2026-06-03T01:35:49.683Z",
+      "savedAt": "2026-06-03T01:36:14.323Z",
       "consolidado": {
         "totRec": 120.2,
         "totDin": 120.2,
@@ -9080,7 +9080,7 @@
         "totFita": 601.9,
         "totClientes": 16,
         "totQuebra": 8.400000000000091,
-        "totDeposito": 0
+        "totDeposito": 16
       }
     },
     {
