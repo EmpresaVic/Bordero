@@ -9130,9 +9130,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-06-02_T",
-      "savedAt": "2026-06-03T01:42:24.498Z",
+      "savedAt": "2026-06-03T01:42:32.674Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
