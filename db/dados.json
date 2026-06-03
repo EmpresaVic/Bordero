@@ -9024,6 +9024,67 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-06-02",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "120.18",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-02_M",
+      "savedAt": "2026-06-03T01:34:32.788Z",
+      "consolidado": {
+        "totRec": 120.18,
+        "totDin": 120.18,
+        "totCart": 0,
+        "totTotal": 120.18,
+        "totFita": 0,
+        "totClientes": 0,
+        "totQuebra": 120.18,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-06-02",
       "turno": "T",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
