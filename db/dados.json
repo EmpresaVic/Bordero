@@ -9646,6 +9646,10 @@
         "totClientes": 11,
         "totQuebra": -28.789999999999992,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester",
+        "data": "2026-06-03"
       }
     },
     {
@@ -9980,7 +9984,7 @@
       "conferencia": {
         "data": "2026-06-03",
         "por": "Ester",
-        "obs": "No movimento tem 170,25 reais e nao 107,95 -> Debora"
+        "obs": "Ok"
       }
     },
     {
@@ -10303,8 +10307,7 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "2025-06-03",
-        "obs": "Não tem dinheiro no pacote : Justificativa - Não esta subindo dinheiro por conta não tem trocado -> Agatha"
+        "data": "0202-06-03"
       }
     },
     {
