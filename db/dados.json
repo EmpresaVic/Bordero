@@ -3191,7 +3191,7 @@
       "activeTab": "caixa",
       "fechado": true,
       "id": "2026-06-03_T",
-      "savedAt": "2026-06-04T01:22:28.873Z",
+      "savedAt": "2026-06-04T01:22:05.641Z",
       "consolidado": {
         "totRec": 302.85,
         "totDin": 302.85,
@@ -9256,6 +9256,67 @@
     }
   ],
   "emp_mokx9qtt_historico": [
+    {
+      "data": "2026-06-03",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "5",
+          "moedas": "1.50",
+          "deposito": "8.50",
+          "depositoPor": "Ariane B Santos",
+          "dataDeposito": "2026-06-03",
+          "cartao": "628.40",
+          "pix": 0,
+          "clientes": "20",
+          "fita": "636.90",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Ariane B Santos",
+          "responsavel": "Ariane B Santos"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "88.80",
+          "pix": 0,
+          "clientes": "0",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-03_T",
+      "savedAt": "2026-06-04T01:25:50.183Z",
+      "consolidado": {
+        "totRec": 5,
+        "totDin": 6.5,
+        "totCart": 717.1999999999999,
+        "totTotal": 722.1999999999999,
+        "totFita": 636.9,
+        "totClientes": 20,
+        "totQuebra": -3.5,
+        "totDeposito": 8.5
+      }
+    },
     {
       "data": "2026-06-03",
       "turno": "M",
