@@ -9257,6 +9257,75 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-06-04",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt",
+          "nome": "mateus nascimento",
+          "valor": 30,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-06-04_M",
+      "savedAt": "2026-06-04T19:08:50.487Z",
+      "consolidado": {
+        "totRec": 0,
+        "totDin": -30,
+        "totCart": 0,
+        "totTotal": 0,
+        "totFita": 0,
+        "totClientes": 0,
+        "totQuebra": 0,
+        "totDeposito": 0
+      }
+    },
+    {
       "data": "2026-06-03",
       "turno": "T",
       "pdvData": {
