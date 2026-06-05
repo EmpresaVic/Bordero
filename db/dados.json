@@ -9469,10 +9469,10 @@
           "pix": 0,
           "clientes": "59",
           "fita": "2265.88",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
+          "devolucao": "75.40",
+          "obsDevolucao": "Não houve estorno.\nEsse pedido foi lançado duas vezes por engano.",
+          "devComanda": "740",
+          "devHorario": "17:01",
           "fundoFechamento": 200,
           "caixa": "Emilie",
           "responsavel": "Karine Trindade"
@@ -9503,7 +9503,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-04_T",
-      "savedAt": "2026-06-05T01:14:54.683Z",
+      "savedAt": "2026-06-05T01:17:16.635Z",
       "consolidado": {
         "totRec": 160,
         "totDin": 160,
