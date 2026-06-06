@@ -245,6 +245,127 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-06-06",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "265.43",
+          "moedas": 0,
+          "deposito": "7.25",
+          "depositoPor": "MARCELA COELHO",
+          "dataDeposito": "2026-06-06",
+          "cartao": "5328.00",
+          "pix": 0,
+          "clientes": "90",
+          "fita": "5632.50",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "MARCELA COELHO",
+          "responsavel": "MARCELA COELHO"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "SANGRIA - LEVOU ",
+          "nome": "CELSO",
+          "valor": 150,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "1 DIA TRABALHADO - 1 DIA VT",
+          "nome": "ANDERSON",
+          "valor": 92.2,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "ARMARINHOS ",
+          "nome": "ARMARINHOS",
+          "valor": 15.98,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-06_M",
+      "savedAt": "2026-06-06T19:26:47.117Z",
+      "consolidado": {
+        "totRec": 265.43,
+        "totDin": 7.25,
+        "totCart": 5328,
+        "totTotal": 5593.43,
+        "totFita": 5632.5,
+        "totClientes": 90,
+        "totQuebra": -39.06999999999971,
+        "totDeposito": 7.25
+      }
+    },
+    {
       "data": "2026-06-05",
       "turno": "T",
       "pdvData": {
