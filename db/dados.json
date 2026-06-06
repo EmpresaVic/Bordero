@@ -9654,6 +9654,75 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-06-05",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "327",
+          "moedas": "6",
+          "deposito": "333",
+          "depositoPor": "Ariane B Santos",
+          "dataDeposito": "2026-06-05",
+          "cartao": "1961.58",
+          "pix": 0,
+          "clientes": "43",
+          "fita": "2264.19",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Emilie",
+          "responsavel": "Ariane B Santos"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "Vt  Matheus ",
+          "nome": "Grileto",
+          "valor": 25,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-06-05_T",
+      "savedAt": "2026-06-06T01:30:05.004Z",
+      "consolidado": {
+        "totRec": 327,
+        "totDin": 333,
+        "totCart": 1961.58,
+        "totTotal": 2288.58,
+        "totFita": 2264.19,
+        "totClientes": 43,
+        "totQuebra": 24.389999999999873,
+        "totDeposito": 333
+      }
+    },
+    {
+      "data": "2026-06-05",
       "turno": "M",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
