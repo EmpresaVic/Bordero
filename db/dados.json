@@ -1556,8 +1556,7 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "2026-06-07",
-        "obs": "Ok, Vale Pagamento Anderson  100 reais sobra 7,80"
+        "data": "0002-06-07"
       }
     },
     {
@@ -1672,6 +1671,10 @@
         "totClientes": 56,
         "totQuebra": 0.03999999999996362,
         "totDeposito": 270.15
+      },
+      "conferencia": {
+        "por": "Ester",
+        "data": "2026-06-07"
       }
     },
     {
