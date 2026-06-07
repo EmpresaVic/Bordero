@@ -3438,10 +3438,10 @@
           "pix": 0,
           "clientes": "41",
           "fita": "1909.50",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
+          "devolucao": "105.60",
+          "obsDevolucao": "motivo porque acabou o pao para a preparaçao do lanche que o cliente pediu ",
+          "devComanda": "81",
+          "devHorario": "21:54",
           "fundoFechamento": 200,
           "caixa": "Mirian Gonçaves",
           "responsavel": "Debora Cristina"
@@ -3505,12 +3505,18 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "brocolis",
+          "qtde": "175",
+          "motivo": "noite"
+        }
+      ],
       "obsGeral": "",
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-06_T",
-      "savedAt": "2026-06-07T02:14:15.020Z",
+      "savedAt": "2026-06-07T02:16:23.532Z",
       "consolidado": {
         "totRec": 162,
         "totDin": 162,
@@ -3604,12 +3610,18 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "brocolis",
+          "qtde": "175",
+          "motivo": "noite "
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-06-06_M",
-      "savedAt": "2026-06-07T02:05:38.420Z",
+      "savedAt": "2026-06-07T02:14:40.516Z",
       "consolidado": {
         "totRec": 372,
         "totDin": 372,
