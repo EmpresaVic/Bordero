@@ -10316,6 +10316,75 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-06-07",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "442.00",
+          "moedas": 0,
+          "deposito": "417",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-06-07",
+          "cartao": "2507.00",
+          "pix": 0,
+          "clientes": "55",
+          "fita": "2980.90",
+          "devolucao": "71.50",
+          "obsDevolucao": "nao tinha como espera por conta tnha compromisso ",
+          "devComanda": "833",
+          "devHorario": "15:06",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt",
+          "nome": "mateus nascimento",
+          "valor": 25,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-07_M",
+      "savedAt": "2026-06-07T21:43:09.699Z",
+      "consolidado": {
+        "totRec": 442,
+        "totDin": 417,
+        "totCart": 2507,
+        "totTotal": 2949,
+        "totFita": 2980.9,
+        "totClientes": 55,
+        "totQuebra": -31.90000000000009,
+        "totDeposito": 417
+      }
+    },
+    {
       "data": "2026-06-06",
       "turno": "M",
       "pdvData": {
