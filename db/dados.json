@@ -5519,7 +5519,7 @@
       "conferencia": {
         "por": "Ester",
         "obs": "Ok, Vale de 26,00 p/transporte dia 28 e 29 - Carlos",
-        "data": "0202-06-08"
+        "data": "0002-06-08"
       }
     },
     {
@@ -13166,6 +13166,9 @@
         "totClientes": 16,
         "totQuebra": 0,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester"
       }
     },
     {
