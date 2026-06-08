@@ -1021,8 +1021,7 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "2026-06-08",
-        "obs": "Ok, Vale Estacionamento Plaza - Marcela 15,00"
+        "data": "0002-06-08"
       }
     },
     {
@@ -11483,6 +11482,9 @@
         "totClientes": 34,
         "totQuebra": -25.029999999999973,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester"
       }
     },
     {
