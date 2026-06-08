@@ -5426,8 +5426,7 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "2026-06-08",
-        "obs": "Ok"
+        "data": "0002-06-08"
       }
     },
     {
@@ -7030,7 +7029,8 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "0002-06-03"
+        "data": "0002-06-03",
+        "obs": "Ok"
       }
     },
     {
