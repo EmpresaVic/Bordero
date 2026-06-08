@@ -10443,8 +10443,8 @@
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "Mateus",
+          "responsavel": "Karine Trindade"
         },
         "pdvmolvixj2daj5opzwud5": {
           "fundoAbertura": 200,
@@ -10453,9 +10453,9 @@
           "deposito": 0,
           "depositoPor": "",
           "dataDeposito": "",
-          "cartao": 0,
+          "cartao": "515.10",
           "pix": 0,
-          "clientes": 0,
+          "clientes": "12",
           "fita": 0,
           "devolucao": 0,
           "obsDevolucao": "",
@@ -10470,16 +10470,16 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-06-07_T",
-      "savedAt": "2026-06-08T00:57:32.952Z",
+      "savedAt": "2026-06-08T00:59:31.096Z",
       "consolidado": {
         "totRec": 85,
         "totDin": 85.4,
-        "totCart": 648,
-        "totTotal": 733,
+        "totCart": 1163.1,
+        "totTotal": 1248.1,
         "totFita": 653.9,
-        "totClientes": 23,
+        "totClientes": 35,
         "totQuebra": 79.10000000000002,
         "totDeposito": 0
       }
