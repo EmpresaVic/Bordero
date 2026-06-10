@@ -11085,7 +11085,7 @@
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
           "fundoAbertura": 200,
-          "recebimento": "66.00",
+          "recebimento": "65",
           "moedas": "1",
           "deposito": "66.00",
           "depositoPor": "Ariane B Santos",
@@ -11143,15 +11143,15 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-09_T",
-      "savedAt": "2026-06-10T01:25:06.332Z",
+      "savedAt": "2026-06-10T01:25:42.299Z",
       "consolidado": {
-        "totRec": 66,
-        "totDin": 67,
+        "totRec": 65,
+        "totDin": 66,
         "totCart": 1238.41,
-        "totTotal": 1304.41,
+        "totTotal": 1303.41,
         "totFita": 1365.81,
         "totClientes": 44,
-        "totQuebra": -61.399999999999864,
+        "totQuebra": -62.399999999999864,
         "totDeposito": 66
       }
     },
