@@ -11080,6 +11080,82 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-06-09",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "66.00",
+          "moedas": "1",
+          "deposito": "66.00",
+          "depositoPor": "Ariane B Santos",
+          "dataDeposito": "2026-06-09",
+          "cartao": "1238.41",
+          "pix": 0,
+          "clientes": "44",
+          "fita": "1365.81",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Emilie",
+          "responsavel": "Ariane B Santos"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt Matheus ",
+          "nome": "Matheus",
+          "valor": 25,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        },
+        {
+          "tipo": "Frelance (Domingo)",
+          "nome": "Unne Querzia ",
+          "valor": 90,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-09_T",
+      "savedAt": "2026-06-10T01:25:06.332Z",
+      "consolidado": {
+        "totRec": 66,
+        "totDin": 67,
+        "totCart": 1238.41,
+        "totTotal": 1304.41,
+        "totFita": 1365.81,
+        "totClientes": 44,
+        "totQuebra": -61.399999999999864,
+        "totDeposito": 66
+      }
+    },
+    {
       "data": "2026-06-07",
       "turno": "T",
       "pdvData": {
