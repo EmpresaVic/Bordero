@@ -11295,6 +11295,67 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-06-10",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "32.00",
+          "moedas": 0,
+          "deposito": "32.00",
+          "depositoPor": "Ariane B Santos",
+          "dataDeposito": "2026-06-10",
+          "cartao": "663.50",
+          "pix": 0,
+          "clientes": "17",
+          "fita": "664.02",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Ariane B Santos"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-10_M",
+      "savedAt": "2026-06-10T19:29:30.034Z",
+      "consolidado": {
+        "totRec": 32,
+        "totDin": 32,
+        "totCart": 663.5,
+        "totTotal": 695.5,
+        "totFita": 664.02,
+        "totClientes": 17,
+        "totQuebra": 31.480000000000018,
+        "totDeposito": 32
+      }
+    },
+    {
       "data": "2026-06-09",
       "turno": "T",
       "pdvData": {
