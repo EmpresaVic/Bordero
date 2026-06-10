@@ -11140,10 +11140,10 @@
       ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-06-09_T",
-      "savedAt": "2026-06-10T01:25:42.299Z",
+      "savedAt": "2026-06-10T01:25:56.340Z",
       "consolidado": {
         "totRec": 65,
         "totDin": 66,
