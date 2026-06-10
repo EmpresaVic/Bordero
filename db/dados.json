@@ -3407,7 +3407,7 @@
       "conferencia": {
         "por": "Ester",
         "obs": "Vale de 42,20 Anderson, e uma compra de 38,40, nao tem nenhuma moeda",
-        "data": "2026-06-10"
+        "data": "0002-06-10"
       }
     },
     {
@@ -9774,6 +9774,9 @@
         "totClientes": 136,
         "totQuebra": 16.61999999999989,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester"
       }
     },
     {
