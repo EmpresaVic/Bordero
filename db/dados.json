@@ -3883,9 +3883,9 @@
       ],
       "obsGeral": "",
       "activeTab": "perdas",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-06-10_T",
-      "savedAt": "2026-06-11T01:25:54.697Z",
+      "savedAt": "2026-06-11T01:26:05.025Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
