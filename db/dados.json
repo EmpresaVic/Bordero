@@ -11825,7 +11825,7 @@
       "conferencia": {
         "por": "Ester",
         "obs": "Ok",
-        "data": "0002-05-08"
+        "data": "0020-05-08"
       }
     },
     {
@@ -11890,8 +11890,7 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "0202-06-11",
-        "obs": "Ok"
+        "data": "0202-06-11"
       }
     },
     {
@@ -12403,7 +12402,8 @@
         "totDeposito": 0
       },
       "conferencia": {
-        "por": "Ester"
+        "por": "Ester",
+        "obs": "Ok"
       }
     },
     {
@@ -13001,8 +13001,7 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "0002-06-03",
-        "obs": "Ok"
+        "data": "0002-06-03"
       }
     },
     {
