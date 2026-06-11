@@ -13545,6 +13545,9 @@
         "totClientes": 77,
         "totQuebra": -21.269999999999982,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester"
       }
     },
     {
@@ -13792,8 +13795,7 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "2026-06-11",
-        "obs": "Ok"
+        "data": "0020-06-11"
       }
     },
     {
