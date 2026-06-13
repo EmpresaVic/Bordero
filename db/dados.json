@@ -12166,9 +12166,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-06-13_T",
-      "savedAt": "2026-06-13T21:12:22.915Z",
+      "savedAt": "2026-06-13T21:12:32.595Z",
       "consolidado": {
         "totRec": 36.1,
         "totDin": 36.1,
