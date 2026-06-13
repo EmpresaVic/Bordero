@@ -11824,6 +11824,67 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-06-12",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "116.10",
+          "moedas": 0,
+          "deposito": "74.70",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2025-06-12",
+          "cartao": "1725.69",
+          "pix": 0,
+          "clientes": "36",
+          "fita": "1821.70",
+          "devolucao": "41.40",
+          "obsDevolucao": "demorou 40 minutos, e pediu devolução, e foi em dinheiro\n",
+          "devComanda": "53",
+          "devHorario": "20:28",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-12_T",
+      "savedAt": "2026-06-13T01:52:27.154Z",
+      "consolidado": {
+        "totRec": 116.1,
+        "totDin": 116.1,
+        "totCart": 1725.69,
+        "totTotal": 1841.79,
+        "totFita": 1821.7,
+        "totClientes": 36,
+        "totQuebra": 20.089999999999918,
+        "totDeposito": 74.7
+      }
+    },
+    {
+      "data": "2026-06-12",
       "turno": "M",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
