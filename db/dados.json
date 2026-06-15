@@ -12425,6 +12425,75 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-06-15",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "165.45",
+          "moedas": 0,
+          "deposito": "175",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-06-15",
+          "cartao": "718.80",
+          "pix": 0,
+          "clientes": "24",
+          "fita": "938.10",
+          "devolucao": "43",
+          "obsDevolucao": "Apareceu o compromisso em cima da hora",
+          "devComanda": "224",
+          "devHorario": "14:00",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Ariane B Santos"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt",
+          "nome": "mateus nascimento",
+          "valor": 25,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-15_M",
+      "savedAt": "2026-06-15T19:53:51.778Z",
+      "consolidado": {
+        "totRec": 165.45,
+        "totDin": 140.45,
+        "totCart": 718.8,
+        "totTotal": 884.25,
+        "totFita": 938.1,
+        "totClientes": 24,
+        "totQuebra": -53.85000000000002,
+        "totDeposito": 175
+      }
+    },
+    {
       "data": "2026-06-14",
       "turno": "T",
       "pdvData": {
