@@ -12757,7 +12757,7 @@
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
+          "caixa": "Ariane B Santos",
           "responsavel": "Ariane B Santos"
         },
         "pdvmolvixj2daj5opzwud5": {
@@ -12784,9 +12784,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-06-16_M",
-      "savedAt": "2026-06-16T19:13:33.103Z",
+      "savedAt": "2026-06-16T19:14:19.943Z",
       "consolidado": {
         "totRec": 186,
         "totDin": 186,
