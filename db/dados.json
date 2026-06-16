@@ -4491,16 +4491,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "compra",
+          "nome": "gelo",
+          "valor": 20,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-06-15_M",
-      "savedAt": "2026-06-16T01:32:23.996Z",
+      "savedAt": "2026-06-16T01:34:34.468Z",
       "consolidado": {
         "totRec": 122.2,
-        "totDin": 122.2,
+        "totDin": 102.2,
         "totCart": 1355,
         "totTotal": 1477.2,
         "totFita": 1425.2,
