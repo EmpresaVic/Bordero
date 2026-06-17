@@ -4500,12 +4500,33 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "arroz branco",
+          "qtde": "478",
+          "motivo": "descarte noite "
+        },
+        {
+          "produto": "arroz agrega",
+          "qtde": "455",
+          "motivo": "descarte noite "
+        },
+        {
+          "produto": "legumes saute",
+          "qtde": "391",
+          "motivo": "descarte noite "
+        },
+        {
+          "produto": "brocolis",
+          "qtde": "100",
+          "motivo": "descarte noite "
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-06-16_T",
-      "savedAt": "2026-06-17T01:34:22.188Z",
+      "savedAt": "2026-06-17T01:35:51.419Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
