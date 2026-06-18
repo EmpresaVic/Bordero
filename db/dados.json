@@ -576,9 +576,8 @@
         "totDeposito": 160
       },
       "conferencia": {
-        "por": "Ester",
-        "obs": "OK",
-        "data": "2026-06-16"
+        "por": "OK ",
+        "obs": "OK"
       }
     },
     {
@@ -680,9 +679,9 @@
         "totDeposito": 59.6
       },
       "conferencia": {
-        "por": "Ester",
+        "por": "Ok",
         "obs": "ok",
-        "data": "2026-06-16"
+        "data": "0003-06-16"
       }
     },
     {
@@ -4884,7 +4883,8 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "0020-06-18"
+        "data": "0020-06-18",
+        "obs": "Ok"
       }
     },
     {
@@ -4984,11 +4984,6 @@
         "totClientes": 27,
         "totQuebra": -215.70000000000005,
         "totDeposito": 0
-      },
-      "conferencia": {
-        "por": "Ester",
-        "data": "2026-06-18",
-        "obs": "Ok"
       }
     },
     {
