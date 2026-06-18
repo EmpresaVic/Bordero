@@ -352,7 +352,8 @@
         "totDeposito": 4.5
       },
       "conferencia": {
-        "por": "Ester"
+        "por": "Ester",
+        "obs": "OK"
       }
     },
     {
