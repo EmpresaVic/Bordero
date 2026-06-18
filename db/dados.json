@@ -576,8 +576,9 @@
         "totDeposito": 160
       },
       "conferencia": {
-        "por": "OK ",
-        "obs": "OK"
+        "por": "Ester",
+        "obs": "OK",
+        "data": "2026-06-16"
       }
     },
     {
@@ -679,9 +680,9 @@
         "totDeposito": 59.6
       },
       "conferencia": {
-        "por": "Ok",
+        "por": "Ester",
         "obs": "ok",
-        "data": "0003-06-16"
+        "data": "2026-06-16"
       }
     },
     {
