@@ -13586,8 +13586,8 @@
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
           "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": "11",
+          "recebimento": "11",
+          "moedas": "",
           "deposito": "0",
           "depositoPor": "Agatha",
           "dataDeposito": "2026-06-19",
@@ -13629,15 +13629,15 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-19_M",
-      "savedAt": "2026-06-19T19:17:47.251Z",
+      "savedAt": "2026-06-19T19:19:16.491Z",
       "consolidado": {
-        "totRec": 0,
+        "totRec": 11,
         "totDin": 11,
         "totCart": 997.61,
-        "totTotal": 997.61,
+        "totTotal": 1008.61,
         "totFita": 1000.09,
         "totClientes": 20,
-        "totQuebra": -2.480000000000018,
+        "totQuebra": 8.519999999999982,
         "totDeposito": 0
       }
     },
