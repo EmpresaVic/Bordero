@@ -254,6 +254,134 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-06-19",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "154.32",
+          "moedas": 0,
+          "deposito": "4.32",
+          "depositoPor": "MARCELA COELHO",
+          "dataDeposito": "2026-06-19",
+          "cartao": "2004.20",
+          "pix": 0,
+          "clientes": "51",
+          "fita": "2152.70",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "MARCELA COELHO",
+          "responsavel": "MARCELA COELHO"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "343.80",
+          "pix": 0,
+          "clientes": "6",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "837.70",
+          "pix": 0,
+          "clientes": "12",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "ALFACE",
+          "nome": "MERCADO",
+          "valor": 36,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "VT",
+          "nome": "ESTER",
+          "valor": 25,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "VT",
+          "nome": "IAGO",
+          "valor": 25,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "1 DIA TRABALHADO",
+          "nome": "ESTER",
+          "valor": 64,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-19_M",
+      "savedAt": "2026-06-19T23:19:47.097Z",
+      "consolidado": {
+        "totRec": 154.32,
+        "totDin": 4.319999999999993,
+        "totCart": 3185.7,
+        "totTotal": 3340.0200000000004,
+        "totFita": 2152.7,
+        "totClientes": 69,
+        "totQuebra": 5.820000000000164,
+        "totDeposito": 4.32
+      }
+    },
+    {
       "data": "2026-06-18",
       "turno": "T",
       "pdvData": {
