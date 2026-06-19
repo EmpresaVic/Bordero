@@ -262,8 +262,8 @@
           "recebimento": "270.76",
           "moedas": 0,
           "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
+          "depositoPor": "MARCELA COELHO",
+          "dataDeposito": "2026-06-18",
           "cartao": "1442.3",
           "pix": 0,
           "clientes": "43",
@@ -273,8 +273,8 @@
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "MARCELA COELHO",
+          "responsavel": "MARCELA COELHO"
         },
         "pdvmokxfbej01queo319vvz": {
           "fundoAbertura": 200,
@@ -340,7 +340,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-18_T",
-      "savedAt": "2026-06-19T01:17:47.107Z",
+      "savedAt": "2026-06-19T21:57:05.415Z",
       "consolidado": {
         "totRec": 270.76,
         "totDin": 270.76,
