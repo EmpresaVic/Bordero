@@ -13571,6 +13571,67 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-06-18",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Ariane B Santos",
+          "dataDeposito": "2026-06-18",
+          "cartao": "763.51",
+          "pix": 0,
+          "clientes": "17",
+          "fita": "750.02",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Emilie",
+          "responsavel": "Ariane B Santos"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "29.00",
+          "pix": 0,
+          "clientes": "2",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": true,
+      "id": "2026-06-18_T",
+      "savedAt": "2026-06-19T02:17:09.399Z",
+      "consolidado": {
+        "totRec": 0,
+        "totDin": 0,
+        "totCart": 792.51,
+        "totTotal": 792.51,
+        "totFita": 750.02,
+        "totClientes": 19,
+        "totQuebra": 13.490000000000009,
+        "totDeposito": 0
+      }
+    },
+    {
       "data": "2026-06-17",
       "turno": "T",
       "pdvData": {
