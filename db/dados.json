@@ -5005,22 +5005,22 @@
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
           "fundoAbertura": 200,
-          "recebimento": 0,
+          "recebimento": "127.15",
           "moedas": 0,
           "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
+          "depositoPor": "Debora Cristina",
+          "dataDeposito": "2026-06-20",
+          "cartao": "2521.00",
           "pix": 0,
-          "clientes": 0,
-          "fita": 0,
+          "clientes": "50",
+          "fita": "2648.15",
           "devolucao": 0,
           "obsDevolucao": "",
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "Mirian Gonçaves",
+          "responsavel": "Debora Cristina"
         },
         "pdvmolvhkn7zloercktp7q": {
           "fundoAbertura": 200,
@@ -5048,9 +5048,9 @@
           "deposito": 0,
           "depositoPor": "",
           "dataDeposito": "",
-          "cartao": 0,
+          "cartao": "2612.19",
           "pix": 0,
-          "clientes": 0,
+          "clientes": "33",
           "fita": 0,
           "devolucao": 0,
           "obsDevolucao": "",
@@ -5067,9 +5067,9 @@
           "deposito": 0,
           "depositoPor": "",
           "dataDeposito": "",
-          "cartao": 0,
+          "cartao": "1897.30",
           "pix": 0,
-          "clientes": 0,
+          "clientes": "26",
           "fita": 0,
           "devolucao": 0,
           "obsDevolucao": "",
@@ -5080,42 +5080,20 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [
-        {
-          "tipo": "VT",
-          "nome": "debora (união)",
-          "valor": 6.45,
-          "pdvId": "pdvmolvhbik2r5qh46q62",
-          "noite": true
-        },
-        {
-          "tipo": "VT",
-          "nome": "YAGO NUBE",
-          "valor": 6.1,
-          "pdvId": "pdvmolvhbik2r5qh46q62",
-          "noite": true
-        },
-        {
-          "tipo": "COMPRA",
-          "nome": "ARMARINHO FERNANDES ",
-          "valor": 11.97,
-          "pdvId": "pdvmolvhbik2r5qh46q62",
-          "noite": true
-        }
-      ],
+      "pagamentos": [],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "pagamentos",
+      "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-20_T",
-      "savedAt": "2026-06-21T00:53:44.876Z",
+      "savedAt": "2026-06-21T01:50:34.055Z",
       "consolidado": {
-        "totRec": 0,
-        "totDin": 0,
-        "totCart": 0,
-        "totTotal": 0,
-        "totFita": 0,
-        "totClientes": 0,
+        "totRec": 127.15,
+        "totDin": 127.15,
+        "totCart": 7030.490000000001,
+        "totTotal": 7157.64,
+        "totFita": 2648.15,
+        "totClientes": 109,
         "totQuebra": 0,
         "totDeposito": 0
       }
@@ -5131,7 +5109,7 @@
           "deposito": 0,
           "depositoPor": "",
           "dataDeposito": "2026-06-20",
-          "cartao": "3265.55",
+          "cartao": "3253.69",
           "pix": 0,
           "clientes": "64",
           "fita": "3265.55",
@@ -5207,15 +5185,15 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-20_M",
-      "savedAt": "2026-06-21T01:49:09.639Z",
+      "savedAt": "2026-06-20T21:17:19.459Z",
       "consolidado": {
         "totRec": 71.15,
         "totDin": 71.15,
-        "totCart": 3265.55,
-        "totTotal": 3336.7000000000003,
+        "totCart": 3253.69,
+        "totTotal": 3324.84,
         "totFita": 3265.55,
         "totClientes": 64,
-        "totQuebra": 71.15000000000009,
+        "totQuebra": 59.289999999999964,
         "totDeposito": 0
       }
     },
