@@ -268,10 +268,10 @@
           "pix": "118.90",
           "clientes": "29",
           "fita": "1250.55",
-          "devolucao": "47.80",
+          "devolucao": "",
           "obsDevolucao": "CLIENTE NÃO GOSTOU DA APARENCIA DO OVO DO PRATO DELA E PEDIU O REEMBOLSO",
-          "devComanda": "98",
-          "devHorario": "17:19",
+          "devComanda": "",
+          "devHorario": "",
           "fundoFechamento": 200,
           "caixa": "DHENIFFER",
           "responsavel": "ANDREZA POLIS"
@@ -362,7 +362,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-20_T",
-      "savedAt": "2026-06-21T01:16:38.709Z",
+      "savedAt": "2026-06-21T01:16:52.469Z",
       "consolidado": {
         "totRec": 185.75,
         "totDin": 185.75,
