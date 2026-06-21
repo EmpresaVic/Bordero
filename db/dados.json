@@ -267,7 +267,7 @@
           "cartao": "1250.55",
           "pix": "118.90",
           "clientes": "29",
-          "fita": "1250.55",
+          "fita": "1194",
           "devolucao": "",
           "obsDevolucao": "CLIENTE NÃO GOSTOU DA APARENCIA DO OVO DO PRATO DELA E PEDIU O REEMBOLSO",
           "devComanda": "",
@@ -362,15 +362,15 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-20_T",
-      "savedAt": "2026-06-21T01:16:52.469Z",
+      "savedAt": "2026-06-21T01:18:22.477Z",
       "consolidado": {
         "totRec": 185.75,
         "totDin": 185.75,
         "totCart": 3537.9500000000003,
         "totTotal": 3723.7000000000003,
-        "totFita": 1250.55,
+        "totFita": 1194,
         "totClientes": 61,
-        "totQuebra": 304.6500000000001,
+        "totQuebra": 361.20000000000005,
         "totDeposito": 0
       }
     },
