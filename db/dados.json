@@ -5131,7 +5131,7 @@
           "deposito": 0,
           "depositoPor": "",
           "dataDeposito": "2026-06-20",
-          "cartao": "3253.69",
+          "cartao": "3265.55",
           "pix": 0,
           "clientes": "64",
           "fita": "3265.55",
@@ -5207,15 +5207,15 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-20_M",
-      "savedAt": "2026-06-20T21:17:19.459Z",
+      "savedAt": "2026-06-21T01:49:09.639Z",
       "consolidado": {
         "totRec": 71.15,
         "totDin": 71.15,
-        "totCart": 3253.69,
-        "totTotal": 3324.84,
+        "totCart": 3265.55,
+        "totTotal": 3336.7000000000003,
         "totFita": 3265.55,
         "totClientes": 64,
-        "totQuebra": 59.289999999999964,
+        "totQuebra": 71.15000000000009,
         "totDeposito": 0
       }
     },
