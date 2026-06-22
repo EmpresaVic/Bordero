@@ -255,113 +255,6 @@
   "emp_mokx4v4r_historico": [
     {
       "data": "2026-06-21",
-      "turno": "T",
-      "pdvData": {
-        "pdvmokxf0cmjl2rags7wo9": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "ANDREZA POLIS",
-          "dataDeposito": "2026-06-21",
-          "cartao": "377.40",
-          "pix": 0,
-          "clientes": "111",
-          "fita": "377.40",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "KYARA V",
-          "responsavel": "ANDREZA POLIS"
-        },
-        "pdvmokxfbej01queo319vvz": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        },
-        "pdvmokxfhrsfeatn4wrpjg": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": "293.40",
-          "pix": 0,
-          "clientes": "4",
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        },
-        "pdvmokxfoxcnmphndpowpn": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": "403.40",
-          "pix": 0,
-          "clientes": "6",
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        }
-      },
-      "pagamentos": [
-        {
-          "tipo": "VT",
-          "nome": "YAGO",
-          "valor": 12.2,
-          "pdvId": "pdvmokxf0cmjl2rags7wo9",
-          "noite": true
-        }
-      ],
-      "perdas": [],
-      "obsGeral": "",
-      "activeTab": "caixa",
-      "fechado": false,
-      "id": "2026-06-21_T",
-      "savedAt": "2026-06-22T01:06:26.447Z",
-      "consolidado": {
-        "totRec": 0,
-        "totDin": 0,
-        "totCart": 1074.1999999999998,
-        "totTotal": 1074.1999999999998,
-        "totFita": 377.4,
-        "totClientes": 121,
-        "totQuebra": 0,
-        "totDeposito": 0
-      }
-    },
-    {
-      "data": "2026-06-21",
       "turno": "M",
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
@@ -14736,6 +14629,67 @@
     }
   ],
   "emp_mokx9qtt_historico": [
+    {
+      "data": "2026-06-21",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "56",
+          "moedas": "1.90",
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "646.10",
+          "pix": 0,
+          "clientes": "16",
+          "fita": "749",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Mateus",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "487.20",
+          "pix": 0,
+          "clientes": "8",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-21_T",
+      "savedAt": "2026-06-22T01:08:02.303Z",
+      "consolidado": {
+        "totRec": 56,
+        "totDin": 57.9,
+        "totCart": 1133.3,
+        "totTotal": 1189.3,
+        "totFita": 749,
+        "totClientes": 24,
+        "totQuebra": -46.89999999999998,
+        "totDeposito": 0
+      }
+    },
     {
       "data": "2026-06-19",
       "turno": "M",
