@@ -14644,6 +14644,67 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-06-22",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "23.90",
+          "moedas": 0,
+          "deposito": "24.00",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-06-22",
+          "cartao": "635.60",
+          "pix": 0,
+          "clientes": "18",
+          "fita": "593.08",
+          "devolucao": "71.40",
+          "obsDevolucao": "Não tinha picadinho e foi devolvido em dinheiro",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Ariane B Santos"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-22_M",
+      "savedAt": "2026-06-22T19:15:36.448Z",
+      "consolidado": {
+        "totRec": 23.9,
+        "totDin": 23.9,
+        "totCart": 635.6,
+        "totTotal": 659.5,
+        "totFita": 593.08,
+        "totClientes": 18,
+        "totQuebra": 66.41999999999996,
+        "totDeposito": 24
+      }
+    },
+    {
       "data": "2026-06-20",
       "turno": "T",
       "pdvData": {
