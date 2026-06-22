@@ -14655,7 +14655,7 @@
           "deposito": "",
           "depositoPor": "Agatha",
           "dataDeposito": "2026-06-22",
-          "cartao": "635.60",
+          "cartao": "",
           "pix": 0,
           "clientes": "18",
           "fita": "593.08",
@@ -14693,15 +14693,15 @@
       "activeTab": "caixa",
       "fechado": true,
       "id": "2026-06-22_M",
-      "savedAt": "2026-06-22T19:31:04.569Z",
+      "savedAt": "2026-06-22T19:30:10.793Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
-        "totCart": 635.6,
-        "totTotal": 635.6,
+        "totCart": 0,
+        "totTotal": 0,
         "totFita": 593.08,
         "totClientes": 18,
-        "totQuebra": 42.51999999999998,
+        "totQuebra": -593.08,
         "totDeposito": 0
       }
     },
@@ -15008,6 +15008,9 @@
         "totClientes": 9,
         "totQuebra": 19.100000000000023,
         "totDeposito": 28.9
+      },
+      "conferencia": {
+        "por": "ester"
       }
     },
     {
@@ -15139,7 +15142,7 @@
       "conferencia": {
         "por": "Ester",
         "data": "2026-06-22",
-        "obs": "Tem 10,60 e nao 0 reais "
+        "obs": "OK"
       }
     },
     {
