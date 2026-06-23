@@ -5421,16 +5421,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Grafica",
+          "nome": "Grafica",
+          "valor": 12,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-06-22_M",
-      "savedAt": "2026-06-23T01:29:53.095Z",
+      "savedAt": "2026-06-23T01:30:11.296Z",
       "consolidado": {
         "totRec": 43.1,
-        "totDin": 43.1,
+        "totDin": 31.1,
         "totCart": 449.9,
         "totTotal": 493,
         "totFita": 416.8,
