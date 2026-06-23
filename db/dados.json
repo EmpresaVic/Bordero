@@ -15257,9 +15257,16 @@
       },
       "pagamentos": [
         {
-          "tipo": "compra grafica",
-          "nome": "Ariane",
+          "tipo": "compra ",
+          "nome": "GRAFICA",
           "valor": 1.2,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        },
+        {
+          "tipo": "VT",
+          "nome": "MATEUS",
+          "valor": 25,
           "pdvId": "pdvmolvin6r4ncwjtabq5b",
           "noite": false
         }
@@ -15269,10 +15276,10 @@
       "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-06-23_T",
-      "savedAt": "2026-06-23T21:59:29.584Z",
+      "savedAt": "2026-06-23T22:00:07.840Z",
       "consolidado": {
         "totRec": 51.2,
-        "totDin": 53.65,
+        "totDin": 28.650000000000002,
         "totCart": 834.51,
         "totTotal": 885.71,
         "totFita": 916.36,
