@@ -15213,6 +15213,75 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-06-23",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "51.20",
+          "moedas": "3.65",
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "834.51",
+          "pix": 0,
+          "clientes": "22",
+          "fita": "916.36",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "compra grafica",
+          "nome": "Ariane",
+          "valor": 1.2,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-06-23_T",
+      "savedAt": "2026-06-23T21:59:26.104Z",
+      "consolidado": {
+        "totRec": 51.2,
+        "totDin": 54.85,
+        "totCart": 834.51,
+        "totTotal": 885.71,
+        "totFita": 916.36,
+        "totClientes": 22,
+        "totQuebra": -30.649999999999977,
+        "totDeposito": 0
+      }
+    },
+    {
       "data": "2026-06-22",
       "turno": "T",
       "pdvData": {
