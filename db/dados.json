@@ -382,10 +382,10 @@
           "pix": "167.9",
           "clientes": "38",
           "fita": "1784.41",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
+          "devolucao": "36.9",
+          "obsDevolucao": "foi devolvido para a cliente porque alegou que o frango esta estragado ",
+          "devComanda": "5047",
+          "devHorario": "12:08",
           "fundoFechamento": 200,
           "caixa": "DHENIFFER",
           "responsavel": "ANDREZA POLIS"
@@ -454,7 +454,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-22_M",
-      "savedAt": "2026-06-22T23:04:32.168Z",
+      "savedAt": "2026-06-23T01:12:26.061Z",
       "consolidado": {
         "totRec": 147.2,
         "totDin": 147.2,
