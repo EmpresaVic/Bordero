@@ -265,7 +265,7 @@
           "depositoPor": "ANDREZA POLIS",
           "dataDeposito": "2026-06-22",
           "cartao": "289.9",
-          "pix": "167.9",
+          "pix": "",
           "clientes": "4",
           "fita": "289.9",
           "devolucao": 0,
@@ -355,15 +355,15 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-06-22_T",
-      "savedAt": "2026-06-23T01:09:54.260Z",
+      "savedAt": "2026-06-23T01:10:07.348Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
-        "totCart": 1256.4,
-        "totTotal": 1256.4,
+        "totCart": 1088.5,
+        "totTotal": 1088.5,
         "totFita": 289.9,
         "totClientes": 15,
-        "totQuebra": 167.89999999999998,
+        "totQuebra": 0,
         "totDeposito": 0
       }
     },
