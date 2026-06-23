@@ -15261,7 +15261,7 @@
           "nome": "Ariane",
           "valor": 1.2,
           "pdvId": "pdvmolvin6r4ncwjtabq5b",
-          "noite": true
+          "noite": false
         }
       ],
       "perdas": [],
@@ -15269,10 +15269,10 @@
       "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-06-23_T",
-      "savedAt": "2026-06-23T21:59:26.104Z",
+      "savedAt": "2026-06-23T21:59:29.584Z",
       "consolidado": {
         "totRec": 51.2,
-        "totDin": 54.85,
+        "totDin": 53.65,
         "totCart": 834.51,
         "totTotal": 885.71,
         "totFita": 916.36,
