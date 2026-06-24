@@ -334,13 +334,21 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "VT",
+          "nome": "MARCELA",
+          "valor": 15,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-06-24_T",
-      "savedAt": "2026-06-24T21:11:06.067Z",
+      "savedAt": "2026-06-24T21:11:23.060Z",
       "consolidado": {
         "totRec": 50,
         "totDin": 50,
