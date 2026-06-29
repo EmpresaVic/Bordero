@@ -16983,6 +16983,67 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-06-28",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "11.40",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-06-28",
+          "cartao": "1577.01",
+          "pix": 0,
+          "clientes": "37",
+          "fita": "1695.04",
+          "devolucao": "124.40",
+          "obsDevolucao": "uma das comandas estava com o caixa fechado, e a outra nao tinha parmgiana de beringela ",
+          "devComanda": "501 979",
+          "devHorario": "15:59",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Ariane B Santos"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-06-28_T",
+      "savedAt": "2026-06-29T00:39:57.265Z",
+      "consolidado": {
+        "totRec": 11.4,
+        "totDin": 11.4,
+        "totCart": 1577.01,
+        "totTotal": 1588.41,
+        "totFita": 1695.04,
+        "totClientes": 37,
+        "totQuebra": -106.62999999999988,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-06-28",
       "turno": "M",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
