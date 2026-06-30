@@ -334,16 +334,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "compras",
+          "nome": "molho de tomate",
+          "valor": 18.48,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-06-29_M",
-      "savedAt": "2026-06-30T01:09:15.647Z",
+      "savedAt": "2026-06-30T01:09:43.023Z",
       "consolidado": {
         "totRec": 2,
-        "totDin": 2,
+        "totDin": -16.48,
         "totCart": 968.5,
         "totTotal": 970.5,
         "totFita": 11,
