@@ -268,10 +268,10 @@
           "pix": 0,
           "clientes": "57",
           "fita": "616.90",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
+          "devolucao": "53.40",
+          "obsDevolucao": "motivo anotou o pedido do cliente errado o cliente não quis esperar fazer outro.",
+          "devComanda": "61",
+          "devHorario": "15:23",
           "fundoFechamento": 200,
           "caixa": "DHENIFFER",
           "responsavel": "Danilo Silva"
@@ -340,7 +340,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-07-01_M",
-      "savedAt": "2026-07-02T01:14:44.892Z",
+      "savedAt": "2026-07-02T01:16:54.707Z",
       "consolidado": {
         "totRec": 530,
         "totDin": 530,
