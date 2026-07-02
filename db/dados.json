@@ -7062,9 +7062,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-07-01_T",
-      "savedAt": "2026-07-02T01:30:08.162Z",
+      "savedAt": "2026-07-02T01:30:25.754Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
