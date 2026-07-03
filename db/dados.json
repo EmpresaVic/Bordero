@@ -361,7 +361,7 @@
           "recebimento": "200",
           "moedas": 0,
           "deposito": "200",
-          "depositoPor": "Danilo Silva",
+          "depositoPor": "ANDREZA POLIS",
           "dataDeposito": "2026-07-02",
           "cartao": 0,
           "pix": 0,
@@ -461,7 +461,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-07-02_M",
-      "savedAt": "2026-07-03T00:58:34.252Z",
+      "savedAt": "2026-07-03T00:59:03.259Z",
       "consolidado": {
         "totRec": 200,
         "totDin": 128.5,
