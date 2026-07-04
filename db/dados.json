@@ -18802,6 +18802,75 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-07-04",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "72.96",
+          "moedas": 0,
+          "deposito": "2.5",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-06-04",
+          "cartao": "2314.53",
+          "pix": 0,
+          "clientes": "52",
+          "fita": "2351.83",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt e compras",
+          "nome": "Mateus, Atacadao e Niazi ",
+          "valor": 70.46,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-07-04_M",
+      "savedAt": "2026-07-04T20:02:23.585Z",
+      "consolidado": {
+        "totRec": 72.96,
+        "totDin": 2.5,
+        "totCart": 2314.53,
+        "totTotal": 2387.4900000000002,
+        "totFita": 2351.83,
+        "totClientes": 52,
+        "totQuebra": 35.66000000000031,
+        "totDeposito": 2.5
+      }
+    },
+    {
       "data": "2026-07-02",
       "turno": "T",
       "pdvData": {
