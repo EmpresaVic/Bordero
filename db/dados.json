@@ -18856,9 +18856,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "pagamentos",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-07-04_M",
-      "savedAt": "2026-07-04T20:02:23.585Z",
+      "savedAt": "2026-07-04T20:02:30.561Z",
       "consolidado": {
         "totRec": 72.96,
         "totDin": 2.5,
