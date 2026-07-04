@@ -7377,13 +7377,21 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Compra",
+          "nome": "Gelo",
+          "valor": 20,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-07-03_T",
-      "savedAt": "2026-07-04T01:50:33.051Z",
+      "savedAt": "2026-07-04T01:51:08.010Z",
       "consolidado": {
         "totRec": 44.6,
         "totDin": 44.6,
