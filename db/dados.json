@@ -7497,7 +7497,7 @@
       "activeTab": "caixa",
       "fechado": true,
       "id": "2026-07-08_T",
-      "savedAt": "2026-07-09T01:28:27.632Z",
+      "savedAt": "2026-07-09T01:27:49.040Z",
       "consolidado": {
         "totRec": 104,
         "totDin": 104,
@@ -19537,6 +19537,67 @@
     }
   ],
   "emp_mokx9qtt_historico": [
+    {
+      "data": "2026-07-07",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "172.80",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-07-08",
+          "cartao": "850.22",
+          "pix": 0,
+          "clientes": "28",
+          "fita": "940.92",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-07-07_T",
+      "savedAt": "2026-07-09T01:38:35.784Z",
+      "consolidado": {
+        "totRec": 172.8,
+        "totDin": 172.8,
+        "totCart": 850.22,
+        "totTotal": 1023.02,
+        "totFita": 940.92,
+        "totClientes": 28,
+        "totQuebra": 82.10000000000002,
+        "totDeposito": 0
+      }
+    },
     {
       "data": "2026-07-06",
       "turno": "M",
