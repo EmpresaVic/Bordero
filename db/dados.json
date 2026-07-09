@@ -19545,7 +19545,7 @@
           "fundoAbertura": 200,
           "recebimento": "172.80",
           "moedas": 0,
-          "deposito": 0,
+          "deposito": "147.80",
           "depositoPor": "Agatha",
           "dataDeposito": "2026-07-08",
           "cartao": "850.22",
@@ -19580,13 +19580,21 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "vt",
+          "nome": "mateus",
+          "valor": 25,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-07-07_T",
-      "savedAt": "2026-07-09T01:38:35.784Z",
+      "savedAt": "2026-07-09T01:39:41.550Z",
       "consolidado": {
         "totRec": 172.8,
         "totDin": 172.8,
@@ -19595,7 +19603,7 @@
         "totFita": 940.92,
         "totClientes": 28,
         "totQuebra": 82.10000000000002,
-        "totDeposito": 0
+        "totDeposito": 147.8
       }
     },
     {
