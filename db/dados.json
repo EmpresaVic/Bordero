@@ -4045,7 +4045,8 @@
         "totDeposito": 64
       },
       "conferencia": {
-        "por": "Ester"
+        "por": "Ester",
+        "obs": "Ok, teve uma compra no valor de 10.99 e tem de dinheiro 64 reais"
       }
     },
     {
