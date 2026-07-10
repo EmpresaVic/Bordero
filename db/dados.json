@@ -4047,7 +4047,7 @@
       "conferencia": {
         "por": "Ester",
         "obs": "Ok, teve uma compra no valor de 10.99 e tem de dinheiro 64 reais",
-        "data": "2026-07-10"
+        "data": "0002-07-10"
       }
     },
     {
@@ -20886,6 +20886,9 @@
         "totClientes": 18,
         "totQuebra": 33.45999999999992,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester"
       }
     },
     {
