@@ -7417,6 +7417,127 @@
   "emp_mokx9aq1_historico": [
     {
       "data": "2026-07-10",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvhbik2r5qh46q62": {
+          "fundoAbertura": 200,
+          "recebimento": "313.78",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Debora Cristina",
+          "dataDeposito": "2026-07-10",
+          "cartao": "2258.90",
+          "pix": 0,
+          "clientes": "52",
+          "fita": "2578.70",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Mirian Gonçaves",
+          "responsavel": "Debora Cristina"
+        },
+        "pdvmolvhkn7zloercktp7q": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhpj2sinsq4cfdxa": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "1917",
+          "pix": 0,
+          "clientes": "28",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhtyei5gzy02wac": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "785",
+          "pix": 0,
+          "clientes": "13",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "compra",
+          "nome": "Atacadão",
+          "valor": 5.98,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        },
+        {
+          "tipo": "compra",
+          "nome": "SODIMAC",
+          "valor": 50.9,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        },
+        {
+          "tipo": "compra",
+          "nome": "SODIMAC",
+          "valor": 36.9,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-07-10_T",
+      "savedAt": "2026-07-11T01:54:25.184Z",
+      "consolidado": {
+        "totRec": 313.78,
+        "totDin": 313.78,
+        "totCart": 4960.9,
+        "totTotal": 5274.68,
+        "totFita": 2578.7,
+        "totClientes": 93,
+        "totQuebra": -6.019999999999527,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-07-10",
       "turno": "M",
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
