@@ -7497,12 +7497,33 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Arroz a grega",
+          "qtde": "913",
+          "motivo": "Descarte Noite"
+        },
+        {
+          "produto": "Purê de batata",
+          "qtde": "844",
+          "motivo": "Descarte Noite"
+        },
+        {
+          "produto": "Legumes Saute",
+          "qtde": "333",
+          "motivo": "Descarte Noite"
+        },
+        {
+          "produto": "Arroz Branco",
+          "qtde": "288",
+          "motivo": "Descarte Noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-07-11_T",
-      "savedAt": "2026-07-12T01:42:55.472Z",
+      "savedAt": "2026-07-12T01:48:26.578Z",
       "consolidado": {
         "totRec": 496.85,
         "totDin": 496.85,
