@@ -21400,7 +21400,9 @@
         "totDeposito": 0
       },
       "conferencia": {
-        "por": "Ester"
+        "por": "Ester",
+        "obs": "OK",
+        "data": "0002-07-14"
       }
     },
     {
