@@ -255,6 +255,113 @@
   "emp_mokx4v4r_historico": [
     {
       "data": "2026-07-14",
+      "turno": "T",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "84.00",
+          "moedas": 0,
+          "deposito": "40.00",
+          "depositoPor": "ANDREZA POLIS",
+          "dataDeposito": "2026-07-15",
+          "cartao": "661.80",
+          "pix": "8.50",
+          "clientes": "17",
+          "fita": "94.40",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "ANDREZA POLIS",
+          "responsavel": "ANDREZA POLIS"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vale transporte joao luiz",
+          "nome": "",
+          "valor": 44,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": true,
+      "id": "2026-07-14_T",
+      "savedAt": "2026-07-15T12:37:52.167Z",
+      "consolidado": {
+        "totRec": 84,
+        "totDin": 84,
+        "totCart": 670.3,
+        "totTotal": 754.3,
+        "totFita": 94.4,
+        "totClientes": 17,
+        "totQuebra": 659.9,
+        "totDeposito": 40
+      }
+    },
+    {
+      "data": "2026-07-14",
       "turno": "M",
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
