@@ -8016,13 +8016,21 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Grafica",
+          "nome": "Grafica",
+          "valor": 70,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-07-15_T",
-      "savedAt": "2026-07-16T01:32:39.172Z",
+      "savedAt": "2026-07-16T01:32:54.060Z",
       "consolidado": {
         "totRec": 166.5,
         "totDin": 166.5,
