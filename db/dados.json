@@ -98,6 +98,15 @@
       "nascimento": "",
       "admissao": "",
       "status": "ativo"
+    },
+    {
+      "id": "mrpagwjddeq7r2z75qa",
+      "nome": "TAIONARA BACELAR",
+      "cpfEnc": "",
+      "setor": "Gestão",
+      "nascimento": "",
+      "admissao": "",
+      "status": "ativo"
     }
   ],
   "emp_mokx4v4r_pdvs": [
@@ -8146,9 +8155,6 @@
         "totClientes": 81,
         "totQuebra": 2.2737367544323206e-13,
         "totDeposito": 0
-      },
-      "conferencia": {
-        "por": "Ester"
       }
     },
     {
@@ -8355,11 +8361,6 @@
         "totClientes": 77,
         "totQuebra": 44.19999999999982,
         "totDeposito": 0
-      },
-      "conferencia": {
-        "por": "Ester",
-        "obs": "ok",
-        "data": "2026-07-17"
       }
     },
     {
@@ -8662,11 +8663,6 @@
         "totClientes": 51,
         "totQuebra": -1,
         "totDeposito": 0
-      },
-      "conferencia": {
-        "por": "Ester",
-        "obs": "ok",
-        "data": ""
       }
     },
     {
