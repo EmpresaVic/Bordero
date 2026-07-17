@@ -8115,12 +8115,28 @@
           "noite": true
         }
       ],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Strogonoff frango",
+          "qtde": "401",
+          "motivo": "Ressecado (Descarte noite)"
+        },
+        {
+          "produto": "Arroz branco",
+          "qtde": "565",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Legumes Saute",
+          "qtde": "125",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "pagamentos",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-07-16_T",
-      "savedAt": "2026-07-17T01:32:09.881Z",
+      "savedAt": "2026-07-17T01:33:26.209Z",
       "consolidado": {
         "totRec": 131.9,
         "totDin": 131.9,
