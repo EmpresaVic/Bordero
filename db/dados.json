@@ -245,6 +245,127 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-07-18",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "383.40",
+          "moedas": "2.25",
+          "deposito": "270.00",
+          "depositoPor": "ANDREZA POLIS",
+          "dataDeposito": "2026-07-18",
+          "cartao": "3251.50",
+          "pix": "477.30",
+          "clientes": "70",
+          "fita": "361.90",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "DHENIFFER",
+          "responsavel": "ANDREZA POLIS"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "feijao",
+          "nome": "",
+          "valor": 67.94,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "pano chao",
+          "nome": "",
+          "valor": 11,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "alface",
+          "nome": "",
+          "valor": 34.5,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-07-18_M",
+      "savedAt": "2026-07-18T19:30:22.793Z",
+      "consolidado": {
+        "totRec": 383.4,
+        "totDin": 272.21,
+        "totCart": 3728.8,
+        "totTotal": 4112.2,
+        "totFita": 361.9,
+        "totClientes": 70,
+        "totQuebra": 3750.2999999999997,
+        "totDeposito": 270
+      }
+    },
+    {
       "data": "2026-07-17",
       "turno": "M",
       "pdvData": {
