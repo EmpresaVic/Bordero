@@ -8231,12 +8231,28 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Arroz branco",
+          "qtde": "425",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Legumes Saute",
+          "qtde": "126",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Pure de batata",
+          "qtde": "395",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-07-17_T",
-      "savedAt": "2026-07-18T01:49:36.602Z",
+      "savedAt": "2026-07-18T01:52:29.041Z",
       "consolidado": {
         "totRec": 206,
         "totDin": 206,
@@ -22066,67 +22082,6 @@
     }
   ],
   "emp_mokx9qtt_historico": [
-    {
-      "data": "2026-07-17",
-      "turno": "T",
-      "pdvData": {
-        "pdvmolvin6r4ncwjtabq5b": {
-          "fundoAbertura": 200,
-          "recebimento": "40",
-          "moedas": "1",
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": "851.20",
-          "pix": 0,
-          "clientes": "25",
-          "fita": "849.30",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "Emilie",
-          "responsavel": "Karine Trindade"
-        },
-        "pdvmolvixj2daj5opzwud5": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        }
-      },
-      "pagamentos": [],
-      "perdas": [],
-      "obsGeral": "",
-      "activeTab": "caixa",
-      "fechado": false,
-      "id": "2026-07-17_T",
-      "savedAt": "2026-07-18T01:51:43.814Z",
-      "consolidado": {
-        "totRec": 40,
-        "totDin": 41,
-        "totCart": 851.2,
-        "totTotal": 891.2,
-        "totFita": 849.3,
-        "totClientes": 25,
-        "totQuebra": 41.90000000000009,
-        "totDeposito": 0
-      }
-    },
     {
       "data": "2026-07-17",
       "turno": "M",
