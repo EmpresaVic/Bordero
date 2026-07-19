@@ -22346,12 +22346,18 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "AGUA COM GÁS ",
+          "qtde": "2",
+          "motivo": "data de vencimento vencida"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-07-18_T",
-      "savedAt": "2026-07-19T02:04:02.068Z",
+      "savedAt": "2026-07-19T02:04:53.684Z",
       "consolidado": {
         "totRec": 16,
         "totDin": 16.2,
