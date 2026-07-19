@@ -22303,6 +22303,67 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-07-18",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "39",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "1968.59",
+          "pix": 0,
+          "clientes": "42",
+          "fita": "2050.79",
+          "devolucao": "73.20",
+          "obsDevolucao": "Foi cobrado da cliente dois pratos totalizando no valor de 73,20 foi estornado valor completo. Depois cobrado novamente um prato valor lojista de 22,90 com mais uma fritas extra 6,90 totalizando no valor de 43,40.\n",
+          "devComanda": "365",
+          "devHorario": "16:32",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-07-18_M",
+      "savedAt": "2026-07-19T01:57:07.701Z",
+      "consolidado": {
+        "totRec": 39,
+        "totDin": 39,
+        "totCart": 1968.59,
+        "totTotal": 2007.59,
+        "totFita": 2050.79,
+        "totClientes": 42,
+        "totQuebra": -43.200000000000045,
+        "totDeposito": 0
+      }
+    },
+    {
       "data": "2026-07-17",
       "turno": "T",
       "pdvData": {
