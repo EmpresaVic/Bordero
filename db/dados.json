@@ -325,13 +325,21 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "vale transporte ",
+          "nome": "joao luiz",
+          "valor": 22,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-07-18_T",
-      "savedAt": "2026-07-19T13:48:59.136Z",
+      "savedAt": "2026-07-19T13:49:56.248Z",
       "consolidado": {
         "totRec": 40,
         "totDin": 40.75,
