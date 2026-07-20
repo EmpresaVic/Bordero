@@ -8566,16 +8566,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Pagamento Freelance",
+          "nome": "Yolanda",
+          "valor": 90,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-07-19_T",
-      "savedAt": "2026-07-20T00:40:54.845Z",
+      "savedAt": "2026-07-20T00:42:23.557Z",
       "consolidado": {
         "totRec": 58,
-        "totDin": 58,
+        "totDin": -32,
         "totCart": 4257.3099999999995,
         "totTotal": 4315.3099999999995,
         "totFita": 1612.5,
