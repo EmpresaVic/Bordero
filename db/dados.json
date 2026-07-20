@@ -22770,9 +22770,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-07-19_T",
-      "savedAt": "2026-07-20T01:15:55.744Z",
+      "savedAt": "2026-07-20T01:16:15.760Z",
       "consolidado": {
         "totRec": 320,
         "totDin": 320.8,
