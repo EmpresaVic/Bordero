@@ -8781,12 +8781,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "~Legumes saute",
+          "qtde": "125",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Arroz branco",
+          "qtde": "365",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-07-20_T",
-      "savedAt": "2026-07-21T01:42:29.085Z",
+      "savedAt": "2026-07-21T01:43:30.189Z",
       "consolidado": {
         "totRec": 189.4,
         "totDin": 189.4,
