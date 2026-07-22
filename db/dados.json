@@ -2046,7 +2046,8 @@
         "totDeposito": 200
       },
       "conferencia": {
-        "por": "Ester"
+        "por": "Ester",
+        "obs": "ok"
       }
     },
     {
