@@ -9110,7 +9110,7 @@
       "activeTab": "caixa",
       "fechado": true,
       "id": "2026-07-22_T",
-      "savedAt": "2026-07-23T01:28:12.514Z",
+      "savedAt": "2026-07-23T01:26:59.723Z",
       "consolidado": {
         "totRec": 140,
         "totDin": 140,
@@ -23881,6 +23881,67 @@
     }
   ],
   "emp_mokx9qtt_historico": [
+    {
+      "data": "2026-07-22",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "27",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Mateus",
+          "dataDeposito": "2026-07-22",
+          "cartao": "839.80",
+          "pix": 0,
+          "clientes": "19",
+          "fita": "866.70",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Mateus",
+          "responsavel": ""
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-07-22_T",
+      "savedAt": "2026-07-23T01:33:39.100Z",
+      "consolidado": {
+        "totRec": 27,
+        "totDin": 27,
+        "totCart": 839.8,
+        "totTotal": 866.8,
+        "totFita": 866.7,
+        "totClientes": 19,
+        "totQuebra": 0.09999999999990905,
+        "totDeposito": 0
+      }
+    },
     {
       "data": "2026-07-21",
       "turno": "M",
