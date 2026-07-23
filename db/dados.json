@@ -9162,7 +9162,7 @@
           "recebimento": "157.00",
           "moedas": 0,
           "deposito": 0,
-          "depositoPor": "",
+          "depositoPor": "Debora Cristina",
           "dataDeposito": "2026-07-23",
           "cartao": "1538.80",
           "pix": 0,
@@ -9240,7 +9240,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-07-23_M",
-      "savedAt": "2026-07-23T19:26:07.497Z",
+      "savedAt": "2026-07-23T22:34:55.164Z",
       "consolidado": {
         "totRec": 157,
         "totDin": 157,
