@@ -255,6 +255,113 @@
   "emp_mokx4v4r_historico": [
     {
       "data": "2026-07-23",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "0",
+          "moedas": 0,
+          "deposito": "0",
+          "depositoPor": "TAIONARA BACELAR",
+          "dataDeposito": "2026-07-23",
+          "cartao": "630.80",
+          "pix": 0,
+          "clientes": "12",
+          "fita": "651.30",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "TAIONARA BACELAR",
+          "responsavel": "TAIONARA BACELAR"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "872.30",
+          "pix": 0,
+          "clientes": "14",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "773.00",
+          "pix": 0,
+          "clientes": "13",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt",
+          "nome": "joao luiz",
+          "valor": 44,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-07-23_M",
+      "savedAt": "2026-07-24T00:33:33.358Z",
+      "consolidado": {
+        "totRec": 0,
+        "totDin": -44,
+        "totCart": 2276.1,
+        "totTotal": 2276.1,
+        "totFita": 651.3,
+        "totClientes": 39,
+        "totQuebra": -20.5,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-07-23",
       "turno": "T",
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
