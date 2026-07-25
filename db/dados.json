@@ -273,8 +273,8 @@
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "TAIONARA BACELAR",
+          "responsavel": "TAIONARA BACELAR"
         },
         "pdvmokxfbej01queo319vvz": {
           "fundoAbertura": 200,
@@ -340,7 +340,7 @@
       "activeTab": "caixa",
       "fechado": true,
       "id": "2026-07-24_T",
-      "savedAt": "2026-07-25T00:38:42.481Z",
+      "savedAt": "2026-07-25T00:38:56.114Z",
       "consolidado": {
         "totRec": 199,
         "totDin": 199,
