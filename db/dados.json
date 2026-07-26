@@ -24930,6 +24930,75 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-07-25",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "16.50",
+          "moedas": 0,
+          "deposito": "10.5",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-07-25",
+          "cartao": "2053.92",
+          "pix": 0,
+          "clientes": "38",
+          "fita": "1935.02",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt",
+          "nome": "mateus nascimento",
+          "valor": 6,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-07-25_M",
+      "savedAt": "2026-07-26T01:36:45.261Z",
+      "consolidado": {
+        "totRec": 16.5,
+        "totDin": 10.5,
+        "totCart": 2053.92,
+        "totTotal": 2070.42,
+        "totFita": 1935.02,
+        "totClientes": 38,
+        "totQuebra": 135.4000000000001,
+        "totDeposito": 10.5
+      }
+    },
+    {
+      "data": "2026-07-25",
       "turno": "T",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
