@@ -9836,16 +9836,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Freelance",
+          "nome": "Emilio",
+          "valor": 100,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-07-26_M",
-      "savedAt": "2026-07-26T20:43:30.289Z",
+      "savedAt": "2026-07-26T23:06:29.887Z",
       "consolidado": {
         "totRec": 207.7,
-        "totDin": 207.7,
+        "totDin": 107.69999999999999,
         "totCart": 3484,
         "totTotal": 3691.7,
         "totFita": 3687,
