@@ -9847,10 +9847,10 @@
       ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-07-26_M",
-      "savedAt": "2026-07-26T23:06:43.367Z",
+      "savedAt": "2026-07-26T23:07:21.742Z",
       "consolidado": {
         "totRec": 207.7,
         "totDin": 107.69999999999999,
