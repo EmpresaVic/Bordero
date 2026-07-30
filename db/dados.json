@@ -259,9 +259,9 @@
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
           "fundoAbertura": 200,
-          "recebimento": "162.10",
+          "recebimento": "145.05",
           "moedas": 0,
-          "deposito": "162.10",
+          "deposito": "136.30",
           "depositoPor": "TAIONARA BACELAR",
           "dataDeposito": "2026-07-30",
           "cartao": "1308.90",
@@ -348,16 +348,16 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-07-30_M",
-      "savedAt": "2026-07-30T19:19:07.463Z",
+      "savedAt": "2026-07-30T19:38:26.223Z",
       "consolidado": {
-        "totRec": 162.1,
-        "totDin": 153.35,
+        "totRec": 145.05,
+        "totDin": 136.3,
         "totCart": 1308.9,
-        "totTotal": 1471,
+        "totTotal": 1453.95,
         "totFita": 1454.32,
         "totClientes": 40,
-        "totQuebra": 16.680000000000064,
-        "totDeposito": 162.1
+        "totQuebra": -0.36999999999989086,
+        "totDeposito": 136.3
       }
     },
     {
