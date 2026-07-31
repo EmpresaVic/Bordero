@@ -26645,6 +26645,67 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-07-30",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "38",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-07-31",
+          "cartao": "861.11",
+          "pix": 0,
+          "clientes": "26",
+          "fita": "795.71",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": ""
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-07-30_T",
+      "savedAt": "2026-07-31T13:20:08.815Z",
+      "consolidado": {
+        "totRec": 38,
+        "totDin": 38,
+        "totCart": 861.11,
+        "totTotal": 899.11,
+        "totFita": 795.71,
+        "totClientes": 26,
+        "totQuebra": 103.39999999999998,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-07-30",
       "turno": "M",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
