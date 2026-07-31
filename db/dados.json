@@ -10446,16 +10446,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Pagamento",
+          "nome": "Kalunga",
+          "valor": 17.8,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
-      "fechado": true,
+      "activeTab": "pagamentos",
+      "fechado": false,
       "id": "2026-07-31_M",
-      "savedAt": "2026-07-31T19:13:39.991Z",
+      "savedAt": "2026-07-31T19:19:17.374Z",
       "consolidado": {
         "totRec": 185,
-        "totDin": 185,
+        "totDin": 167.2,
         "totCart": 1579.3,
         "totTotal": 1764.3,
         "totFita": 1765.01,
