@@ -26690,9 +26690,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-07-30_T",
-      "savedAt": "2026-07-31T13:20:08.815Z",
+      "savedAt": "2026-07-31T13:20:11.726Z",
       "consolidado": {
         "totRec": 38,
         "totDin": 38,
