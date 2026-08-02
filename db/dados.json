@@ -27514,9 +27514,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-08-02_M",
-      "savedAt": "2026-08-02T19:34:36.827Z",
+      "savedAt": "2026-08-02T19:34:41.913Z",
       "consolidado": {
         "totRec": 182.6,
         "totDin": 182.6,
