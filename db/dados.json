@@ -254,6 +254,113 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-08-02",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "397.27",
+          "moedas": 0,
+          "deposito": "397.22",
+          "depositoPor": "TAIONARA BACELAR",
+          "dataDeposito": "2026-08-02",
+          "cartao": "1174.10",
+          "pix": "",
+          "clientes": "35",
+          "fita": "1598.90",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "TAIONARA BACELAR",
+          "responsavel": "TAIONARA BACELAR"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "compra",
+          "nome": "americanas",
+          "valor": 22.27,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-08-02_M",
+      "savedAt": "2026-08-02T22:26:31.864Z",
+      "consolidado": {
+        "totRec": 397.27,
+        "totDin": 375,
+        "totCart": 1174.1,
+        "totTotal": 1571.37,
+        "totFita": 1598.9,
+        "totClientes": 35,
+        "totQuebra": -27.5300000000002,
+        "totDeposito": 397.22
+      }
+    },
+    {
       "data": "2026-08-01",
       "turno": "T",
       "pdvData": {
