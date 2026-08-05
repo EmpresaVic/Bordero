@@ -11359,105 +11359,6 @@
   ],
   "emp_mokx9aq1_historico": [
     {
-      "data": "2026-08-05",
-      "turno": "M",
-      "pdvData": {
-        "pdvmolvhbik2r5qh46q62": {
-          "fundoAbertura": 200,
-          "recebimento": "6.00",
-          "moedas": 0,
-          "deposito": "6.00",
-          "depositoPor": "Valdineia",
-          "dataDeposito": "2026-08-05",
-          "cartao": "1462.40",
-          "pix": 0,
-          "clientes": "35",
-          "fita": "1468.30",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "Moyses P",
-          "responsavel": "Valdineia"
-        },
-        "pdvmolvhkn7zloercktp7q": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        },
-        "pdvmolvhpj2sinsq4cfdxa": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        },
-        "pdvmolvhtyei5gzy02wac": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        }
-      },
-      "pagamentos": [],
-      "perdas": [],
-      "obsGeral": "",
-      "activeTab": "caixa",
-      "fechado": true,
-      "id": "2026-08-05_M",
-      "savedAt": "2026-08-05T19:13:54.690Z",
-      "consolidado": {
-        "totRec": 6,
-        "totDin": 6,
-        "totCart": 1462.4,
-        "totTotal": 1468.4,
-        "totFita": 1468.3,
-        "totClientes": 35,
-        "totQuebra": 0.10000000000013642,
-        "totDeposito": 6
-      }
-    },
-    {
       "data": "2026-08-04",
       "turno": "T",
       "pdvData": {
@@ -13892,7 +13793,8 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "0002-08-05"
+        "data": "2026-08-05",
+        "obs": "ok"
       }
     },
     {
@@ -30071,6 +29973,9 @@
         "totClientes": 17,
         "totQuebra": 44.249999999999886,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester"
       }
     },
     {
