@@ -254,120 +254,6 @@
   ],
   "emp_mokx4v4r_historico": [
     {
-      "data": "2026-08-05",
-      "turno": "M",
-      "pdvData": {
-        "pdvmokxf0cmjl2rags7wo9": {
-          "fundoAbertura": 200,
-          "recebimento": "26.65",
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "DHENIFFER",
-          "dataDeposito": "2026-08-05",
-          "cartao": "1286.40",
-          "pix": 0,
-          "clientes": "32",
-          "fita": "1310.00",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "DHENIFFER",
-          "responsavel": "ANDREZA POLIS"
-        },
-        "pdvmokxfbej01queo319vvz": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        },
-        "pdvmokxfhrsfeatn4wrpjg": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        },
-        "pdvmokxfoxcnmphndpowpn": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        }
-      },
-      "pagamentos": [
-        {
-          "tipo": "compra",
-          "nome": "alface",
-          "valor": 27,
-          "pdvId": "pdvmokxf0cmjl2rags7wo9",
-          "noite": false
-        },
-        {
-          "tipo": "compra",
-          "nome": "molho de tomate",
-          "valor": 19,
-          "pdvId": "pdvmokxf0cmjl2rags7wo9",
-          "noite": false
-        }
-      ],
-      "perdas": [],
-      "obsGeral": "",
-      "activeTab": "caixa",
-      "fechado": true,
-      "id": "2026-08-05_M",
-      "savedAt": "2026-08-05T18:51:41.105Z",
-      "consolidado": {
-        "totRec": 26.65,
-        "totDin": -19.35,
-        "totCart": 1286.4,
-        "totTotal": 1313.0500000000002,
-        "totFita": 1310,
-        "totClientes": 32,
-        "totQuebra": 3.050000000000182,
-        "totDeposito": 0
-      }
-    },
-    {
       "data": "2026-08-04",
       "turno": "M",
       "pdvData": {
@@ -1130,7 +1016,8 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "0002-08-05"
+        "data": "2026-08-05",
+        "obs": "ok"
       }
     },
     {
@@ -2655,6 +2542,9 @@
         "totClientes": 36,
         "totQuebra": -0.4700000000000273,
         "totDeposito": 7
+      },
+      "conferencia": {
+        "por": "Ester"
       }
     },
     {
