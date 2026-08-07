@@ -11700,15 +11700,15 @@
           "dataDeposito": "2026-08-06",
           "cartao": "1265.30",
           "pix": 0,
-          "clientes": 0,
-          "fita": 0,
+          "clientes": "24",
+          "fita": "1768.40",
           "devolucao": 0,
           "obsDevolucao": "",
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "Mirian Gonçaves",
+          "responsavel": "Aline Silva"
         },
         "pdvmolvhkn7zloercktp7q": {
           "fundoAbertura": 200,
@@ -11774,15 +11774,15 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-06_T",
-      "savedAt": "2026-08-07T01:43:57.446Z",
+      "savedAt": "2026-08-07T01:45:44.334Z",
       "consolidado": {
         "totRec": 503.1,
         "totDin": 503.1,
         "totCart": 3710.8,
         "totTotal": 4213.9,
-        "totFita": 0,
-        "totClientes": 0,
-        "totQuebra": 1768.4,
+        "totFita": 1768.4,
+        "totClientes": 24,
+        "totQuebra": 0,
         "totDeposito": 0
       }
     },
