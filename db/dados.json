@@ -2661,7 +2661,9 @@
         "totDeposito": 215
       },
       "conferencia": {
-        "por": "Ester"
+        "por": "Ester",
+        "data": "2026-08-07",
+        "obs": "ok"
       }
     },
     {
