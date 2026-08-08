@@ -11928,6 +11928,113 @@
   "emp_mokx9aq1_historico": [
     {
       "data": "2026-08-07",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvhbik2r5qh46q62": {
+          "fundoAbertura": 200,
+          "recebimento": "117.98",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhkn7zloercktp7q": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhpj2sinsq4cfdxa": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhtyei5gzy02wac": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "compra",
+          "nome": "Supermercado X",
+          "valor": 7.98,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-08-07_T",
+      "savedAt": "2026-08-08T01:58:39.901Z",
+      "consolidado": {
+        "totRec": 117.98,
+        "totDin": 117.98,
+        "totCart": 0,
+        "totTotal": 117.98,
+        "totFita": 0,
+        "totClientes": 0,
+        "totQuebra": 117.98,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-08-07",
       "turno": "M",
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
