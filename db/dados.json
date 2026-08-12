@@ -29538,8 +29538,8 @@
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": "Karine Trindade"
+          "caixa": "Marcela Coelho",
+          "responsavel": "Marcela Coelho"
         },
         "pdvmolvixj2daj5opzwud5": {
           "fundoAbertura": 200,
@@ -29567,7 +29567,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-10_M",
-      "savedAt": "2026-08-12T16:42:57.100Z",
+      "savedAt": "2026-08-12T16:45:13.379Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
