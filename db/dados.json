@@ -13480,6 +13480,9 @@
         "totClientes": 24,
         "totQuebra": 0.25,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "obs": "ok, vale debora 136"
       }
     },
     {
@@ -19728,7 +19731,7 @@
       "conferencia": {
         "por": "Ester",
         "obs": "ok",
-        "data": "2026-08-12"
+        "data": "0002-08-12"
       }
     },
     {
