@@ -15449,8 +15449,7 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "2026-08-12",
-        "obs": "ok"
+        "data": "0002-08-12"
       }
     },
     {
@@ -18901,7 +18900,8 @@
       },
       "conferencia": {
         "por": "Ester",
-        "data": "0002-08-12"
+        "data": "0002-08-12",
+        "obs": "ok"
       }
     },
     {
@@ -19012,10 +19012,6 @@
         "totClientes": 155,
         "totQuebra": -24,
         "totDeposito": 0
-      },
-      "conferencia": {
-        "por": "Ester",
-        "data": "0002-08-12"
       }
     },
     {
@@ -19237,6 +19233,9 @@
         "totClientes": 18,
         "totQuebra": -30,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester"
       }
     },
     {
@@ -19349,7 +19348,7 @@
         "totDeposito": 0
       },
       "conferencia": {
-        "por": "Ester"
+        "por": "Est"
       }
     },
     {
