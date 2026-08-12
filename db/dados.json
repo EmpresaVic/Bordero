@@ -13587,7 +13587,7 @@
       "conferencia": {
         "por": "Ester",
         "obs": "ok",
-        "data": "2026-08-12"
+        "data": "0002-08-12"
       }
     },
     {
@@ -14005,11 +14005,6 @@
         "totClientes": 59,
         "totQuebra": 4.699999999999818,
         "totDeposito": 0
-      },
-      "conferencia": {
-        "por": "Ester",
-        "obs": "100 vale emilio, 107 Debora",
-        "data": "0020-08-12"
       }
     },
     {
@@ -17447,6 +17442,9 @@
         "totClientes": 40,
         "totQuebra": 197.79999999999973,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester"
       }
     },
     {
