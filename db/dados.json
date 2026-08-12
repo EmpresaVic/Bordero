@@ -12150,7 +12150,8 @@
         "totDeposito": 0
       },
       "conferencia": {
-        "por": "Ester"
+        "por": "Ester",
+        "obs": "ok"
       }
     },
     {
@@ -12253,7 +12254,8 @@
       },
       "conferencia": {
         "por": "Ester",
-        "obs": "ok"
+        "obs": "ok",
+        "data": "0002-08-07"
       }
     },
     {
