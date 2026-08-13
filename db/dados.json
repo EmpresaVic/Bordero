@@ -263,6 +263,127 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-08-13",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "291.08",
+          "moedas": 0,
+          "deposito": "200.00",
+          "depositoPor": "DHENIFFER",
+          "dataDeposito": "2026-08-13",
+          "cartao": "1292.60",
+          "pix": 0,
+          "clientes": "34",
+          "fita": "1597.60",
+          "devolucao": "41.90",
+          "obsDevolucao": "cliente reclamou do ovo ,do bife a cavalo ,disse que estava feio",
+          "devComanda": "",
+          "devHorario": "16:00",
+          "fundoFechamento": 200,
+          "caixa": "DHENIFFER",
+          "responsavel": "TAIONARA BACELAR"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "compra",
+          "nome": "aemarinhos fernando",
+          "valor": 31.18,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "compra",
+          "nome": "comercio verduras",
+          "valor": 18,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "",
+          "nome": "",
+          "valor": 0,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-08-13_M",
+      "savedAt": "2026-08-13T19:44:53.913Z",
+      "consolidado": {
+        "totRec": 291.08,
+        "totDin": 241.89999999999998,
+        "totCart": 1292.6,
+        "totTotal": 1583.6799999999998,
+        "totFita": 1597.6,
+        "totClientes": 34,
+        "totQuebra": -13.920000000000073,
+        "totDeposito": 200
+      }
+    },
+    {
       "data": "2026-08-12",
       "turno": "T",
       "pdvData": {
