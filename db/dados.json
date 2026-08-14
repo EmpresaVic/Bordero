@@ -264,6 +264,120 @@
   "emp_mokx4v4r_historico": [
     {
       "data": "2026-08-13",
+      "turno": "T",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "61.89",
+          "moedas": 0,
+          "deposito": "25.00",
+          "depositoPor": "TAIONARA BACELAR",
+          "dataDeposito": "2026-08-13",
+          "cartao": "370.30",
+          "pix": 0,
+          "clientes": "9",
+          "fita": "434.20",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "DHENIFFER",
+          "responsavel": "TAIONARA BACELAR"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "421.92",
+          "pix": 0,
+          "clientes": "10",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "216.40",
+          "pix": 0,
+          "clientes": "4",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "compra",
+          "nome": "armarinhos",
+          "valor": 21.89,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": true
+        },
+        {
+          "tipo": "compra",
+          "nome": "papelaria",
+          "valor": 15,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-08-13_T",
+      "savedAt": "2026-08-14T00:44:17.186Z",
+      "consolidado": {
+        "totRec": 61.89,
+        "totDin": 61.89,
+        "totCart": 1008.62,
+        "totTotal": 1070.51,
+        "totFita": 434.2,
+        "totClientes": 23,
+        "totQuebra": -2.009999999999991,
+        "totDeposito": 25
+      }
+    },
+    {
+      "data": "2026-08-13",
       "turno": "M",
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
