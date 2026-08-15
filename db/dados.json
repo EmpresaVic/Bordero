@@ -268,22 +268,22 @@
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
           "fundoAbertura": 200,
-          "recebimento": 0,
+          "recebimento": "230.35",
           "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
+          "deposito": "230.35",
+          "depositoPor": "MARCELA COELHO",
+          "dataDeposito": "2026-08-15",
+          "cartao": "2894.78",
           "pix": 0,
-          "clientes": 0,
-          "fita": 0,
+          "clientes": "58",
+          "fita": "3122.68",
           "devolucao": 0,
           "obsDevolucao": "",
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "MARCELA COELHO",
+          "responsavel": "ANDREZA POLIS"
         },
         "pdvmokxfbej01queo319vvz": {
           "fundoAbertura": 200,
@@ -357,19 +357,19 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
+      "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-15_M",
-      "savedAt": "2026-08-15T19:24:25.855Z",
+      "savedAt": "2026-08-15T19:25:55.631Z",
       "consolidado": {
-        "totRec": 0,
-        "totDin": 0,
-        "totCart": 0,
-        "totTotal": 0,
-        "totFita": 0,
-        "totClientes": 0,
-        "totQuebra": 0,
-        "totDeposito": 0
+        "totRec": 230.35,
+        "totDin": 230.35,
+        "totCart": 2894.78,
+        "totTotal": 3125.13,
+        "totFita": 3122.68,
+        "totClientes": 58,
+        "totQuebra": 2.450000000000273,
+        "totDeposito": 230.35
       }
     },
     {
