@@ -30410,6 +30410,13 @@
           "valor": 22.98,
           "pdvId": "pdvmolvin6r4ncwjtabq5b",
           "noite": true
+        },
+        {
+          "tipo": "VT",
+          "nome": "MATEUS DIA 13/08",
+          "valor": 6,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
         }
       ],
       "perdas": [
@@ -30423,7 +30430,7 @@
       "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-08-14_T",
-      "savedAt": "2026-08-15T13:16:27.158Z",
+      "savedAt": "2026-08-15T13:16:50.871Z",
       "consolidado": {
         "totRec": 3,
         "totDin": 3,
