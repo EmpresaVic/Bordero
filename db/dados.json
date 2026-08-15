@@ -12203,6 +12203,127 @@
   "emp_mokx9aq1_historico": [
     {
       "data": "2026-08-14",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvhbik2r5qh46q62": {
+          "fundoAbertura": 200,
+          "recebimento": "116.55",
+          "moedas": 0,
+          "deposito": "",
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "1741.49",
+          "pix": 0,
+          "clientes": "34",
+          "fita": "1837.65",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Mirian Gonçaves",
+          "responsavel": "Aline Silva"
+        },
+        "pdvmolvhkn7zloercktp7q": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhpj2sinsq4cfdxa": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "789.09",
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhtyei5gzy02wac": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "131.20",
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt",
+          "nome": "Rafaela",
+          "valor": 12.2,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        },
+        {
+          "tipo": "esponja, bombril",
+          "nome": "xsupermercado",
+          "valor": 11.46,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        },
+        {
+          "tipo": "agua sanitaria, detergente",
+          "nome": "xsupermercado",
+          "valor": 18.65,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-08-14_T",
+      "savedAt": "2026-08-15T01:39:50.572Z",
+      "consolidado": {
+        "totRec": 116.55,
+        "totDin": 116.55,
+        "totCart": 2661.7799999999997,
+        "totTotal": 2778.33,
+        "totFita": 1837.65,
+        "totClientes": 34,
+        "totQuebra": 20.389999999999873,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-08-14",
       "turno": "M",
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
