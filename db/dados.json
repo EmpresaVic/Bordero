@@ -30427,10 +30427,10 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "pagamentos",
+      "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-14_T",
-      "savedAt": "2026-08-15T13:16:50.871Z",
+      "savedAt": "2026-08-15T13:16:58.815Z",
       "consolidado": {
         "totRec": 3,
         "totDin": 3,
