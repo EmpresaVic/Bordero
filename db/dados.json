@@ -30366,22 +30366,22 @@
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
           "fundoAbertura": 200,
-          "recebimento": 0,
+          "recebimento": "3",
           "moedas": 0,
           "deposito": 0,
           "depositoPor": "",
           "dataDeposito": "",
-          "cartao": 0,
+          "cartao": "1187",
           "pix": 0,
-          "clientes": 0,
-          "fita": 0,
+          "clientes": "34",
+          "fita": "1191.60",
           "devolucao": 0,
           "obsDevolucao": "",
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "Emilie",
+          "responsavel": "Karine Trindade"
         },
         "pdvmolvixj2daj5opzwud5": {
           "fundoAbertura": 200,
@@ -30412,18 +30412,18 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
+      "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-14_T",
-      "savedAt": "2026-08-15T01:22:39.911Z",
+      "savedAt": "2026-08-15T13:15:35.199Z",
       "consolidado": {
-        "totRec": 0,
-        "totDin": 0,
-        "totCart": 0,
-        "totTotal": 0,
-        "totFita": 0,
-        "totClientes": 0,
-        "totQuebra": 0,
+        "totRec": 3,
+        "totDin": 3,
+        "totCart": 1187,
+        "totTotal": 1190,
+        "totFita": 1191.6,
+        "totClientes": 34,
+        "totQuebra": -1.599999999999909,
         "totDeposito": 0
       }
     },
