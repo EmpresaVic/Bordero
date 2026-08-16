@@ -12283,12 +12283,33 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Arroz Branco",
+          "qtde": "497",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Arroz a grega",
+          "qtde": "242",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Pure de batata",
+          "qtde": "258",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Legumes saute",
+          "qtde": "105",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-15_T",
-      "savedAt": "2026-08-16T01:57:21.471Z",
+      "savedAt": "2026-08-16T01:58:23.583Z",
       "consolidado": {
         "totRec": 156.7,
         "totDin": 156.7,
