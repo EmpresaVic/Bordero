@@ -12306,10 +12306,10 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
+      "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-15_T",
-      "savedAt": "2026-08-16T01:58:25.359Z",
+      "savedAt": "2026-08-16T01:58:32.023Z",
       "consolidado": {
         "totRec": 156.7,
         "totDin": 156.7,
