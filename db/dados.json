@@ -30417,13 +30417,18 @@
           "produto": "Isca Empanada",
           "qtde": "255.00",
           "motivo": "DESCARTE"
+        },
+        {
+          "produto": "Toscana",
+          "qtde": "1",
+          "motivo": "1 UND- DESCARTE"
         }
       ],
       "obsGeral": "",
       "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-15_T",
-      "savedAt": "2026-08-17T00:44:39.715Z",
+      "savedAt": "2026-08-17T00:45:13.995Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
