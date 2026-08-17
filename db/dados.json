@@ -30412,12 +30412,18 @@
           "noite": true
         }
       ],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Isca Empanada",
+          "qtde": "255.00",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "pagamentos",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-15_T",
-      "savedAt": "2026-08-17T00:43:44.739Z",
+      "savedAt": "2026-08-17T00:44:39.715Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
