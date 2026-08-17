@@ -30366,22 +30366,22 @@
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
           "fundoAbertura": 200,
-          "recebimento": 0,
+          "recebimento": "71.90",
           "moedas": 0,
           "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
+          "depositoPor": "Mateus",
+          "dataDeposito": "2026-08-16",
+          "cartao": "1065.30",
           "pix": 0,
-          "clientes": 0,
-          "fita": 0,
+          "clientes": "24",
+          "fita": "1076.80",
           "devolucao": 0,
           "obsDevolucao": "",
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
+          "caixa": "Mateus",
+          "responsavel": "Karine Trindade"
         },
         "pdvmolvixj2daj5opzwud5": {
           "fundoAbertura": 200,
@@ -30390,9 +30390,9 @@
           "deposito": 0,
           "depositoPor": "",
           "dataDeposito": "",
-          "cartao": 0,
+          "cartao": "1416.60",
           "pix": 0,
-          "clientes": 0,
+          "clientes": "19",
           "fita": 0,
           "devolucao": 0,
           "obsDevolucao": "",
@@ -30416,7 +30416,7 @@
         {
           "produto": "Isca Empanada",
           "qtde": "255.00",
-          "motivo": "DESCARTE"
+          "motivo": "255G-DESCARTE"
         },
         {
           "produto": "Toscana",
@@ -30425,18 +30425,18 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
+      "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-15_T",
-      "savedAt": "2026-08-17T00:45:13.995Z",
+      "savedAt": "2026-08-17T00:52:57.907Z",
       "consolidado": {
-        "totRec": 0,
-        "totDin": 0,
-        "totCart": 0,
-        "totTotal": 0,
-        "totFita": 0,
-        "totClientes": 0,
-        "totQuebra": 0,
+        "totRec": 71.9,
+        "totDin": 71.9,
+        "totCart": 2481.8999999999996,
+        "totTotal": 2553.8,
+        "totFita": 1076.8,
+        "totClientes": 43,
+        "totQuebra": 60.40000000000009,
         "totDeposito": 0
       }
     },
