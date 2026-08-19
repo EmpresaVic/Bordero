@@ -30423,13 +30423,18 @@
           "produto": "ISCAS DE FRANGO EMPANADO",
           "qtde": "90",
           "motivo": "DESCARTE"
+        },
+        {
+          "produto": "BATATA FRITA",
+          "qtde": "40",
+          "motivo": "DESCARTE"
         }
       ],
       "obsGeral": "",
       "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-18_T",
-      "savedAt": "2026-08-19T01:18:50.574Z",
+      "savedAt": "2026-08-19T01:19:29.949Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
