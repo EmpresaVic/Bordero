@@ -12216,10 +12216,10 @@
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
           "fundoAbertura": 200,
-          "recebimento": "194.50",
+          "recebimento": "200",
           "moedas": 0,
           "deposito": 0,
-          "depositoPor": "",
+          "depositoPor": "Debora Cristina",
           "dataDeposito": "2026-08-19",
           "cartao": "883.60",
           "pix": 0,
@@ -12297,15 +12297,15 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-19_M",
-      "savedAt": "2026-08-19T19:42:45.419Z",
+      "savedAt": "2026-08-19T20:31:13.610Z",
       "consolidado": {
-        "totRec": 194.5,
-        "totDin": 194.5,
+        "totRec": 200,
+        "totDin": 200,
         "totCart": 883.6,
-        "totTotal": 1078.1,
+        "totTotal": 1083.6,
         "totFita": 1060.1,
         "totClientes": 22,
-        "totQuebra": 18,
+        "totQuebra": 23.5,
         "totDeposito": 0
       }
     },
