@@ -263,6 +263,105 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-08-19",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "19.05",
+          "moedas": 0,
+          "deposito": "19.05",
+          "depositoPor": "DHENIFFER",
+          "dataDeposito": "2026-08-19",
+          "cartao": "1408.20",
+          "pix": 0,
+          "clientes": "32",
+          "fita": "1428.70",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "DHENIFFER",
+          "responsavel": "ANDREZA POLIS"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": true,
+      "id": "2026-08-19_M",
+      "savedAt": "2026-08-19T19:00:13.138Z",
+      "consolidado": {
+        "totRec": 19.05,
+        "totDin": 19.05,
+        "totCart": 1408.2,
+        "totTotal": 1427.25,
+        "totFita": 1428.7,
+        "totClientes": 32,
+        "totQuebra": -1.4500000000000455,
+        "totDeposito": 19.05
+      }
+    },
+    {
       "data": "2026-08-13",
       "turno": "T",
       "pdvData": {
@@ -1025,7 +1124,8 @@
       },
       "conferencia": {
         "por": "ESter",
-        "data": "2026-08-18"
+        "data": "2026-08-18",
+        "obs": "ok"
       }
     },
     {
@@ -30374,139 +30474,6 @@
     }
   ],
   "emp_mokx9qtt_historico": [
-    {
-      "data": "2026-08-19",
-      "turno": "M",
-      "pdvData": {
-        "pdvmolvin6r4ncwjtabq5b": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "Mateus",
-          "dataDeposito": "2026-08-19",
-          "cartao": "778.09",
-          "pix": 0,
-          "clientes": "18",
-          "fita": "778.09",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "Mateus",
-          "responsavel": "Karine Trindade"
-        },
-        "pdvmolvixj2daj5opzwud5": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        }
-      },
-      "pagamentos": [],
-      "perdas": [],
-      "obsGeral": "",
-      "activeTab": "caixa",
-      "fechado": false,
-      "id": "2026-08-19_M",
-      "savedAt": "2026-08-19T20:38:34.050Z",
-      "consolidado": {
-        "totRec": 0,
-        "totDin": 0,
-        "totCart": 778.09,
-        "totTotal": 778.09,
-        "totFita": 778.09,
-        "totClientes": 18,
-        "totQuebra": 0,
-        "totDeposito": 0
-      }
-    },
-    {
-      "data": "2026-08-18",
-      "turno": "T",
-      "pdvData": {
-        "pdvmolvin6r4ncwjtabq5b": {
-          "fundoAbertura": 200,
-          "recebimento": "15.50",
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "Mateus",
-          "dataDeposito": "2026-08-18",
-          "cartao": "339.50",
-          "pix": 0,
-          "clientes": "9",
-          "fita": "355.00",
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "Mateus",
-          "responsavel": "Karine Trindade"
-        },
-        "pdvmolvixj2daj5opzwud5": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": "218.60",
-          "pix": 0,
-          "clientes": "5",
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        }
-      },
-      "pagamentos": [],
-      "perdas": [
-        {
-          "produto": "ISCAS DE FRANGO EMPANADO",
-          "qtde": "90",
-          "motivo": "DESCARTE"
-        },
-        {
-          "produto": "BATATA FRITA",
-          "qtde": "40",
-          "motivo": "DESCARTE"
-        }
-      ],
-      "obsGeral": "",
-      "activeTab": "caixa",
-      "fechado": true,
-      "id": "2026-08-18_T",
-      "savedAt": "2026-08-19T01:34:26.413Z",
-      "consolidado": {
-        "totRec": 15.5,
-        "totDin": 15.5,
-        "totCart": 558.1,
-        "totTotal": 573.6,
-        "totFita": 355,
-        "totClientes": 14,
-        "totQuebra": 0,
-        "totDeposito": 0
-      }
-    },
     {
       "data": "2026-08-13",
       "turno": "T",
