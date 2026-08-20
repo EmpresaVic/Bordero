@@ -264,6 +264,116 @@
   "emp_mokx4v4r_historico": [
     {
       "data": "2026-08-19",
+      "turno": "T",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "DHENIFFER",
+          "dataDeposito": "2026-08-19",
+          "cartao": "726.90",
+          "pix": 0,
+          "clientes": "12",
+          "fita": "726.90",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "DHENIFFER",
+          "responsavel": "ANDREZA POLIS"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "59.70",
+          "pix": 0,
+          "clientes": "3",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "553.00",
+          "pix": 0,
+          "clientes": "9",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [
+        {
+          "produto": "arroz agrega",
+          "qtde": "1",
+          "motivo": "227 grama de desperdicio"
+        },
+        {
+          "produto": "legumes saute",
+          "qtde": "1",
+          "motivo": "275 grama de desperdicio"
+        }
+      ],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-08-19_T",
+      "savedAt": "2026-08-20T01:00:51.433Z",
+      "consolidado": {
+        "totRec": 0,
+        "totDin": 0,
+        "totCart": 1339.6,
+        "totTotal": 1339.6,
+        "totFita": 726.9,
+        "totClientes": 24,
+        "totQuebra": 0,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-08-19",
       "turno": "M",
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
