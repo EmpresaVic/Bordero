@@ -12292,12 +12292,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Legumes Saute",
+          "qtde": "125",
+          "motivo": "Descarte Noite"
+        },
+        {
+          "produto": "Brocolis",
+          "qtde": "259",
+          "motivo": "Dsecarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-19_T",
-      "savedAt": "2026-08-20T01:31:30.821Z",
+      "savedAt": "2026-08-20T01:32:11.684Z",
       "consolidado": {
         "totRec": 68,
         "totDin": 68,
