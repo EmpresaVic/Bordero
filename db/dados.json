@@ -12305,10 +12305,10 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
-      "fechado": false,
+      "activeTab": "caixa",
+      "fechado": true,
       "id": "2026-08-19_T",
-      "savedAt": "2026-08-20T01:32:11.684Z",
+      "savedAt": "2026-08-20T01:32:24.141Z",
       "consolidado": {
         "totRec": 68,
         "totDin": 68,
