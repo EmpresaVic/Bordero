@@ -12292,12 +12292,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Purê de batata",
+          "qtde": "1068",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Feijão",
+          "qtde": "156",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-20_T",
-      "savedAt": "2026-08-21T01:30:51.833Z",
+      "savedAt": "2026-08-21T01:31:42.927Z",
       "consolidado": {
         "totRec": 7.7,
         "totDin": 7.7,
