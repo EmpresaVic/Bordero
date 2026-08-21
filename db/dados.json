@@ -358,9 +358,9 @@
       ],
       "obsGeral": "",
       "activeTab": "perdas",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-08-21_M",
-      "savedAt": "2026-08-21T19:06:20.670Z",
+      "savedAt": "2026-08-21T19:06:26.693Z",
       "consolidado": {
         "totRec": 89.25,
         "totDin": 89.25,
