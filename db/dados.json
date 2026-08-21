@@ -30739,6 +30739,11 @@
         "totClientes": 29,
         "totQuebra": -5.939999999999941,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester",
+        "data": "2026-08-21",
+        "obs": "ok"
       }
     },
     {
@@ -30800,6 +30805,11 @@
         "totClientes": 28,
         "totQuebra": 0,
         "totDeposito": 0
+      },
+      "conferencia": {
+        "por": "Ester",
+        "data": "2026-08-21",
+        "obs": "ok"
       }
     },
     {
