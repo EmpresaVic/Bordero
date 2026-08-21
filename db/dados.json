@@ -366,9 +366,9 @@
       ],
       "obsGeral": "",
       "activeTab": "pagamentos",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-08-21_M",
-      "savedAt": "2026-08-21T19:13:09.197Z",
+      "savedAt": "2026-08-21T19:13:21.373Z",
       "consolidado": {
         "totRec": 89.25,
         "totDin": 53.25,
