@@ -344,12 +344,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": " file de frango",
+          "qtde": "2",
+          "motivo": "queimou"
+        },
+        {
+          "produto": "parmegiana de carne",
+          "qtde": "1",
+          "motivo": "acionou errado"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-21_M",
-      "savedAt": "2026-08-21T19:04:10.110Z",
+      "savedAt": "2026-08-21T19:06:20.670Z",
       "consolidado": {
         "totRec": 89.25,
         "totDin": 89.25,
