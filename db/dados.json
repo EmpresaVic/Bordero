@@ -343,7 +343,15 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "compra ",
+          "nome": "alface",
+          "valor": 36,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
       "perdas": [
         {
           "produto": " file de frango",
@@ -357,13 +365,13 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
-      "fechado": true,
+      "activeTab": "pagamentos",
+      "fechado": false,
       "id": "2026-08-21_M",
-      "savedAt": "2026-08-21T19:06:26.693Z",
+      "savedAt": "2026-08-21T19:13:09.197Z",
       "consolidado": {
         "totRec": 89.25,
-        "totDin": 89.25,
+        "totDin": 53.25,
         "totCart": 1571.9,
         "totTotal": 1661.15,
         "totFita": 1655.4,
