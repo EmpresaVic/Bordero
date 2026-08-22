@@ -12408,10 +12408,10 @@
       ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "pagamentos",
-      "fechado": false,
+      "activeTab": "caixa",
+      "fechado": true,
       "id": "2026-08-21_M",
-      "savedAt": "2026-08-22T01:50:38.836Z",
+      "savedAt": "2026-08-22T01:50:51.875Z",
       "consolidado": {
         "totRec": 52.23,
         "totDin": 12.379999999999995,
