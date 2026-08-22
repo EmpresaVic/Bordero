@@ -12315,10 +12315,10 @@
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
           "fundoAbertura": 200,
-          "recebimento": "62.25",
+          "recebimento": "52.23",
           "moedas": 0,
           "deposito": 0,
-          "depositoPor": "",
+          "depositoPor": "Debora Cristina",
           "dataDeposito": "2026-08-21",
           "cartao": "954.10",
           "pix": 0,
@@ -12390,21 +12390,36 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Compra",
+          "nome": "Mercado X",
+          "valor": 3.38,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        },
+        {
+          "tipo": "Compra",
+          "nome": "Mercado X",
+          "valor": 36.47,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-08-21_M",
-      "savedAt": "2026-08-21T19:17:25.376Z",
+      "savedAt": "2026-08-22T01:50:38.836Z",
       "consolidado": {
-        "totRec": 62.25,
-        "totDin": 62.25,
+        "totRec": 52.23,
+        "totDin": 12.379999999999995,
         "totCart": 954.1,
-        "totTotal": 1016.35,
+        "totTotal": 1006.33,
         "totFita": 981.02,
         "totClientes": 23,
-        "totQuebra": 35.33000000000004,
+        "totQuebra": 25.31000000000006,
         "totDeposito": 0
       }
     },
