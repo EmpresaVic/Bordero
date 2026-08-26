@@ -447,19 +447,30 @@ var GH = {
         /* A Contents API do GitHub NÃO devolve "content" para arquivos > 1MB
            (fica "" / encoding "none"). Tratar isso como "arquivo vazio" é o
            bug que fazia o app reinicializar (sobrescrever) o remoto quando
-           db/dados.json cresceu além de 1MB. Buscar o conteúdo real via
-           download_url (raw) antes de desistir. */
-        if (data.download_url) {
-          var rawResp = await fetch(data.download_url);
-          if (rawResp.ok) {
-            var rawTxt = (await rawResp.text()).trim();
-            if (rawTxt) {
-              try { return { content: JSON.parse(rawTxt), sha: data.sha }; }
-              catch(e2) { throw new Error('conteúdo remoto (raw) não é JSON válido — sha=' + data.sha); }
+           db/dados.json cresceu além de 1MB. Buscar o conteúdo real via a
+           Git Blobs API (autenticada, funciona em repositório privado —
+           diferente de download_url/raw.githubusercontent.com, que devolve
+           404 sem token em repo privado) usando o sha que já temos. */
+        var c = GH.getCfg();
+        var blobResp = await fetch(
+          'https://api.github.com/repos/' + c.user + '/' + c.repo + '/git/blobs/' + data.sha,
+          { headers: GH._headers() }
+        );
+        if (blobResp.ok) {
+          var blobData = await blobResp.json();
+          var blobB64 = (blobData.content || '').replace(/\n/g,'').trim();
+          if (blobB64) {
+            var blobTxt = '';
+            try { blobTxt = decodeURIComponent(escape(atob(blobB64))); }
+            catch(decErr2) { blobTxt = atob(blobB64); }
+            blobTxt = blobTxt.trim();
+            if (blobTxt) {
+              try { return { content: JSON.parse(blobTxt), sha: data.sha }; }
+              catch(e2) { throw new Error('conteúdo remoto (blob) não é JSON válido — sha=' + data.sha); }
             }
           }
         }
-        throw new Error('arquivo remoto grande demais para a Contents API (>1MB) e download_url indisponível — sha=' + data.sha);
+        throw new Error('arquivo remoto grande demais para a Contents API (>1MB) e leitura via Git Blobs API falhou (HTTP ' + blobResp.status + ') — sha=' + data.sha);
       }
       var json = '';
       try { json = decodeURIComponent(escape(atob(rawB64))); }
