@@ -443,7 +443,24 @@ var GH = {
       if (!resp.ok) throw new Error('HTTP ' + resp.status);
       var data = await resp.json();
       var rawB64 = (data.content || '').replace(/\n/g,'').trim();
-      if (!rawB64) return { content: null, sha: data.sha };
+      if (!rawB64) {
+        /* A Contents API do GitHub NÃO devolve "content" para arquivos > 1MB
+           (fica "" / encoding "none"). Tratar isso como "arquivo vazio" é o
+           bug que fazia o app reinicializar (sobrescrever) o remoto quando
+           db/dados.json cresceu além de 1MB. Buscar o conteúdo real via
+           download_url (raw) antes de desistir. */
+        if (data.download_url) {
+          var rawResp = await fetch(data.download_url);
+          if (rawResp.ok) {
+            var rawTxt = (await rawResp.text()).trim();
+            if (rawTxt) {
+              try { return { content: JSON.parse(rawTxt), sha: data.sha }; }
+              catch(e2) { throw new Error('conteúdo remoto (raw) não é JSON válido — sha=' + data.sha); }
+            }
+          }
+        }
+        throw new Error('arquivo remoto grande demais para a Contents API (>1MB) e download_url indisponível — sha=' + data.sha);
+      }
       var json = '';
       try { json = decodeURIComponent(escape(atob(rawB64))); }
       catch(decErr) { json = atob(rawB64); }
@@ -451,7 +468,7 @@ var GH = {
       if (!json) return { content: null, sha: data.sha };
       var parsed = null;
       try { parsed = JSON.parse(json); }
-      catch(parseErr) { return { content: null, sha: data.sha }; }
+      catch(parseErr) { throw new Error('JSON remoto corrompido/inválido (sha=' + data.sha + ') — abortando pra não sobrescrever'); }
       return { content: parsed, sha: data.sha };
     } catch(e) {
       console.error('GH read error:', e);
@@ -564,14 +581,25 @@ var DB = {
         if (result && result.content) {
           _cache = result.content;
           _currentSha = result.sha;
-        } else {
+        } else if (result && result.sha) {
+          /* Arquivo remoto EXISTE (tem sha) mas não conseguimos ler o
+             conteúdo (>1MB sem download_url, JSON corrompido, etc.).
+             NUNCA reinicializar/sobrescrever nesse caso — é exatamente
+             isso que causava o HTTP 409 e o risco de perda de dados.
+             Mostra a cópia local (se houver) só para leitura, com aviso. */
           _carregarLocalStorage();
-          _currentSha = result ? result.sha : null;
-          try { _currentSha = await GH.write(_cache, _currentSha); }
+          _currentSha = result.sha;
+          setTimeout(function(){ toast('⚠️ Não foi possível carregar os dados do GitHub agora. Mostrando última cópia local — evite editar até resolver (ver console).', 'var(--red)'); }, 300);
+        } else {
+          /* 404 real: arquivo nunca existiu neste repo/branch — seguro criar. */
+          _carregarLocalStorage();
+          _currentSha = null;
+          try { _currentSha = await GH.write(_cache, null); }
           catch(writeErr) { console.warn('GH: não foi possível inicializar arquivo remoto:', writeErr.message); }
         }
       } catch(e) {
         _carregarLocalStorage();
+        console.error('GH: falha ao carregar dados remotos, NÃO sobrescrevendo:', e.message);
         if (callback) callback(new Error('GitHub indisponível: ' + e.message));
         return;
       }
