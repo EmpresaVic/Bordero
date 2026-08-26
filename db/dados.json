@@ -30616,16 +30616,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "COMPRA ",
+          "nome": "XSUPERMERCADO/KARINE",
+          "valor": 12.37,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-08-26_M",
-      "savedAt": "2026-08-26T20:43:24.394Z",
+      "savedAt": "2026-08-26T20:44:42.610Z",
       "consolidado": {
         "totRec": 46.87,
-        "totDin": 47.37,
+        "totDin": 35,
         "totCart": 619.3,
         "totTotal": 666.17,
         "totFita": 658.43,
