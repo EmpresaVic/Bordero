@@ -12490,13 +12490,28 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Compra",
+          "nome": "Gelo",
+          "valor": 20,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        },
+        {
+          "tipo": "Pagamento vt",
+          "nome": "rafaela",
+          "valor": 12.18,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-08-26_T",
-      "savedAt": "2026-08-27T01:30:01.050Z",
+      "savedAt": "2026-08-27T01:30:43.979Z",
       "consolidado": {
         "totRec": 164.15,
         "totDin": 164.15,
