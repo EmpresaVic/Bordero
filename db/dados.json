@@ -12506,12 +12506,18 @@
           "noite": true
         }
       ],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Arroz a grega",
+          "qtde": "1205",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "pagamentos",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-26_T",
-      "savedAt": "2026-08-27T01:30:46.802Z",
+      "savedAt": "2026-08-27T01:31:05.666Z",
       "consolidado": {
         "totRec": 164.15,
         "totDin": 164.15,
