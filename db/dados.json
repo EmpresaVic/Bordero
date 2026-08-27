@@ -30935,12 +30935,18 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "ISCA EMPANADA ",
+          "qtde": "100",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-26_T",
-      "savedAt": "2026-08-27T02:04:53.968Z",
+      "savedAt": "2026-08-27T02:05:24.480Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
