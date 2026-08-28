@@ -12631,19 +12631,19 @@
           "recebimento": 0,
           "moedas": 0,
           "deposito": 0,
-          "depositoPor": "Debora Cristina",
-          "dataDeposito": "2026-08-27",
-          "cartao": "728.50",
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
           "pix": 0,
-          "clientes": "13",
-          "fita": "731.00",
+          "clientes": 0,
+          "fita": 0,
           "devolucao": 0,
           "obsDevolucao": "",
           "devComanda": "",
           "devHorario": "",
           "fundoFechamento": 200,
-          "caixa": "Mirian Gonçaves",
-          "responsavel": "Debora Cristina"
+          "caixa": "",
+          "responsavel": ""
         },
         "pdvmolvhkn7zloercktp7q": {
           "fundoAbertura": 200,
@@ -12704,31 +12704,20 @@
         }
       },
       "pagamentos": [],
-      "perdas": [
-        {
-          "produto": "Pure de batata",
-          "qtde": "456",
-          "motivo": "Descarte noite"
-        },
-        {
-          "produto": "Brocolis",
-          "qtde": "245",
-          "motivo": "Descarte noite"
-        }
-      ],
+      "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
       "fechado": true,
       "id": "2026-08-27_T",
-      "savedAt": "2026-08-28T01:25:26.975Z",
+      "savedAt": "2026-08-28T01:25:52.823Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
-        "totCart": 1635.6,
-        "totTotal": 1635.6,
-        "totFita": 731,
-        "totClientes": 31,
-        "totQuebra": -2.5,
+        "totCart": 907.0999999999999,
+        "totTotal": 907.0999999999999,
+        "totFita": 0,
+        "totClientes": 18,
+        "totQuebra": 0,
         "totDeposito": 0
       }
     },
