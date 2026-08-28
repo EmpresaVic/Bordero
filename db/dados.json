@@ -31304,6 +31304,73 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-08-27",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "102.00",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Mateus",
+          "dataDeposito": "2026-08-27",
+          "cartao": "774.60",
+          "pix": 0,
+          "clientes": "18",
+          "fita": "876.60",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Mateus",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "236.80",
+          "pix": 0,
+          "clientes": "8",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [
+        {
+          "produto": "iscas de frango empanada",
+          "qtde": "30",
+          "motivo": "descarte"
+        }
+      ],
+      "obsGeral": "",
+      "activeTab": "perdas",
+      "fechado": false,
+      "id": "2026-08-27_T",
+      "savedAt": "2026-08-28T01:55:22.002Z",
+      "consolidado": {
+        "totRec": 102,
+        "totDin": 102,
+        "totCart": 1011.4000000000001,
+        "totTotal": 1113.4,
+        "totFita": 876.6,
+        "totClientes": 26,
+        "totQuebra": 0,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-08-27",
       "turno": "M",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
