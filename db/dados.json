@@ -12722,6 +12722,113 @@
   ],
   "emp_mokx9aq1_historico": [
     {
+      "data": "2026-08-29",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvhbik2r5qh46q62": {
+          "fundoAbertura": 200,
+          "recebimento": "357.85",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Debora Cristina",
+          "dataDeposito": "2026-08-29",
+          "cartao": "2573.60",
+          "pix": 0,
+          "clientes": "41",
+          "fita": "2904.40",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Moyses P",
+          "responsavel": "Aline Silva"
+        },
+        "pdvmolvhkn7zloercktp7q": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhpj2sinsq4cfdxa": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhtyei5gzy02wac": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "Vale Transporte",
+          "nome": "Rafaela",
+          "valor": 12.2,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-08-29_M",
+      "savedAt": "2026-08-29T19:39:39.101Z",
+      "consolidado": {
+        "totRec": 357.85,
+        "totDin": 345.65000000000003,
+        "totCart": 2573.6,
+        "totTotal": 2931.45,
+        "totFita": 2904.4,
+        "totClientes": 41,
+        "totQuebra": 27.049999999999727,
+        "totDeposito": 0
+      }
+    },
+    {
       "data": "2026-08-28",
       "turno": "T",
       "pdvData": {
