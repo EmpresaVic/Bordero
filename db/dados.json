@@ -31627,6 +31627,73 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-08-28",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "15.50",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Mateus",
+          "dataDeposito": "2026-08-28",
+          "cartao": "896.19",
+          "pix": 0,
+          "clientes": "22",
+          "fita": "911.69",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Mateus",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "360.91",
+          "pix": 0,
+          "clientes": "12",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [
+        {
+          "produto": "TOSCANA",
+          "qtde": "1",
+          "motivo": "DESCARTE"
+        }
+      ],
+      "obsGeral": "",
+      "activeTab": "perdas",
+      "fechado": false,
+      "id": "2026-08-28_T",
+      "savedAt": "2026-08-29T01:43:15.168Z",
+      "consolidado": {
+        "totRec": 15.5,
+        "totDin": 15.5,
+        "totCart": 1257.1000000000001,
+        "totTotal": 1272.6000000000001,
+        "totFita": 911.69,
+        "totClientes": 34,
+        "totQuebra": 0,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-08-28",
       "turno": "M",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
