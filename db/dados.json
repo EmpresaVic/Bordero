@@ -12803,12 +12803,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Legumes saute",
+          "qtde": "101",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Contra file",
+          "qtde": "2",
+          "motivo": "Improprio para consumo *cliente não quis*"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-28_T",
-      "savedAt": "2026-08-29T01:30:02.386Z",
+      "savedAt": "2026-08-29T01:30:42.466Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
