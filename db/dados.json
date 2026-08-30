@@ -13016,12 +13016,28 @@
           "noite": true
         }
       ],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Arroz Branco",
+          "qtde": "289",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Arroz a grega",
+          "qtde": "349",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Legumes saute",
+          "qtde": "125",
+          "motivo": "Descarte noite"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "pagamentos",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-29_T",
-      "savedAt": "2026-08-30T01:38:25.057Z",
+      "savedAt": "2026-08-30T01:39:13.578Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
