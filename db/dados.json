@@ -32122,10 +32122,10 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
-      "fechado": false,
+      "activeTab": "caixa",
+      "fechado": true,
       "id": "2026-08-29_T",
-      "savedAt": "2026-08-30T02:04:38.067Z",
+      "savedAt": "2026-08-30T02:04:58.154Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
