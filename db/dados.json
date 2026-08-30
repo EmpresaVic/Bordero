@@ -32104,12 +32104,28 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "iscas de frango empanada",
+          "qtde": "200",
+          "motivo": "descarte"
+        },
+        {
+          "produto": "file de frango",
+          "qtde": "2",
+          "motivo": "descarte"
+        },
+        {
+          "produto": "peito bife",
+          "qtde": "2",
+          "motivo": "descarte"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-29_T",
-      "savedAt": "2026-08-30T02:03:03.586Z",
+      "savedAt": "2026-08-30T02:04:38.067Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
