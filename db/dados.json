@@ -263,6 +263,105 @@
   ],
   "emp_mokx4v4r_historico": [
     {
+      "data": "2026-08-30",
+      "turno": "M",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "38.49",
+          "moedas": 0,
+          "deposito": "33.00",
+          "depositoPor": "DHENIFFER",
+          "dataDeposito": "2026-08-30",
+          "cartao": "1467.20",
+          "pix": 0,
+          "clientes": "27",
+          "fita": "1520.60",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "DHENIFFER",
+          "responsavel": "ANDREZA POLIS"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "39.90",
+          "pix": 0,
+          "clientes": "1",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "507.20",
+          "pix": 0,
+          "clientes": "8",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-08-30_M",
+      "savedAt": "2026-08-31T00:59:14.253Z",
+      "consolidado": {
+        "totRec": 38.49,
+        "totDin": 38.49,
+        "totCart": 2014.3000000000002,
+        "totTotal": 2052.79,
+        "totFita": 1520.6,
+        "totClientes": 36,
+        "totQuebra": -14.909999999999854,
+        "totDeposito": 33
+      }
+    },
+    {
       "data": "2026-08-29",
       "turno": "T",
       "pdvData": {
@@ -13001,28 +13100,12 @@
         }
       },
       "pagamentos": [],
-      "perdas": [
-        {
-          "produto": "Arroz Branco",
-          "qtde": "265",
-          "motivo": "Descarte noite"
-        },
-        {
-          "produto": "Arroz a grega",
-          "qtde": "456",
-          "motivo": "Descarte noite"
-        },
-        {
-          "produto": "Legumes saute",
-          "qtde": "245",
-          "motivo": "Descarte noite"
-        }
-      ],
+      "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": true,
+      "fechado": false,
       "id": "2026-08-30_T",
-      "savedAt": "2026-08-31T00:58:40.078Z",
+      "savedAt": "2026-08-31T00:57:04.310Z",
       "consolidado": {
         "totRec": 214.85,
         "totDin": 214.85,
