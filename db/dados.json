@@ -268,9 +268,9 @@
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
           "fundoAbertura": 200,
-          "recebimento": "38.49",
+          "recebimento": "48.00",
           "moedas": 0,
-          "deposito": "33.00",
+          "deposito": "27.50",
           "depositoPor": "DHENIFFER",
           "dataDeposito": "2026-08-30",
           "cartao": "1467.20",
@@ -343,22 +343,37 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Estacionamento",
+          "nome": "Marcela",
+          "valor": 15,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "americanas",
+          "nome": "bucha",
+          "valor": 5.49,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-30_M",
-      "savedAt": "2026-08-31T00:59:14.253Z",
+      "savedAt": "2026-08-31T14:34:35.542Z",
       "consolidado": {
-        "totRec": 38.49,
-        "totDin": 38.49,
+        "totRec": 48,
+        "totDin": 27.509999999999998,
         "totCart": 2014.3000000000002,
-        "totTotal": 2052.79,
+        "totTotal": 2062.3,
         "totFita": 1520.6,
         "totClientes": 36,
-        "totQuebra": -14.909999999999854,
-        "totDeposito": 33
+        "totQuebra": -5.399999999999864,
+        "totDeposito": 27.5
       }
     },
     {
