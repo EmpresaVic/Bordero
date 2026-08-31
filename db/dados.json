@@ -268,9 +268,9 @@
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
           "fundoAbertura": 200,
-          "recebimento": "48.00",
+          "recebimento": "53.49",
           "moedas": 0,
-          "deposito": "27.50",
+          "deposito": "33.00",
           "depositoPor": "DHENIFFER",
           "dataDeposito": "2026-08-30",
           "cartao": "1467.20",
@@ -364,16 +364,16 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-08-30_M",
-      "savedAt": "2026-08-31T14:34:35.542Z",
+      "savedAt": "2026-08-31T14:36:26.758Z",
       "consolidado": {
-        "totRec": 48,
-        "totDin": 27.509999999999998,
+        "totRec": 53.49,
+        "totDin": 33,
         "totCart": 2014.3000000000002,
-        "totTotal": 2062.3,
+        "totTotal": 2067.79,
         "totFita": 1520.6,
         "totClientes": 36,
-        "totQuebra": -5.399999999999864,
-        "totDeposito": 27.5
+        "totQuebra": 0.09000000000014552,
+        "totDeposito": 33
       }
     },
     {
