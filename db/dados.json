@@ -13313,12 +13313,28 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "Legumes saute",
+          "qtde": "480",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "Pure de batata",
+          "qtde": "662",
+          "motivo": "Descarte noite"
+        },
+        {
+          "produto": "",
+          "qtde": "",
+          "motivo": ""
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-08-31_T",
-      "savedAt": "2026-09-01T01:30:59.565Z",
+      "savedAt": "2026-09-01T01:32:48.894Z",
       "consolidado": {
         "totRec": 44.98,
         "totDin": 44.98,
