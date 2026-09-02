@@ -33112,9 +33112,9 @@
           "fundoAbertura": 200,
           "recebimento": "171.45",
           "moedas": "0.75",
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
+          "deposito": "172.20",
+          "depositoPor": "Karine Trindade",
+          "dataDeposito": "2026-09-01",
           "cartao": "600.30",
           "pix": 0,
           "clientes": "16",
@@ -33175,7 +33175,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-09-01_T",
-      "savedAt": "2026-09-02T01:12:59.909Z",
+      "savedAt": "2026-09-02T01:14:36.637Z",
       "consolidado": {
         "totRec": 171.45,
         "totDin": 172.2,
@@ -33184,7 +33184,7 @@
         "totFita": 770.99,
         "totClientes": 21,
         "totQuebra": 0.7599999999999909,
-        "totDeposito": 0
+        "totDeposito": 172.2
       }
     },
     {
