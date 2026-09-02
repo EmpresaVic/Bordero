@@ -33147,13 +33147,35 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "DIARIA ",
+          "nome": "JOÃO(FREE)",
+          "valor": 80,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        },
+        {
+          "tipo": "COMPRA",
+          "nome": "KULANGA 01/09",
+          "valor": 19.8,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        },
+        {
+          "tipo": "COMPRA",
+          "nome": "KALUNGA 31/08",
+          "valor": 4.99,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-01_T",
-      "savedAt": "2026-09-02T01:11:26.941Z",
+      "savedAt": "2026-09-02T01:12:56.093Z",
       "consolidado": {
         "totRec": 171.45,
         "totDin": 172.2,
