@@ -33671,10 +33671,10 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
-      "fechado": false,
+      "activeTab": "caixa",
+      "fechado": true,
       "id": "2026-09-02_T",
-      "savedAt": "2026-09-03T01:44:59.197Z",
+      "savedAt": "2026-09-03T01:45:16.318Z",
       "consolidado": {
         "totRec": 17,
         "totDin": 17,
