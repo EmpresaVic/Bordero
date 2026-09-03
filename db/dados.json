@@ -33615,6 +33615,75 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-09-03",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "142",
+          "moedas": 0,
+          "deposito": "98.50",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-09-03",
+          "cartao": "879.71",
+          "pix": 0,
+          "clientes": "27",
+          "fita": "1006.11",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "COMPRA",
+          "nome": "EMPRIR ",
+          "valor": 43.5,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-09-03_M",
+      "savedAt": "2026-09-03T18:57:52.191Z",
+      "consolidado": {
+        "totRec": 142,
+        "totDin": 98.5,
+        "totCart": 879.71,
+        "totTotal": 1021.71,
+        "totFita": 1006.11,
+        "totClientes": 27,
+        "totQuebra": 15.600000000000023,
+        "totDeposito": 98.5
+      }
+    },
+    {
       "data": "2026-09-02",
       "turno": "T",
       "pdvData": {
