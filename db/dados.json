@@ -13744,7 +13744,7 @@
       "activeTab": "caixa",
       "fechado": true,
       "id": "2026-09-02_T",
-      "savedAt": "2026-09-03T01:39:28.247Z",
+      "savedAt": "2026-09-03T01:42:36.207Z",
       "consolidado": {
         "totRec": 49.77,
         "totDin": 49.77,
@@ -33658,12 +33658,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "file de frango",
+          "qtde": "1",
+          "motivo": "DESCARTE"
+        },
+        {
+          "produto": "iscas de frango empanada",
+          "qtde": "30",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-09-02_T",
-      "savedAt": "2026-09-03T01:43:28.421Z",
+      "savedAt": "2026-09-03T01:44:59.197Z",
       "consolidado": {
         "totRec": 17,
         "totDin": 17,
