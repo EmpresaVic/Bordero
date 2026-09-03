@@ -13723,13 +13723,28 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Vale transporte",
+          "nome": "Rafaela",
+          "valor": 24.5,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        },
+        {
+          "tipo": "Vale transporte",
+          "nome": "João vitor",
+          "valor": 12.25,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-02_T",
-      "savedAt": "2026-09-03T01:38:37.150Z",
+      "savedAt": "2026-09-03T01:39:10.670Z",
       "consolidado": {
         "totRec": 49.77,
         "totDin": 49.77,
