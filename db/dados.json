@@ -13921,16 +13921,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Compra de tomate, 2 água sanitaria e 1 esponja  ",
+          "nome": "Xsupermercado",
+          "valor": 40.23,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-04_M",
-      "savedAt": "2026-09-04T18:35:05.048Z",
+      "savedAt": "2026-09-04T18:38:12.696Z",
       "consolidado": {
         "totRec": 137.98,
-        "totDin": 137.98,
+        "totDin": 97.75,
         "totCart": 0,
         "totTotal": 137.98,
         "totFita": 0,
