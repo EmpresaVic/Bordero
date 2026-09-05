@@ -14055,113 +14055,6 @@
   "emp_mokx9aq1_historico": [
     {
       "data": "2026-09-04",
-      "turno": "T",
-      "pdvData": {
-        "pdvmolvhbik2r5qh46q62": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        },
-        "pdvmolvhkn7zloercktp7q": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        },
-        "pdvmolvhpj2sinsq4cfdxa": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        },
-        "pdvmolvhtyei5gzy02wac": {
-          "fundoAbertura": 200,
-          "recebimento": 0,
-          "moedas": 0,
-          "deposito": 0,
-          "depositoPor": "",
-          "dataDeposito": "",
-          "cartao": 0,
-          "pix": 0,
-          "clientes": 0,
-          "fita": 0,
-          "devolucao": 0,
-          "obsDevolucao": "",
-          "devComanda": "",
-          "devHorario": "",
-          "fundoFechamento": 200,
-          "caixa": "",
-          "responsavel": ""
-        }
-      },
-      "pagamentos": [
-        {
-          "tipo": "Vale transporte",
-          "nome": "Rafaela",
-          "valor": 24.5,
-          "pdvId": "pdvmolvhbik2r5qh46q62",
-          "noite": true
-        }
-      ],
-      "perdas": [],
-      "obsGeral": "",
-      "activeTab": "pagamentos",
-      "fechado": false,
-      "id": "2026-09-04_T",
-      "savedAt": "2026-09-05T01:51:43.285Z",
-      "consolidado": {
-        "totRec": 0,
-        "totDin": 0,
-        "totCart": 0,
-        "totTotal": 0,
-        "totFita": 0,
-        "totClientes": 0,
-        "totQuebra": 0,
-        "totDeposito": 0
-      }
-    },
-    {
-      "data": "2026-09-04",
       "turno": "M",
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
@@ -14253,9 +14146,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": true,
+      "fechado": false,
       "id": "2026-09-04_M",
-      "savedAt": "2026-09-05T01:51:24.863Z",
+      "savedAt": "2026-09-04T19:17:34.394Z",
       "consolidado": {
         "totRec": 137.98,
         "totDin": 97.75,
@@ -34445,6 +34338,67 @@
     }
   ],
   "emp_mokx9qtt_historico": [
+    {
+      "data": "2026-09-04",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "35.90",
+          "moedas": 0,
+          "deposito": "36",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-09-04",
+          "cartao": "893.99",
+          "pix": 0,
+          "clientes": "32",
+          "fita": "894.90",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "153.90",
+          "pix": 0,
+          "clientes": "6",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": true,
+      "id": "2026-09-04_T",
+      "savedAt": "2026-09-05T01:52:10.192Z",
+      "consolidado": {
+        "totRec": 35.9,
+        "totDin": 35.9,
+        "totCart": 1047.89,
+        "totTotal": 1083.79,
+        "totFita": 894.9,
+        "totClientes": 38,
+        "totQuebra": 34.99000000000001,
+        "totDeposito": 36
+      }
+    },
     {
       "data": "2026-09-04",
       "turno": "M",
