@@ -14359,6 +14359,120 @@
   ],
   "emp_mokx9aq1_historico": [
     {
+      "data": "2026-09-06",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvhbik2r5qh46q62": {
+          "fundoAbertura": 200,
+          "recebimento": "323.85",
+          "moedas": 0,
+          "deposito": "143.85",
+          "depositoPor": "Aline Silva",
+          "dataDeposito": "2026-09-06",
+          "cartao": "4875.60",
+          "pix": 0,
+          "clientes": "84",
+          "fita": "5280.21",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Moyses P",
+          "responsavel": "Aline Silva"
+        },
+        "pdvmolvhkn7zloercktp7q": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhpj2sinsq4cfdxa": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhtyei5gzy02wac": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "Pagamentos 2 dias trabalhados (Free) 05/09 e 06/09",
+          "nome": "Emilio",
+          "valor": 180,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        },
+        {
+          "tipo": "",
+          "nome": "",
+          "valor": 0,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-09-06_M",
+      "savedAt": "2026-09-06T20:27:47.057Z",
+      "consolidado": {
+        "totRec": 323.85,
+        "totDin": 143.85000000000002,
+        "totCart": 4875.6,
+        "totTotal": 5199.450000000001,
+        "totFita": 5280.21,
+        "totClientes": 84,
+        "totQuebra": -80.75999999999931,
+        "totDeposito": 143.85
+      }
+    },
+    {
       "data": "2026-09-05",
       "turno": "T",
       "pdvData": {
