@@ -35330,9 +35330,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-09-07_M",
-      "savedAt": "2026-09-07T22:09:07.220Z",
+      "savedAt": "2026-09-07T22:09:12.940Z",
       "consolidado": {
         "totRec": 2,
         "totDin": 2,
