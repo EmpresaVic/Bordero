@@ -35129,12 +35129,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "BATATA FRITA",
+          "qtde": "100",
+          "motivo": "DESCARTE"
+        },
+        {
+          "produto": "ISCAS DE FRANGO EMPANADA",
+          "qtde": "30",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-09-06_T",
-      "savedAt": "2026-09-07T00:55:08.444Z",
+      "savedAt": "2026-09-07T00:56:19.260Z",
       "consolidado": {
         "totRec": 320.5,
         "totDin": 320.5,
