@@ -35284,6 +35284,67 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-09-07",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "2.00",
+          "moedas": 0,
+          "deposito": "2.00",
+          "depositoPor": "João Guilherme (FREE)",
+          "dataDeposito": "2026-09-07",
+          "cartao": "2370.81",
+          "pix": 0,
+          "clientes": "47",
+          "fita": "2372.74",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Marcela Coelho",
+          "responsavel": "Marcela Coelho"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-09-07_M",
+      "savedAt": "2026-09-07T22:09:07.220Z",
+      "consolidado": {
+        "totRec": 2,
+        "totDin": 2,
+        "totCart": 2370.81,
+        "totTotal": 2372.81,
+        "totFita": 2372.74,
+        "totClientes": 47,
+        "totQuebra": 0.07000000000016371,
+        "totDeposito": 2
+      }
+    },
+    {
       "data": "2026-09-06",
       "turno": "T",
       "pdvData": {
