@@ -35830,12 +35830,28 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "TOSCANA",
+          "qtde": "1",
+          "motivo": "DESCARTE"
+        },
+        {
+          "produto": "BATATA FRITA",
+          "qtde": "100",
+          "motivo": "DESCARTE"
+        },
+        {
+          "produto": "ISCAS DE FRANGO EMPANADO",
+          "qtde": "100",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-09-08_T",
-      "savedAt": "2026-09-09T01:22:30.181Z",
+      "savedAt": "2026-09-09T01:23:37.237Z",
       "consolidado": {
         "totRec": 80,
         "totDin": 80,
