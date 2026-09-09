@@ -36130,9 +36130,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-09-09_M",
-      "savedAt": "2026-09-09T19:41:02.200Z",
+      "savedAt": "2026-09-09T19:41:05.561Z",
       "consolidado": {
         "totRec": 22.5,
         "totDin": 22.5,
