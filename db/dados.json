@@ -15041,16 +15041,31 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Vale transporte",
+          "nome": "Matheus",
+          "valor": 12.25,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        },
+        {
+          "tipo": "Vale transporte",
+          "nome": "Matheus",
+          "valor": 12.25,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-10_M",
-      "savedAt": "2026-09-10T19:12:41.775Z",
+      "savedAt": "2026-09-10T19:13:07.126Z",
       "consolidado": {
         "totRec": 50,
-        "totDin": 50,
+        "totDin": 25.5,
         "totCart": 1207.2,
         "totTotal": 1257.2,
         "totFita": 1222.92,
