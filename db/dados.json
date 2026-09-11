@@ -15344,7 +15344,7 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-09-11_M",
-      "savedAt": "2026-09-11T19:14:35.498Z",
+      "savedAt": "2026-09-11T19:13:25.323Z",
       "consolidado": {
         "totRec": 48.5,
         "totDin": 48.5,
@@ -36905,6 +36905,67 @@
     }
   ],
   "emp_mokx9qtt_historico": [
+    {
+      "data": "2026-09-11",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "92.49",
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "Mateus",
+          "dataDeposito": "2026-09-11",
+          "cartao": "940.60",
+          "pix": 0,
+          "clientes": "29",
+          "fita": "1017.02",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Mateus",
+          "responsavel": "Karine Trindade"
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-09-11_M",
+      "savedAt": "2026-09-11T19:15:18.025Z",
+      "consolidado": {
+        "totRec": 92.49,
+        "totDin": 92.49,
+        "totCart": 940.6,
+        "totTotal": 1033.09,
+        "totFita": 1017.02,
+        "totClientes": 29,
+        "totQuebra": 16.069999999999936,
+        "totDeposito": 0
+      }
+    },
     {
       "data": "2026-09-10",
       "turno": "T",
