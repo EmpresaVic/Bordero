@@ -15239,13 +15239,28 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "Pagamento (Freelance) dia 07/09/2026",
+          "nome": "Emilio",
+          "valor": 90,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        },
+        {
+          "tipo": "Vale transporte",
+          "nome": "Matheus",
+          "valor": 12.2,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-10_T",
-      "savedAt": "2026-09-11T01:32:26.425Z",
+      "savedAt": "2026-09-11T01:33:27.423Z",
       "consolidado": {
         "totRec": 189.2,
         "totDin": 189.2,
