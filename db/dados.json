@@ -36637,12 +36637,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "FILE DE FRANGO",
+          "qtde": "02",
+          "motivo": "DESCARTE"
+        },
+        {
+          "produto": "PP4H",
+          "qtde": "8",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-09-10_M",
-      "savedAt": "2026-09-10T19:20:26.625Z",
+      "savedAt": "2026-09-11T01:19:13.598Z",
       "consolidado": {
         "totRec": 23,
         "totDin": 23,
