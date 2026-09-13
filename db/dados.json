@@ -37452,12 +37452,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "FRANGO A MILANESA",
+          "qtde": "1",
+          "motivo": "DESCARTE"
+        },
+        {
+          "produto": "ISCAS DE FRANGO EMPANADO",
+          "qtde": "30",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-09-12_T",
-      "savedAt": "2026-09-13T01:51:59.487Z",
+      "savedAt": "2026-09-13T01:53:11.375Z",
       "consolidado": {
         "totRec": 377.23,
         "totDin": 377.23,
