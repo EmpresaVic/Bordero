@@ -15892,7 +15892,7 @@
           "deposito": 0,
           "depositoPor": "Debora Cristina",
           "dataDeposito": "2026-09-14",
-          "cartao": 0,
+          "cartao": "856",
           "pix": 0,
           "clientes": "18",
           "fita": "1044.92",
@@ -15968,15 +15968,15 @@
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-09-14_M",
-      "savedAt": "2026-09-14T19:12:57.967Z",
+      "savedAt": "2026-09-14T19:16:07.359Z",
       "consolidado": {
         "totRec": 188.9,
         "totDin": 188.9,
-        "totCart": 0,
-        "totTotal": 188.9,
+        "totCart": 856,
+        "totTotal": 1044.9,
         "totFita": 1044.92,
         "totClientes": 18,
-        "totQuebra": -856.0200000000001,
+        "totQuebra": -0.01999999999998181,
         "totDeposito": 0
       }
     },
