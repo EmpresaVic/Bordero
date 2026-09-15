@@ -16065,9 +16065,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": true,
+      "fechado": false,
       "id": "2026-09-14_T",
-      "savedAt": "2026-09-15T01:33:56.506Z",
+      "savedAt": "2026-09-15T01:33:30.175Z",
       "consolidado": {
         "totRec": 20,
         "totDin": 20,
@@ -16164,9 +16164,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-09-14_M",
-      "savedAt": "2026-09-14T19:16:07.359Z",
+      "savedAt": "2026-09-15T01:34:40.522Z",
       "consolidado": {
         "totRec": 188.9,
         "totDin": 188.9,
