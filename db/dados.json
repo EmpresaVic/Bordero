@@ -39293,16 +39293,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "COMPRA REMEDIO PARA USO DA LOJA",
+          "nome": "FARMACIA",
+          "valor": 12.99,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-17_M",
-      "savedAt": "2026-09-17T21:48:31.178Z",
+      "savedAt": "2026-09-17T21:53:17.593Z",
       "consolidado": {
         "totRec": 52.99,
-        "totDin": 53.99,
+        "totDin": 41,
         "totCart": 794.89,
         "totTotal": 847.88,
         "totFita": 826.29,
