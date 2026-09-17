@@ -39423,16 +39423,24 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "VT",
+          "nome": "JOÃO",
+          "valor": 80,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-16_M",
-      "savedAt": "2026-09-16T19:42:09.423Z",
+      "savedAt": "2026-09-17T21:57:04.523Z",
       "consolidado": {
         "totRec": 18,
-        "totDin": 18,
+        "totDin": -62,
         "totCart": 644.3,
         "totTotal": 662.3,
         "totFita": 662.31,
