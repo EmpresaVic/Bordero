@@ -38890,12 +38890,28 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "TOSCANA",
+          "qtde": "2",
+          "motivo": "DESCARTE"
+        },
+        {
+          "produto": "ISCAS DE FRANGO EMPANADAS",
+          "qtde": "30",
+          "motivo": "DESCARTE"
+        },
+        {
+          "produto": "PRATO DE CALABRESA",
+          "qtde": "1",
+          "motivo": "DESCARTE DO IFOOD DE ONTEM CANCELADO"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-09-16_T",
-      "savedAt": "2026-09-17T01:17:30.174Z",
+      "savedAt": "2026-09-17T01:19:48.395Z",
       "consolidado": {
         "totRec": 97.25,
         "totDin": 97.25,
