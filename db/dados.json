@@ -39302,10 +39302,10 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
-      "fechado": false,
+      "activeTab": "caixa",
+      "fechado": true,
       "id": "2026-09-17_T",
-      "savedAt": "2026-09-18T01:11:48.441Z",
+      "savedAt": "2026-09-18T01:12:01.618Z",
       "consolidado": {
         "totRec": 0,
         "totDin": 0,
