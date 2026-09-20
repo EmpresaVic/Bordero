@@ -16926,6 +16926,113 @@
   "emp_mokx9aq1_historico": [
     {
       "data": "2026-09-19",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvhbik2r5qh46q62": {
+          "fundoAbertura": 200,
+          "recebimento": "0.25",
+          "moedas": 0,
+          "deposito": "",
+          "depositoPor": "",
+          "dataDeposito": "2026-09-19",
+          "cartao": "4015.80",
+          "pix": "",
+          "clientes": "76",
+          "fita": "4092.55",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Mirian Gonçaves",
+          "responsavel": "Aline Silva"
+        },
+        "pdvmolvhkn7zloercktp7q": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "1096.80",
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhpj2sinsq4cfdxa": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "430.69",
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmolvhtyei5gzy02wac": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "2012.20",
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "grafica",
+          "nome": "grafica",
+          "valor": 70,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-09-19_T",
+      "savedAt": "2026-09-20T01:34:44.765Z",
+      "consolidado": {
+        "totRec": 0.25,
+        "totDin": 0.25,
+        "totCart": 7555.49,
+        "totTotal": 7555.74,
+        "totFita": 4092.55,
+        "totClientes": 76,
+        "totQuebra": -76.5,
+        "totDeposito": 0
+      }
+    },
+    {
+      "data": "2026-09-19",
       "turno": "M",
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
