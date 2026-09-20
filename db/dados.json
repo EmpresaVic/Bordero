@@ -16930,7 +16930,7 @@
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
           "fundoAbertura": 200,
-          "recebimento": "142.00",
+          "recebimento": "162.00",
           "moedas": 0,
           "deposito": 0,
           "depositoPor": "",
@@ -17017,17 +17017,17 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": true,
+      "fechado": false,
       "id": "2026-09-20_M",
-      "savedAt": "2026-09-20T19:38:04.302Z",
+      "savedAt": "2026-09-20T19:39:46.430Z",
       "consolidado": {
-        "totRec": 142,
-        "totDin": 122,
+        "totRec": 162,
+        "totDin": 142,
         "totCart": 3730.4,
-        "totTotal": 3872.4,
+        "totTotal": 3892.4,
         "totFita": 3873,
         "totClientes": 56,
-        "totQuebra": -0.599999999999909,
+        "totQuebra": 19.40000000000009,
         "totDeposito": 0
       }
     },
