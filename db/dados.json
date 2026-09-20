@@ -264,6 +264,120 @@
   "emp_mokx4v4r_historico": [
     {
       "data": "2026-09-19",
+      "turno": "T",
+      "pdvData": {
+        "pdvmokxf0cmjl2rags7wo9": {
+          "fundoAbertura": 200,
+          "recebimento": "167.90",
+          "moedas": 0,
+          "deposito": "140",
+          "depositoPor": "TAIONARA BACELAR",
+          "dataDeposito": "2026-09-19",
+          "cartao": "1067.30",
+          "pix": 0,
+          "clientes": "25",
+          "fita": "1241.80",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "TAIONARA BACELAR",
+          "responsavel": "TAIONARA BACELAR"
+        },
+        "pdvmokxfbej01queo319vvz": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfhrsfeatn4wrpjg": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "1486.09",
+          "pix": 0,
+          "clientes": "25",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        },
+        "pdvmokxfoxcnmphndpowpn": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "1420.20",
+          "pix": 0,
+          "clientes": "39",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt",
+          "nome": "flavia ",
+          "valor": 12.9,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": true
+        },
+        {
+          "tipo": "estacionamento",
+          "nome": "macela",
+          "valor": 15,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": true
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-09-19_T",
+      "savedAt": "2026-09-20T00:43:51.906Z",
+      "consolidado": {
+        "totRec": 167.9,
+        "totDin": 167.9,
+        "totCart": 3973.59,
+        "totTotal": 4141.49,
+        "totFita": 1241.8,
+        "totClientes": 89,
+        "totQuebra": -6.599999999999909,
+        "totDeposito": 140
+      }
+    },
+    {
+      "data": "2026-09-19",
       "turno": "M",
       "pdvData": {
         "pdvmokxf0cmjl2rags7wo9": {
