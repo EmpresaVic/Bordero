@@ -40125,12 +40125,23 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "FRANGO APARMEGIANA",
+          "qtde": "1",
+          "motivo": "QUEIMOU"
+        },
+        {
+          "produto": "BATATA FRITA",
+          "qtde": "200",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-09-19_T",
-      "savedAt": "2026-09-20T01:54:40.114Z",
+      "savedAt": "2026-09-20T01:56:23.593Z",
       "consolidado": {
         "totRec": 150,
         "totDin": 150,
