@@ -40296,6 +40296,75 @@
   ],
   "emp_mokx9qtt_historico": [
     {
+      "data": "2026-09-21",
+      "turno": "M",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "173.60",
+          "moedas": 0,
+          "deposito": "150",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-09-21",
+          "cartao": "1094.80",
+          "pix": 0,
+          "clientes": "18",
+          "fita": "1246.71",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": ""
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": 0,
+          "pix": 0,
+          "clientes": 0,
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [
+        {
+          "tipo": "vt e compra ",
+          "nome": "Matheus e Mercado X",
+          "valor": 24.99,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": false
+        }
+      ],
+      "perdas": [],
+      "obsGeral": "",
+      "activeTab": "pagamentos",
+      "fechado": false,
+      "id": "2026-09-21_M",
+      "savedAt": "2026-09-21T18:50:24.728Z",
+      "consolidado": {
+        "totRec": 173.6,
+        "totDin": 148.60999999999999,
+        "totCart": 1094.8,
+        "totTotal": 1268.3999999999999,
+        "totFita": 1246.71,
+        "totClientes": 18,
+        "totQuebra": 21.689999999999827,
+        "totDeposito": 150
+      }
+    },
+    {
       "data": "2026-09-20",
       "turno": "T",
       "pdvData": {
