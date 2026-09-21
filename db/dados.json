@@ -40338,13 +40338,28 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "VT",
+          "nome": "MATEUS",
+          "valor": 20,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        },
+        {
+          "tipo": "VT",
+          "nome": "TAISLANIA",
+          "valor": 20,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-20_T",
-      "savedAt": "2026-09-21T01:04:13.398Z",
+      "savedAt": "2026-09-21T01:05:07.038Z",
       "consolidado": {
         "totRec": 88.9,
         "totDin": 89.80000000000001,
