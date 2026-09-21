@@ -40340,14 +40340,14 @@
       },
       "pagamentos": [
         {
-          "tipo": "VT",
+          "tipo": "VT 20/09",
           "nome": "MATEUS",
           "valor": 20,
           "pdvId": "pdvmolvin6r4ncwjtabq5b",
           "noite": true
         },
         {
-          "tipo": "VT",
+          "tipo": "VT20/09",
           "nome": "TAISLANIA",
           "valor": 20,
           "pdvId": "pdvmolvin6r4ncwjtabq5b",
@@ -40359,7 +40359,7 @@
       "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-20_T",
-      "savedAt": "2026-09-21T01:05:07.038Z",
+      "savedAt": "2026-09-21T01:05:20.598Z",
       "consolidado": {
         "totRec": 88.9,
         "totDin": 89.80000000000001,
