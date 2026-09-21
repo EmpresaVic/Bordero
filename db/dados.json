@@ -40350,9 +40350,9 @@
       "perdas": [],
       "obsGeral": "",
       "activeTab": "pagamentos",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-09-21_M",
-      "savedAt": "2026-09-21T18:50:24.728Z",
+      "savedAt": "2026-09-21T18:50:27.632Z",
       "consolidado": {
         "totRec": 173.6,
         "totDin": 148.60999999999999,
