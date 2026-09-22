@@ -40495,6 +40495,73 @@
   "emp_mokx9qtt_historico": [
     {
       "data": "2026-09-21",
+      "turno": "T",
+      "pdvData": {
+        "pdvmolvin6r4ncwjtabq5b": {
+          "fundoAbertura": 200,
+          "recebimento": "61.10",
+          "moedas": 0,
+          "deposito": "61.10",
+          "depositoPor": "Agatha",
+          "dataDeposito": "2026-09-21",
+          "cartao": "782.19",
+          "pix": 0,
+          "clientes": "21",
+          "fita": "829.19",
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "Agatha",
+          "responsavel": ""
+        },
+        "pdvmolvixj2daj5opzwud5": {
+          "fundoAbertura": 200,
+          "recebimento": 0,
+          "moedas": 0,
+          "deposito": 0,
+          "depositoPor": "",
+          "dataDeposito": "",
+          "cartao": "410.10",
+          "pix": 0,
+          "clientes": "6",
+          "fita": 0,
+          "devolucao": 0,
+          "obsDevolucao": "",
+          "devComanda": "",
+          "devHorario": "",
+          "fundoFechamento": 200,
+          "caixa": "",
+          "responsavel": ""
+        }
+      },
+      "pagamentos": [],
+      "perdas": [
+        {
+          "produto": "isca de frango e batata fritas ",
+          "qtde": "300",
+          "motivo": "fez a mas"
+        }
+      ],
+      "obsGeral": "",
+      "activeTab": "caixa",
+      "fechado": false,
+      "id": "2026-09-21_T",
+      "savedAt": "2026-09-22T01:32:22.586Z",
+      "consolidado": {
+        "totRec": 61.1,
+        "totDin": 61.1,
+        "totCart": 1192.29,
+        "totTotal": 1253.39,
+        "totFita": 829.19,
+        "totClientes": 27,
+        "totQuebra": 14.100000000000023,
+        "totDeposito": 61.1
+      }
+    },
+    {
+      "data": "2026-09-21",
       "turno": "M",
       "pdvData": {
         "pdvmolvin6r4ncwjtabq5b": {
