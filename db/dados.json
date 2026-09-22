@@ -40546,9 +40546,9 @@
       ],
       "obsGeral": "",
       "activeTab": "caixa",
-      "fechado": false,
+      "fechado": true,
       "id": "2026-09-21_T",
-      "savedAt": "2026-09-22T01:32:22.586Z",
+      "savedAt": "2026-09-22T01:32:25.697Z",
       "consolidado": {
         "totRec": 61.1,
         "totDin": 61.1,
