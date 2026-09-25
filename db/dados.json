@@ -343,16 +343,31 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "vt",
+          "nome": "ligia",
+          "valor": 19.2,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        },
+        {
+          "tipo": "compra",
+          "nome": "alface",
+          "valor": 27,
+          "pdvId": "pdvmokxf0cmjl2rags7wo9",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-25_M",
-      "savedAt": "2026-09-25T20:24:00.597Z",
+      "savedAt": "2026-09-25T20:24:52.797Z",
       "consolidado": {
         "totRec": 302.7,
-        "totDin": 302.7,
+        "totDin": 256.5,
         "totCart": 1575.7,
         "totTotal": 1878.4,
         "totFita": 1870.2,
