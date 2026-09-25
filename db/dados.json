@@ -40949,12 +40949,18 @@
         }
       },
       "pagamentos": [],
-      "perdas": [],
+      "perdas": [
+        {
+          "produto": "BATATA FRITA",
+          "qtde": "30",
+          "motivo": "DESCARTE"
+        }
+      ],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "perdas",
       "fechado": false,
       "id": "2026-09-24_T",
-      "savedAt": "2026-09-25T01:30:36.467Z",
+      "savedAt": "2026-09-25T01:31:45.499Z",
       "consolidado": {
         "totRec": 131.5,
         "totDin": 131.5,
