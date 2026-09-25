@@ -40948,7 +40948,22 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "VT",
+          "nome": "TAISLAINA",
+          "valor": 50,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        },
+        {
+          "tipo": "DIARIA",
+          "nome": "JOAO GUILHERME",
+          "valor": 30,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
       "perdas": [
         {
           "produto": "BATATA FRITA",
@@ -40957,10 +40972,10 @@
         }
       ],
       "obsGeral": "",
-      "activeTab": "perdas",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-24_T",
-      "savedAt": "2026-09-25T01:31:45.499Z",
+      "savedAt": "2026-09-25T01:32:58.066Z",
       "consolidado": {
         "totRec": 131.5,
         "totDin": 131.5,
