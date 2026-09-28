@@ -41961,13 +41961,21 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "VT",
+          "nome": "JOAO GUILHERME",
+          "valor": 80,
+          "pdvId": "pdvmolvin6r4ncwjtabq5b",
+          "noite": true
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
-      "activeTab": "caixa",
+      "activeTab": "pagamentos",
       "fechado": false,
       "id": "2026-09-27_T",
-      "savedAt": "2026-09-28T00:45:34.282Z",
+      "savedAt": "2026-09-28T00:47:13.250Z",
       "consolidado": {
         "totRec": 40,
         "totDin": 40,
