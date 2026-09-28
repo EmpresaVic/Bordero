@@ -17654,7 +17654,7 @@
       "pdvData": {
         "pdvmolvhbik2r5qh46q62": {
           "fundoAbertura": 200,
-          "recebimento": "262.00",
+          "recebimento": "2.00",
           "moedas": 0,
           "deposito": 0,
           "depositoPor": "",
@@ -17729,21 +17729,36 @@
           "responsavel": ""
         }
       },
-      "pagamentos": [],
+      "pagamentos": [
+        {
+          "tipo": "freelancer dois dias",
+          "nome": "Emilio",
+          "valor": 180,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        },
+        {
+          "tipo": "freelacer",
+          "nome": "Nariani",
+          "valor": 80,
+          "pdvId": "pdvmolvhbik2r5qh46q62",
+          "noite": false
+        }
+      ],
       "perdas": [],
       "obsGeral": "",
       "activeTab": "caixa",
       "fechado": false,
       "id": "2026-09-27_M",
-      "savedAt": "2026-09-27T19:34:25.184Z",
+      "savedAt": "2026-09-28T00:57:36.001Z",
       "consolidado": {
-        "totRec": 262,
-        "totDin": 262,
+        "totRec": 2,
+        "totDin": -258,
         "totCart": 3230.2,
-        "totTotal": 3492.2,
+        "totTotal": 3232.2,
         "totFita": 3474.2,
         "totClientes": 52,
-        "totQuebra": 18,
+        "totQuebra": -242,
         "totDeposito": 0
       }
     },
